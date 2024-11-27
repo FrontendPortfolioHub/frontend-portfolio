@@ -29,4 +29,13 @@ module.exports = {
     browser: true,
     node: true,
   },
+  extends: ["stylelint-config-standard", "stylelint-scss"],
+  rules: {
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "declaration-colon-space-before": "always",
+    "indentation": 2,
+    "max-empty-lines": 1,
+    "scss/at-rule-no-unknown": true
+  }
 };
