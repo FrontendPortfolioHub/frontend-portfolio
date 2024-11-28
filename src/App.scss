@@ -1,1 +1,10 @@
-@import './styles/main.scss';
+@import './styles/main';
+@import './styles/utilities/_mixins';
+
+.desktop__content {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+}
