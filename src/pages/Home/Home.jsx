@@ -1,3 +1,9 @@
+import './Home';
+
 export const Home = () => {
-  <h1>Home</h1>;
+  return (
+    <div className="page">
+      <h1>Home</h1>
+    </div>
+  )
 };

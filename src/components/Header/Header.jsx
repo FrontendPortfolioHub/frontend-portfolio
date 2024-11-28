@@ -1,5 +1,11 @@
-import './Header.scss';
+import './Header';
 
 export const Header = () => {
-  <header className="header">Header</header>
+  return (
+    <header className="header">
+      <div className="container">
+        Header
+      </div>
+    </header>
+  )
 }
