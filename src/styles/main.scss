@@ -4,6 +4,7 @@
 @import './base/reset';
 @import './utilities/variables';
 @import './utilities/mixins';
+@import '../components/Header/Header';
 
 body {
   font-family: 'Roboto Mono', monospace;
