@@ -12,9 +12,10 @@
 }
 
 .start-button {
-  width: 28px;
-  height: 28px;
-  background: no-repeat url('../../assets/icons/start-button-grey.svg');
+  width: 30px;
+  height: 30px;
+  background: url('../../assets/icons/start-button-grey.svg');
+  background-repeat: no-repeat;
   background-size: contain;
   animation: blink 2s infinite;
 }
