@@ -13,7 +13,18 @@
   gap: 45px;
 }
 
-.nav__link {
+.mobile__nav-link {
   color: $text-primary;
   font-size: 15px;
+}
+
+.mobile__nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  height: 45px;
+  border-radius: 7px;
+  background-color: $color-accent;
+  color: $color-secondary;
 }
