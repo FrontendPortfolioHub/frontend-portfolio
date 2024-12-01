@@ -1,0 +1,19 @@
+.menu-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.mobile__nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav__link {
+  color: $text-primary;
+  font-size: 15px;
+}

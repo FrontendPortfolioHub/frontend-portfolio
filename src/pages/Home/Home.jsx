@@ -8,9 +8,15 @@ import { MainContext } from '../../context/MainContext';
 export const Home = () => {
   const {
     isStarted,
+    setIsStarted,
   } = useContext(MainContext);
 
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(false);
+    setIsStarted(false);
+  }, []);
 
   useEffect(() => {
     setIsLoading(false);
