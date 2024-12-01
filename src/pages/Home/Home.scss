@@ -16,6 +16,7 @@
   }
 
   &--active {
+    transition: opacity 3s;
     opacity: 1;
   }
 }
