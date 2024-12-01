@@ -7,9 +7,10 @@ import { Contacts } from './pages/Contacts';
 import { Footer } from './components/Footer';
 
 export const App = () => {
+
   return (
     <div className="app-container">
-      <Header/>
+      <Header />
       <div className="mobile__content">
         <Outlet/>
       </div>

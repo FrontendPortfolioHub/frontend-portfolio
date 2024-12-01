@@ -9,9 +9,14 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  opacity: 0.1;
 
   & p {
     line-height: 175%;
+  }
+
+  &--active {
+    opacity: 1;
   }
 }
 

@@ -1,10 +1,31 @@
+import { useContext } from 'react';
 import './Header';
+import classNames from 'classnames';
+import { MainContext } from '../../context/MainContext';
 
 export const Header = () => {
+  const {
+    isStarted,
+    setIsStarted,
+  } = useContext(MainContext);
+
+  const handleStartButton = () => {
+    setIsStarted(!isStarted);
+  }
+
   return (
-    <header className="header container">
+    <header
+      className={classNames('header container', {
+        'header__border-bottom--active': isStarted,
+      })}
+    >
       <div className="header__mobile">
-        <button className="start-button"></button>
+        <button
+          className={classNames('start-button', {
+            'start-button--active': isStarted,
+          })}
+          onClick={handleStartButton}
+        />
       </div>
     </header>
   );
