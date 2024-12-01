@@ -17,6 +17,7 @@ export const Header = () => {
     <header
       className={classNames('header container', {
         'header__border-bottom--active': isStarted,
+        'fade-slide-out': isStarted,
       })}
     >
       <div className="header__mobile">

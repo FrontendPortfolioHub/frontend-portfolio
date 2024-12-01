@@ -8,8 +8,9 @@
 @import '../pages/Home/Home';
 
 body {
+  height: 100vh;
   font-family: 'Roboto Mono', monospace;
-  background-color: $background-color;
+  background: linear-gradient(150deg, rgba(10, 25, 47, 1) 20%, rgba(0, 0, 0, 1) 100%);
   color: $color-secondary;
 }
 

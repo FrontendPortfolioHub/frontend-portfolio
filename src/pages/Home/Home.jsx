@@ -16,7 +16,7 @@ export const Home = () => {
     setIsLoading(false);
     const timer = setTimeout(() => {
       setIsLoading(true);
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [isStarted]);
@@ -35,7 +35,9 @@ export const Home = () => {
             </h1>
             <h2 className="home-page__subtitle">Frontend Developer</h2>
             <p className="text-accent">
-              with passion to creating and improving<span>.</span>
+              with passion to creating and improving
+              <span>.</span>
+              <span>.</span>
               <span>.</span>
               <span>.</span>
             </p>

@@ -11,9 +11,26 @@
   box-shadow: 0 1px 6px 0 $color-secondary;
 
   &__border-bottom--active {
-    box-shadow: 0 1px 6px 0 $color-accent;
+    box-shadow: 0 5px 6px 0 $color-accent;
   }
 }
+
+.fade-slide-out {
+  animation: fadeSlideOut 3s forwards;
+}
+
+@keyframes fadeSlideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    box-shadow: none;
+    opacity: 0;
+  }
+}
+
 
 .start-button {
   width: 28px;
