@@ -17,8 +17,8 @@ export const App = () => {
         <About />
         <Projects />
         <Contacts />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };

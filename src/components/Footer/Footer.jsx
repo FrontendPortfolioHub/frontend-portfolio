@@ -2,8 +2,8 @@ import './Footer';
 
 export const Footer = () => {
   return (
-    <div className="page">
+    <footer className="footer">
       <h1>Footer</h1>
-    </div>
+    </footer>
   )
 }
