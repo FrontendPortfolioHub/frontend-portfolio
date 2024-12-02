@@ -17,7 +17,7 @@ export const MenuPage = () => {
               className="mobile__nav-link"
               onClick={handleMenuState}
             >
-              About
+              About my
             </NavLink>
           </li>
           <li className="mobile__nav-item">
@@ -39,22 +39,13 @@ export const MenuPage = () => {
             </NavLink>
           </li>
           <li className="mobile__nav-item">
-            <NavLink
-              to="/"
-              className="mobile__nav-link"
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className="mobile__nav-item">
-            <NavLink
-              to="https://drive.google.com/file/d/1gn8pSq_oSFfB7OU71VvLzV25nurwP1qr/view?usp=drive_link"
+            <a
+              href="/files/CV Frontend Dev Pavlo Maistrenko.pdf"
+              download="CV Frontend Dev Pavlo Maistrenko.pdf"
               className="mobile__nav-link mobile__nav-button"
-              target="_blank"
-              rel="noreferrer"
             >
-              Resume
-            </NavLink>
+              Download-CV
+            </a>
           </li>
         </ul>
       </nav>

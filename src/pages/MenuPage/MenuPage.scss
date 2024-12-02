@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 45px;
+  gap: 55px;
 }
 
 .mobile__nav-link {
@@ -22,9 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 105px;
-  height: 45px;
+  width: 125px;
+  height: 40px;
   border-radius: 7px;
   background-color: $color-accent;
-  color: $color-secondary;
+  color: #0a192f;
+  font-weight: 500;
 }
