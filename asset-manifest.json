@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.888a275c.css",
-    "main.js": "/frontend-portfolio/static/js/main.07116942.js",
+    "main.css": "/frontend-portfolio/static/css/main.4c99a62d.css",
+    "main.js": "/frontend-portfolio/static/js/main.a66372db.js",
     "index.html": "/frontend-portfolio/index.html",
     "static/media/start-button-accent-28px.svg": "/frontend-portfolio/static/media/start-button-accent-28px.968f0717222398c87eef.svg",
     "static/media/start-button-grey-28px.svg": "/frontend-portfolio/static/media/start-button-grey-28px.648b0a9556b88523f723.svg",
     "static/media/git-hub_icon--green.svg": "/frontend-portfolio/static/media/git-hub_icon--green.5f57d8398ff0e314e787.svg",
     "static/media/linked-in_icon--green.svg": "/frontend-portfolio/static/media/linked-in_icon--green.b9b144fbbaa251ad3c2c.svg",
-    "main.888a275c.css.map": "/frontend-portfolio/static/css/main.888a275c.css.map",
-    "main.07116942.js.map": "/frontend-portfolio/static/js/main.07116942.js.map"
+    "main.4c99a62d.css.map": "/frontend-portfolio/static/css/main.4c99a62d.css.map",
+    "main.a66372db.js.map": "/frontend-portfolio/static/js/main.a66372db.js.map"
   },
   "entrypoints": [
-    "static/css/main.888a275c.css",
-    "static/js/main.07116942.js"
+    "static/css/main.4c99a62d.css",
+    "static/js/main.a66372db.js"
   ]
 }
