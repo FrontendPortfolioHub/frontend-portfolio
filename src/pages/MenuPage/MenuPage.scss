@@ -10,7 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 55px;
+  gap: 35px;
+  margin-bottom: 95px;
 }
 
 .mobile__nav-link {
@@ -28,4 +29,25 @@
   background-color: $color-accent;
   color: #0a192f;
   font-weight: 500;
+}
+
+.social__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.social__nav-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.linkedin {
+  background-image: url("../../assets/icons/linked-in_icon--green.svg");
+}
+
+.git-hub {
+  background-image: url("../../assets/icons/git-hub_icon--green.svg")
 }

@@ -1,6 +1,7 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { scrollToTop } from '../../utils/scrollToTop';
 import './MenuPage';
+import { menuPageNavItems } from '../../data/menuPageNavItems';
 
 export const MenuPage = () => {
   const handleMenuState = () => {
@@ -11,33 +12,17 @@ export const MenuPage = () => {
     <div className="menu-page">
       <nav className="mobile__nav">
         <ul className="mobile__nav-list">
-          <li className="mobile__nav-item">
-            <NavLink
-              to="/about"
-              className="mobile__nav-link"
-              onClick={handleMenuState}
-            >
-              About my
-            </NavLink>
-          </li>
-          <li className="mobile__nav-item">
-            <NavLink
-              to="/projects"
-              className="mobile__nav-link"
-              onClick={handleMenuState}
-            >
-              Projects
-            </NavLink>
-          </li>
-          <li className="mobile__nav-item">
-            <NavLink
-              to="/contacts"
-              className="mobile__nav-link"
-              onClick={handleMenuState}
-            >
-              Contacts
-            </NavLink>
-          </li>
+          {menuPageNavItems.map((item) => (
+            <li key={item.id} className="mobile__nav-item">
+              <NavLink
+                to={item.href}
+                className="mobile__nav-link"
+                onClick={handleMenuState}
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
           <li className="mobile__nav-item">
             <a
               href="/files/CV Frontend Dev Pavlo Maistrenko.pdf"
@@ -48,6 +33,16 @@ export const MenuPage = () => {
             </a>
           </li>
         </ul>
+        <div className="social__links">
+          <ul className="social__nav-list">
+            <li className="social__nav-item">
+              <Link className="social__nav-link linkedin" />
+            </li>
+            <li className="social__nav-item">
+              <Link className="social__nav-link git-hub" />
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   );
