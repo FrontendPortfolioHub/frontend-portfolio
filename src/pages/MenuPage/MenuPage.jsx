@@ -19,7 +19,7 @@ export const MenuPage = () => {
                 className="mobile__nav-link"
                 onClick={handleMenuState}
               >
-                {item.label}
+                {`.${item.label}`}
               </NavLink>
             </li>
           ))}
