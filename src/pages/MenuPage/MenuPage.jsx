@@ -23,7 +23,7 @@ export const MenuPage = () => {
               </NavLink>
             </li>
           ))}
-          <li className="mobile__nav-item">
+          {/*<li className="mobile__nav-item">
             <a
               href="/files/CV Frontend Dev Pavlo Maistrenko.pdf"
               download="CV Frontend Dev Pavlo Maistrenko.pdf"
@@ -31,7 +31,7 @@ export const MenuPage = () => {
             >
               Download-CV
             </a>
-          </li>
+          </li>-->*/}
         </ul>
         <div className="social__links">
           <ul className="social__nav-list">
