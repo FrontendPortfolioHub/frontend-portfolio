@@ -16,7 +16,7 @@
 
 .mobile__nav-link {
   color: $text-accent;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .mobile__nav-button {
@@ -35,6 +35,8 @@
 .social__links {
   position: absolute;
   bottom: 50px;
+  left: 50%;
+  transform: translateX(-40%);
 }
 
 .social__nav-list {
