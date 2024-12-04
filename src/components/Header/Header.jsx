@@ -14,20 +14,8 @@ export const Header = () => {
   }
 
   return (
-    <header
-      className={classNames('header container', {
-        'header__border-bottom--active': isStarted,
-        'fade-slide-out': isStarted,
-      })}
-    >
-      <div className="header__mobile">
-        <button
-          className={classNames('start-button', {
-            'start-button--active': isStarted,
-          })}
-          onClick={handleStartButton}
-        />
-      </div>
+    <header>
+      Header
     </header>
   );
 };

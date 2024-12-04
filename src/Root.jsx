@@ -1,19 +1,19 @@
 import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import { App } from './App';
-import { Home } from './pages/Home';
+import { StartPage } from './pages/StartPage';
 import { About } from './pages/About/About';
 import { Projects } from './pages/Projects';
 import { Contacts } from './pages/Contacts';
-import { MenuPage } from './pages/MenuPage';
 import { MainProvider } from './context/MainContext';
+import { Home } from './pages/Home/Home';
 
 export const Root = () => (
   <Router>
     <MainProvider>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<Home />} />
-          <Route path="menu" element={<MenuPage />} />
+          <Route index element={<StartPage />} />
+          <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contacts" element={<Contacts />} />

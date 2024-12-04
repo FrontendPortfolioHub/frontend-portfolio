@@ -1,0 +1,30 @@
+.start-button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 30px;
+  color: $color-secondary;
+  line-height: 0;
+  background-color: #112240;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 2px $color-accent;
+  animation: blink 2s infinite;
+
+  &--active {
+    animation-duration: 0ms;
+    color: $color-accent;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    box-shadow: 0 0 3px 3px $color-primary;
+    color: $color-primary;
+  }
+  50% {
+    box-shadow: 0 0 3px 0 $color-accent;
+    color: $color-accent;
+  }
+}

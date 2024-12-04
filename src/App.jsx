@@ -7,14 +7,13 @@ import { Contacts } from './pages/Contacts';
 import { Footer } from './components/Footer';
 
 export const App = () => {
-
   return (
     <div className="app-container">
-      <Header />
       <div className="mobile__content">
         <Outlet/>
       </div>
       <div className="desktop__content">
+        <Header />
         <About />
         <Projects />
         <Contacts />

@@ -1,57 +1,48 @@
-import { useContext, useEffect, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { scrollToTop } from '../../utils/scrollToTop';
 import './Home';
-import { MenuPage } from '../MenuPage/MenuPage';
-import classNames from 'classnames';
-import { MainContext } from '../../context/MainContext';
-
+import { menuPageNavItems } from '../../data/menuPageNavItems';
 
 export const Home = () => {
-  const {
-    isStarted,
-    setIsStarted,
-  } = useContext(MainContext);
-
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setIsLoading(false);
-    setIsStarted(false);
-  }, []);
-
-  useEffect(() => {
-    setIsLoading(false);
-    const timer = setTimeout(() => {
-      setIsLoading(true);
-    }, 4000);
-
-    return () => clearTimeout(timer);
-  }, [isStarted]);
+  const handleMenuState = () => {
+    scrollToTop();
+  };
 
   return (
     <div className="home-page">
-      <div className="container">
-        {(!isLoading || !isStarted) ? (
-          <div
-            className={classNames('home-page__content', {
-              'home-page__content--active': isStarted,
-            })}
-          >
-            <h1 className="home-page__title text-primary">
-              I'M <br /> Pavlo Maistrenko
-            </h1>
-            <h2 className="home-page__subtitle">Frontend Developer</h2>
-            <p className="text-accent">
-              with passion to creating and improving
-              <span>.</span>
-              <span>.</span>
-              <span>.</span>
-              <span>.</span>
-            </p>
-          </div>
-        ) : (
-          <MenuPage />
-        )}
-      </div>
+      <nav className="mobile__nav">
+        <ul className="mobile__nav-list">
+          {menuPageNavItems.map((item) => (
+            <li key={item.id} className="mobile__nav-item">
+              <NavLink
+                to={item.href}
+                className="mobile__nav-link"
+                onClick={handleMenuState}
+              >
+                {`.${item.label}`}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+        <div className="social__links">
+          <ul className="social__nav-list">
+            <li className="social__nav-item">
+              <Link
+                to="https://www.linkedin.com/in/pavlomaistrenko/"
+                className="social__nav-link linkedin"
+                target="_blank"
+              />
+            </li>
+            <li className="social__nav-item">
+              <Link
+                to="https://github.com/PaulMaistrenko"
+                className="social__nav-link git-hub"
+                target="_blank"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   );
 };
