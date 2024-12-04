@@ -21,10 +21,8 @@
 @keyframes blink {
   0%, 100% {
     box-shadow: 0 0 3px 3px $color-primary;
-    color: $color-primary;
   }
   50% {
     box-shadow: 0 0 3px 0 $color-accent;
-    color: $color-accent;
   }
 }
