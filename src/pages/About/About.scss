@@ -1,4 +1,45 @@
+.about-page {
+  padding-top: 23px;
+}
+
 .start-page__link {
-  position: absolute;
-  top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 24px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../../assets/icons/arrow-accent-left.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.page__title {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 5px;
+  opacity: 0.3;
+  
+  &::after {
+    content: "";
+    display: block;
+    width: 177px;
+    height: 2px;
+    background-color: $color-secondary;
+  }
+}
+
+.about-page__image {
+  width: 177px;
+  height: 177px;
+  background-image: url('../../assets/images/about/main-photo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

@@ -5,9 +5,9 @@
   align-items: center;
   width: 168px;
   height: 30px;
-  color: $color-secondary;
+  color: $color-primary;
   line-height: 0;
-  background-color: #112240;
+  background-color: $color-secondary;
   border-radius: 20px;
   box-shadow: 0 0 3px 2px $color-accent;
   animation: blink 2s infinite;
