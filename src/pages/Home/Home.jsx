@@ -9,7 +9,7 @@ export const Home = () => {
   };
 
   return (
-    <div className="home-page">
+    <section className="home-page">
       <nav className="mobile__nav">
         <ul className="mobile__nav-list">
           {menuPageNavItems.map((item) => (
@@ -43,6 +43,6 @@ export const Home = () => {
           </ul>
         </div>
       </nav>
-    </div>
+    </section>
   );
 };

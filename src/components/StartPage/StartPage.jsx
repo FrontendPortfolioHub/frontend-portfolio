@@ -1,23 +1,20 @@
-import { useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './StartPage';
 import classNames from 'classnames';
 import { useNavigate } from 'react-router-dom';
-import { StartButton } from '../../components/StartButton';
 
 export const StartPage = () => {
   const [isRedirecting, setIsRedirecting] = useState(false);
   const navigate = useNavigate();
-  const timeoutRef = useRef(null);
 
-  const handleRedirect = async () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
+  useEffect(() => {
     setIsRedirecting(true);
-    timeoutRef.current = setTimeout(() => {
+    const timer = setTimeout(() => {
       navigate('/home');
     }, 4000);
-  };
+
+    return () => clearTimeout(timer);
+  }, [navigate]);
 
   return (
     <div className="start-page">
@@ -30,7 +27,7 @@ export const StartPage = () => {
           <h1 className="start-page__title text-primary">
             I'M <br /> Pavlo Maistrenko
           </h1>
-          <h2 className="start-page__subtitle">Frontend Developer</h2>
+          <p className="start-page__subtitle">Frontend Developer</p>
           <p className="text-accent">
             with passion to creating and improving
             <span>.</span>
@@ -39,7 +36,6 @@ export const StartPage = () => {
             <span>.</span>
           </p>
         </div>
-        <StartButton handleRedirect={handleRedirect} />
       </div>
     </div>
   );

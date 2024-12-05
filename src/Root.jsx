@@ -1,6 +1,5 @@
 import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import { App } from './App';
-import { StartPage } from './pages/StartPage';
 import { About } from './pages/About/About';
 import { Projects } from './pages/Projects';
 import { Contacts } from './pages/Contacts';
@@ -12,8 +11,7 @@ export const Root = () => (
     <MainProvider>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<StartPage />} />
-          <Route path="home" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contacts" element={<Contacts />} />
