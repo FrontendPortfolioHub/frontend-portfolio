@@ -21,6 +21,10 @@
   color: $text-accent;
   font-size: 18px;
   font-weight: 300;
+
+  span {
+    color: $color-primary;
+  }
 }
 
 .mobile__nav-button {

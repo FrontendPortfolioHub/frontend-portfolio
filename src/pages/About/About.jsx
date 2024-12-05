@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <div className="about-page">
       <div className="container">
-        <Link className="start-page__link text-accent" to="/home">
+        <Link className="start-page__link text-accent" to="/">
           back...
         </Link>
         <h1 className="page__title text-secondary">About</h1>

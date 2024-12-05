@@ -1,27 +1,14 @@
-import { useEffect, useState } from 'react';
 import './StartPage';
 import classNames from 'classnames';
-import { useNavigate } from 'react-router-dom';
 
-export const StartPage = () => {
-  const [isRedirecting, setIsRedirecting] = useState(false);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    setIsRedirecting(true);
-    const timer = setTimeout(() => {
-      navigate('/home');
-    }, 4000);
-
-    return () => clearTimeout(timer);
-  }, [navigate]);
+export const StartPage = ({ isLoading }) => {
 
   return (
     <div className="start-page">
       <div className="container">
         <div
           className={classNames('start-page__content', {
-            'start-page__content--active': isRedirecting,
+            'start-page__content--active': isLoading,
           })}
         >
           <h1 className="start-page__title text-primary">
