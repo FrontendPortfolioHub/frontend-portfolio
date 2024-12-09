@@ -1,5 +1,6 @@
 .about-page {
   padding-top: 25px;
+  background: linear-gradient(180deg, rgba(10, 25, 47, 1) 30%, rgba(0, 0, 0, 1) 100%);
 }
 
 .start-page__link {
@@ -36,10 +37,38 @@
 }
 
 .about-page__image {
+  margin-bottom: 48px;
   width: 177px;
   height: 177px;
   background-image: url('../../assets/images/about/main-photo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.greeting {
+  margin-bottom: 15px;
+}
+
+.name {
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 120%;
+}
+
+.short-description {
+  padding-bottom: 24px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 175%;
+}
+
+.more-information__button {
+  margin-left: 6px;
+
+  span {
+    letter-spacing: 3px;
+  }
 }

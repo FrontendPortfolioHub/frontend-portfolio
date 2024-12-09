@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { scrollToTop } from '../../utils/scrollToTop';
 import './Home';
-import { menuPageNavItems } from '../../data/menuPageNavItems';
+import { homePageNavItems } from '../../data/homePageNavItems';
 import { StartPage } from '../../components/StartPage/StartPage';
 import { useEffect, useState } from 'react';
 
@@ -12,16 +12,14 @@ export const Home = () => {
     const isFirstVisit = localStorage.getItem('visited');
 
     if (isFirstVisit) {
-      // Если пользователь уже был на странице, сразу показываем Home
-      setIsLoading(false);
+       setIsLoading(false);
     } else {
-      // Если это первый визит, показываем StartPage с задержкой
       localStorage.setItem('visited', 'true');
       setTimeout(() => {
-        setIsLoading(false); // Через 3 секунды показываем Home
-      }, 3000); // 3000 миллисекунд = 3 секунды
+        setIsLoading(false);
+      }, 3000);
     }
-  }, []);
+  }, [isLoading]);
 
   const handleMenuState = () => {
     scrollToTop();
@@ -34,7 +32,7 @@ export const Home = () => {
       ) : (
         <nav className="mobile__nav">
           <ul className="mobile__nav-list">
-            {menuPageNavItems.map((item) => (
+            {homePageNavItems.map((item) => (
               <li key={item.id} className="mobile__nav-item">
                 <NavLink
                   to={item.href}
@@ -45,6 +43,15 @@ export const Home = () => {
                 </NavLink>
               </li>
             ))}
+            <button
+              className="mobile__nav-item"
+              onClick={() => {
+                localStorage.removeItem('visited');
+                setIsLoading(true);
+              }}
+            >
+              <p className="mobile__nav-link"><span>.</span>to start</p>
+            </button>
           </ul>
           <div className="social__links">
             <ul className="social__nav-list">
