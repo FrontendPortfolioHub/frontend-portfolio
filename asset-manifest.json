@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.20a97d8c.css",
+    "main.css": "/frontend-portfolio/static/css/main.04113011.css",
     "main.js": "/frontend-portfolio/static/js/main.9f615f5d.js",
     "static/media/main-photo.png": "/frontend-portfolio/static/media/main-photo.8e9debedf85632d94f8b.png",
     "static/media/cv-download.svg": "/frontend-portfolio/static/media/cv-download.bdc3d9187494f99ade5e.svg",
@@ -10,11 +10,11 @@
     "static/media/arrow-accent-top.svg": "/frontend-portfolio/static/media/arrow-accent-top.5de5b3a5eb4e3484748b.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.20a97d8c.css.map": "/frontend-portfolio/static/css/main.20a97d8c.css.map",
+    "main.04113011.css.map": "/frontend-portfolio/static/css/main.04113011.css.map",
     "main.9f615f5d.js.map": "/frontend-portfolio/static/js/main.9f615f5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.20a97d8c.css",
+    "static/css/main.04113011.css",
     "static/js/main.9f615f5d.js"
   ]
 }
