@@ -48,6 +48,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  box-shadow: 4px 4px 3px rgba(100, 255, 218, 0.25);
 }
 
 .greeting {
@@ -75,6 +76,10 @@
   span {
     letter-spacing: 3px;
   }
+}
+
+.button--hidden {
+  display: none;
 }
 
 .additional-information {

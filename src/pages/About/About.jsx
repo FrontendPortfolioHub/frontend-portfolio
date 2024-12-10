@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import './About';
+import { scrollToTop } from '../../utils/scrollToTop';
+import { useState } from 'react';
+import classNames from 'classnames';
 
 export const About = () => {
+  const [isMoreInfoOpen, setMoreInfoOpen] = useState(false);
+
   return (
     <div className="about-page">
       <div className="container">
@@ -16,12 +21,24 @@ export const About = () => {
           Since 2021, I’ve enjoyed creating efficient and intuitive solutions in
           frontend development. When I'm not coding, I'm learning something new,
           traveling, or working out.
-          <button className="additional-information__button text-accent">
+          <button
+            onClick={() => setMoreInfoOpen(true)}
+            className={classNames(
+              'additional-information__button text-accent',
+              {
+                'button--hidden': isMoreInfoOpen,
+              },
+            )}
+          >
             <span>...</span>more
           </button>
         </article>
-        <article className="additional-information">
-          <h2 className="additional-information__title">
+        <article
+          className={classNames('additional-information', {
+            hidden: !isMoreInfoOpen,
+          })}
+        >
+          <h2 className="additional-information__title text-primary">
             How I became a Frontend Deweloper
           </h2>
           <p className="additional-information__text text-secondary">
@@ -48,7 +65,10 @@ export const About = () => {
             exploring new places. These experiences provide fresh perspectives
             and inspiration, enriching both my personal and professional
             endeavors.
-            <button className="additional-information__button text-accent">
+            <button
+              onClick={() => setMoreInfoOpen(false)}
+              className="additional-information__button text-accent"
+            >
               <span>...</span>less
             </button>
           </p>
@@ -117,13 +137,28 @@ export const About = () => {
         <nav className="about-page__nav">
           <ul className="about-page__nav-list">
             <li className="about-page__nav-item">
-              <Link className="about-page__nav-link menu-link text-accent">...menu</Link>
+              <Link
+                to="/"
+                className="about-page__nav-link menu-link text-accent"
+              >
+                ...menu
+              </Link>
             </li>
             <li className="about-page__nav-item">
-              <Link className="about-page__nav-link projects-link text-accent">projects...</Link>
+              <Link
+                to="/projects"
+                className="about-page__nav-link projects-link text-accent"
+              >
+                projects...
+              </Link>
             </li>
             <li className="about-page__nav-item">
-              <Link className="about-page__nav-link top-link text-accent">...to top</Link>
+              <button
+                onClick={() => scrollToTop()}
+                className="about-page__nav-link top-link text-accent"
+              >
+                ...to top
+              </button>
             </li>
           </ul>
         </nav>
