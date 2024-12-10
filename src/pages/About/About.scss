@@ -77,6 +77,10 @@
   }
 }
 
+.additional-information {
+  margin-bottom: 40px;
+}
+
 .additional-information__title {
   margin-bottom: 25px;
   font-family: 'Roboto', sans-serif;
@@ -85,6 +89,43 @@
 }
 
 .additional-information__text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 175%;
 }
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.feature__title {
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%;
+}
+
+.features-item__top {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  height: 32px;
+  width: 166px;
+}
+
+.feature__content {
+  padding: 15px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.feature-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
