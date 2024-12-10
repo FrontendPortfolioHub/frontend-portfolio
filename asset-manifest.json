@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.6a452fa0.css",
-    "main.js": "/frontend-portfolio/static/js/main.a3743dc8.js",
+    "main.css": "/frontend-portfolio/static/css/main.5deb9208.css",
+    "main.js": "/frontend-portfolio/static/js/main.072014ea.js",
     "static/media/main-photo.png": "/frontend-portfolio/static/media/main-photo.8e9debedf85632d94f8b.png",
     "index.html": "/frontend-portfolio/index.html",
     "static/media/git-hub_icon--green.svg": "/frontend-portfolio/static/media/git-hub_icon--green.5f57d8398ff0e314e787.svg",
     "static/media/linked-in_icon--green.svg": "/frontend-portfolio/static/media/linked-in_icon--green.b9b144fbbaa251ad3c2c.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.6a452fa0.css.map": "/frontend-portfolio/static/css/main.6a452fa0.css.map",
-    "main.a3743dc8.js.map": "/frontend-portfolio/static/js/main.a3743dc8.js.map"
+    "main.5deb9208.css.map": "/frontend-portfolio/static/css/main.5deb9208.css.map",
+    "main.072014ea.js.map": "/frontend-portfolio/static/js/main.072014ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a452fa0.css",
-    "static/js/main.a3743dc8.js"
+    "static/css/main.5deb9208.css",
+    "static/js/main.072014ea.js"
   ]
 }
