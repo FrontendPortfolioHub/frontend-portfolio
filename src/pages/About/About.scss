@@ -97,6 +97,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 70px;
 }
 
 .feature__title {
@@ -110,9 +111,12 @@
 .features-item__top {
   display: flex;
   align-items: center;
-  margin-left: 15px;
+  padding-left: 15px;
   height: 32px;
   width: 166px;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid rgba(55, 62, 83, 0.5);
+  background: #06132b;
 }
 
 .feature__content {
@@ -121,6 +125,10 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid rgba(55, 62, 83, 0.5);
+  background: #06132b;
+  box-shadow: 4px 4px 3px rgba(100, 255, 218, 0.25);
 }
 
 .feature-content__list {
@@ -129,3 +137,99 @@
   gap: 8px;
 }
 
+.feauture-content__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url('../../assets/icons/arrow-accent-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.cv-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 35px;
+  width: 188px;
+  margin: 0 auto 40px;
+  border: 2px solid $color-accent;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 7px rgba(100, 255, 218, 0.2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url('../../assets/icons/cv-download.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.about-page__nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 70px;
+}
+
+.about-page__nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+}
+
+.menu-link {
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../../assets/icons/arrow-accent-left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.projects-link {
+  &::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../../assets/icons/arrow-accent-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.top-link {
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../../assets/icons/arrow-accent-top.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

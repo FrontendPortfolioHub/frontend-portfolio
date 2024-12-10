@@ -111,6 +111,22 @@ export const About = () => {
             </div>
           </li>
         </ul>
+        <div className="about-page__footer">
+          <button className="cv-button text-accent">download cv...</button>
+        </div>
+        <nav className="about-page__nav">
+          <ul className="about-page__nav-list">
+            <li className="about-page__nav-item">
+              <Link className="about-page__nav-link menu-link text-accent">...menu</Link>
+            </li>
+            <li className="about-page__nav-item">
+              <Link className="about-page__nav-link projects-link text-accent">projects...</Link>
+            </li>
+            <li className="about-page__nav-item">
+              <Link className="about-page__nav-link top-link text-accent">...to top</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   );
