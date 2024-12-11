@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.04113011.css",
-    "main.js": "/frontend-portfolio/static/js/main.9f615f5d.js",
+    "main.css": "/frontend-portfolio/static/css/main.0f2b2cda.css",
+    "main.js": "/frontend-portfolio/static/js/main.4974d6c4.js",
     "static/media/main-photo.png": "/frontend-portfolio/static/media/main-photo.8e9debedf85632d94f8b.png",
     "static/media/cv-download.svg": "/frontend-portfolio/static/media/cv-download.bdc3d9187494f99ade5e.svg",
     "index.html": "/frontend-portfolio/index.html",
     "static/media/git-hub_icon--green.svg": "/frontend-portfolio/static/media/git-hub_icon--green.5f57d8398ff0e314e787.svg",
     "static/media/linked-in_icon--green.svg": "/frontend-portfolio/static/media/linked-in_icon--green.b9b144fbbaa251ad3c2c.svg",
     "static/media/arrow-accent-top.svg": "/frontend-portfolio/static/media/arrow-accent-top.5de5b3a5eb4e3484748b.svg",
+    "static/media/slider-arrow-left-grey.svg": "/frontend-portfolio/static/media/slider-arrow-left-grey.c8f1435f9f5f498db786.svg",
+    "static/media/slider-arrow-right-accent.svg": "/frontend-portfolio/static/media/slider-arrow-right-accent.7f78fe8cb8a6aff833ea.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.04113011.css.map": "/frontend-portfolio/static/css/main.04113011.css.map",
-    "main.9f615f5d.js.map": "/frontend-portfolio/static/js/main.9f615f5d.js.map"
+    "main.0f2b2cda.css.map": "/frontend-portfolio/static/css/main.0f2b2cda.css.map",
+    "main.4974d6c4.js.map": "/frontend-portfolio/static/js/main.4974d6c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.04113011.css",
-    "static/js/main.9f615f5d.js"
+    "static/css/main.0f2b2cda.css",
+    "static/js/main.4974d6c4.js"
   ]
 }
