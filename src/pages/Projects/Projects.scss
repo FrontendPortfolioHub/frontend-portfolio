@@ -37,8 +37,9 @@
 .slider-arrows {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
   margin: 0 auto;
+  width: 95px;
 }
 
 .slider-arrow {
