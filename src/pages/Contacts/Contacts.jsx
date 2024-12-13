@@ -1,13 +1,21 @@
 import { Link } from 'react-router-dom';
 import './Contacts';
+import { useEffect } from 'react';
+import { useMainContext } from '../../context/MainContext';
+import { scrollToTop } from '../../utils/scrollToTop';
+import { BackLink } from '../../components/BackLink/BackLink';
 
 export const Contacts = () => {
+  const {setCurrentPage} = useMainContext();
+  useEffect(() => {
+    scrollToTop();
+    setCurrentPage('contacts');
+  }, []);
+
   return (
     <div className="contacts-page">
       <div className="container">
-        <Link className="back__link text-accent" to="/">
-          back...
-        </Link>
+        <BackLink />
         <h1 className="page__title text-secondary">Contacts</h1>
         <p className="contacts-page__description">Always in touch for you...</p>
         <ul className="contacts-list">

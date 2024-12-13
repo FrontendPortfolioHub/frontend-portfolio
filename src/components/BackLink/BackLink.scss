@@ -1,0 +1,15 @@
+.back__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url('../../assets/icons/arrow-accent-left.svg');
+    background-repeat: no-repeat;
+  }
+}

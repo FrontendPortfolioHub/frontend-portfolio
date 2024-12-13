@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './FooterMobile';
+import { scrollToTop } from '../../utils/scrollToTop';
 
 export const FooterMobile = () => {
   return (
@@ -13,7 +14,7 @@ export const FooterMobile = () => {
             <Link to="/contacts" className="footer__nav-link">.contacts</Link>
           </li>
           <li className="footer__nav-item">
-            <button className="footer__nav-link">.to top</button>
+            <button onClick={() => scrollToTop()} className="footer__nav-link">.to top</button>
           </li>
         </ul>
       </nav>

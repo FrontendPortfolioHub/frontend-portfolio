@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import './Projects';
-import { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 import { scrollToTop } from '../../utils/scrollToTop';
 import { useMainContext } from '../../context/MainContext';
+import { BackLink } from '../../components/BackLink/BackLink';
 
 export const Projects = () => {
   const {setCurrentPage} = useMainContext();
@@ -15,9 +16,7 @@ export const Projects = () => {
   return (
     <div className="projects-page">
       <div className="container">
-        <Link className="back__link text-accent" to="/">
-          back...
-        </Link>
+        <BackLink />
         <h1 className="page__title text-secondary">Projects</h1>
         <article className="projects-page__description text-secondary">
           Here you will find projects that allowed me to learn and develop my

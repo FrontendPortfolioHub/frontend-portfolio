@@ -1,18 +1,25 @@
 import { Link } from 'react-router-dom';
 import './About';
 import { scrollToTop } from '../../utils/scrollToTop';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import classNames from 'classnames';
+import { useMainContext } from '../../context/MainContext';
+import { BackLink } from '../../components/BackLink/BackLink';
 
 export const About = () => {
+  const {setCurrentPage} = useMainContext();
+
   const [isMoreInfoOpen, setMoreInfoOpen] = useState(false);
+
+  useEffect(() => {
+    scrollToTop();
+    setCurrentPage('about');
+  }, []);
 
   return (
     <div className="about-page">
       <div className="container">
-        <Link className="back__link text-accent" to="/">
-          back...
-        </Link>
+        <BackLink />
         <h1 className="page__title text-secondary">About</h1>
         <div className="about-page__image"></div>
         <p className="greeting text-accent">Hi, my name is</p>
@@ -134,34 +141,6 @@ export const About = () => {
         <div className="about-page__footer">
           <button className="cv-button text-accent">download cv...</button>
         </div>
-        <nav className="about-page__nav">
-          <ul className="about-page__nav-list">
-            <li className="about-page__nav-item">
-              <Link
-                to="/"
-                className="about-page__nav-link menu-link text-accent"
-              >
-                ...menu
-              </Link>
-            </li>
-            <li className="about-page__nav-item">
-              <Link
-                to="/projects"
-                className="about-page__nav-link projects-link text-accent"
-              >
-                projects...
-              </Link>
-            </li>
-            <li className="about-page__nav-item">
-              <button
-                onClick={() => scrollToTop()}
-                className="about-page__nav-link top-link text-accent"
-              >
-                ...to top
-              </button>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
   );

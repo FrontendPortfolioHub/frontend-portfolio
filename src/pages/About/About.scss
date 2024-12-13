@@ -1,26 +1,11 @@
 .about-page {
   padding-top: 25px;
+  padding-bottom: 20px;
   background: linear-gradient(
     180deg,
     rgba(10, 25, 47, 1) 30%,
     rgba(0, 0, 0, 1) 100%
   );
-}
-
-.back__link {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-bottom: 20px;
-
-  &::before {
-    content: '';
-    display: block;
-    width: 14px;
-    height: 14px;
-    background-image: url('../../assets/icons/arrow-accent-left.svg');
-    background-repeat: no-repeat;
-  }
 }
 
 .page__title {
@@ -166,7 +151,7 @@
   gap: 8px;
   height: 35px;
   width: 188px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   border: 2px solid $color-accent;
   border-radius: 20px;
   box-shadow: 0px 0px 3px 7px rgba(100, 255, 218, 0.2);
@@ -183,59 +168,5 @@
     background-image: url('../../assets/icons/cv-download.svg');
     background-size: contain;
     background-repeat: no-repeat;
-  }
-}
-
-.about-page__nav-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  padding-bottom: 70px;
-}
-
-.about-page__nav-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 175%;
-}
-
-.menu-link {
-  &::before {
-    content: "";
-    display: block;
-    width: 14px;
-    height: 14px;
-    background-image: url("../../assets/icons/arrow-accent-left.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-
-.projects-link {
-  &::after {
-    content: "";
-    display: block;
-    width: 14px;
-    height: 14px;
-    background-image: url("../../assets/icons/arrow-accent-right.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-
-.top-link {
-  &::before {
-    content: "";
-    display: block;
-    width: 14px;
-    height: 14px;
-    background-image: url("../../assets/icons/arrow-accent-top.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
