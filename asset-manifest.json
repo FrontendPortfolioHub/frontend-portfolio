@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.5dc58c92.css",
-    "main.js": "/frontend-portfolio/static/js/main.3654180d.js",
+    "main.css": "/frontend-portfolio/static/css/main.51fcc695.css",
+    "main.js": "/frontend-portfolio/static/js/main.8dbac495.js",
     "static/media/gadgets_catalog.bmp": "/frontend-portfolio/static/media/gadgets_catalog.ba4dd55446effcdced3f.bmp",
     "static/media/DIA_landing.png": "/frontend-portfolio/static/media/DIA_landing.26128d7027c6e6855d73.png",
     "static/media/main-photo.png": "/frontend-portfolio/static/media/main-photo.8e9debedf85632d94f8b.png",
@@ -16,11 +16,11 @@
     "static/media/slider-arrow-left-grey.svg": "/frontend-portfolio/static/media/slider-arrow-left-grey.5831872fc074583427b0.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.5dc58c92.css.map": "/frontend-portfolio/static/css/main.5dc58c92.css.map",
-    "main.3654180d.js.map": "/frontend-portfolio/static/js/main.3654180d.js.map"
+    "main.51fcc695.css.map": "/frontend-portfolio/static/css/main.51fcc695.css.map",
+    "main.8dbac495.js.map": "/frontend-portfolio/static/js/main.8dbac495.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dc58c92.css",
-    "static/js/main.3654180d.js"
+    "static/css/main.51fcc695.css",
+    "static/js/main.8dbac495.js"
   ]
 }
