@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.87ea2698.css",
-    "main.js": "/frontend-portfolio/static/js/main.305da042.js",
+    "main.css": "/frontend-portfolio/static/css/main.8f977e3b.css",
+    "main.js": "/frontend-portfolio/static/js/main.e4fa7536.js",
     "static/media/gadgets_catalog.bmp": "/frontend-portfolio/static/media/gadgets_catalog.ba4dd55446effcdced3f.bmp",
     "static/media/DIA_landing.png": "/frontend-portfolio/static/media/DIA_landing.26128d7027c6e6855d73.png",
     "static/media/main-photo.png": "/frontend-portfolio/static/media/main-photo.8e9debedf85632d94f8b.png",
@@ -16,11 +16,11 @@
     "static/media/arrow-accent-top.svg": "/frontend-portfolio/static/media/arrow-accent-top.5de5b3a5eb4e3484748b.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.87ea2698.css.map": "/frontend-portfolio/static/css/main.87ea2698.css.map",
-    "main.305da042.js.map": "/frontend-portfolio/static/js/main.305da042.js.map"
+    "main.8f977e3b.css.map": "/frontend-portfolio/static/css/main.8f977e3b.css.map",
+    "main.e4fa7536.js.map": "/frontend-portfolio/static/js/main.e4fa7536.js.map"
   },
   "entrypoints": [
-    "static/css/main.87ea2698.css",
-    "static/js/main.305da042.js"
+    "static/css/main.8f977e3b.css",
+    "static/js/main.e4fa7536.js"
   ]
 }
