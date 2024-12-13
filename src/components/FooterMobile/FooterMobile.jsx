@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './FooterMobile';
 import { scrollToTop } from '../../utils/scrollToTop';
 import { useMainContext } from '../../context/MainContext';
+import { CreaterInfo } from '../CreaterInfo/CreaterInfo';
 
 export const FooterMobile = () => {
   const {currentPage} = useMainContext();
@@ -23,6 +24,7 @@ export const FooterMobile = () => {
           </li>
         </ul>
       </nav>
+      <CreaterInfo />
     </div>
   );
 };
