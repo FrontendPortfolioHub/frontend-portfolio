@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import './FooterMobile';
 import { scrollToTop } from '../../utils/scrollToTop';
+import { useMainContext } from '../../context/MainContext';
 
 export const FooterMobile = () => {
+  const {currentPage} = useMainContext();
+
   return (
     <div className="footer-mobile">
       <nav className="footer__nav">
@@ -11,7 +14,9 @@ export const FooterMobile = () => {
             <Link to="/" className="footer__nav-link">.menu</Link>
           </li>
           <li className="footer__nav-item">
-            <Link to="/contacts" className="footer__nav-link">.contacts</Link>
+            {currentPage === 'about' && <Link to="/projects" className="footer__nav-link">.projects</Link>}
+            {currentPage === 'projects' && <Link to="/contacts" className="footer__nav-link">.contacts</Link>}
+            {currentPage === 'contacts' && <Link to="/about" className="footer__nav-link">.about</Link>}
           </li>
           <li className="footer__nav-item">
             <button onClick={() => scrollToTop()} className="footer__nav-link">.to top</button>
