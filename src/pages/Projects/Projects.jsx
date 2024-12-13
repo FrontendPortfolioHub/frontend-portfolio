@@ -31,7 +31,7 @@ export const Projects = () => {
           <div className="projects-page-section-top">
             <div className="projects-page-section-top__left">
               <p className="projects-page-section__title text-accent">
-                Landings...
+                Landing pages...
               </p>
             </div>
             <div className="slider-arrows">
