@@ -139,7 +139,7 @@ export const About = () => {
           </li>
         </ul>
         <div className="about-page__footer">
-          <button className="cv-button text-accent">download cv...</button>
+          <button className="cv-button text-accent">download cv</button>
         </div>
       </div>
     </div>

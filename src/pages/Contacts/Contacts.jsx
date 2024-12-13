@@ -20,40 +20,40 @@ export const Contacts = () => {
         <p className="contacts-page__description">Always in touch for you...</p>
         <ul className="contacts-list">
           <li className="contacts-item">
-            <p className="contacts-title text-accent">Call me...</p>
+            <p className="contacts-title text-secondary">Call me...</p>
             <a
               href="tel:+4916096294939"
-              className="contacts-link text-secondary"
+              className="contacts-link text-accent"
             >
               +4916096294939
             </a>
           </li>
           <li className="contacts-item">
-            <p className="contacts-title text-accent">
+            <p className="contacts-title text-secondary">
               Chat with me on Telegram...
             </p>
             <a
               href="https://t.me/@Pavlo_Maistrenko"
               target="_blank"
               rel="noopener noreferrer"
-              className="contacts-link text-secondary"
+              className="contacts-link text-accent"
             >
               @Pavlo_Maistrenko
             </a>
           </li>
           <li className="contacts-item">
-            <p className="contacts-title text-accent">Drop me a line...</p>
+            <p className="contacts-title text-secondary">Drop me a line...</p>
             <a
               href="mailto:maystrenko.p@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="contacts-link text-secondary"
+              className="contacts-link text-accent"
             >
               maystrenko.p@gmail.com
             </a>
           </li>
           <li className="contacts-item">
-            <p className="contacts-title text-accent">
+            <p className="contacts-title text-secondary">
               or use the form below...
             </p>
             <form action="/submit" method="post" className="contact-form">
@@ -84,7 +84,7 @@ export const Contacts = () => {
                 required
               ></textarea>
 
-              <button type="submit" className="contact-form__button">Send...</button>
+              <button type="submit" className="contact-form__button">Send</button>
             </form>
           </li>
         </ul>
