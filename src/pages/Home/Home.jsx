@@ -4,9 +4,16 @@ import './Home';
 import { homePageNavItems } from '../../data/homePageNavItems';
 import { StartPage } from '../../components/StartPage/StartPage';
 import { useEffect, useState } from 'react';
+import { useMainContext } from '../../context/MainContext';
 
 export const Home = () => {
+  const {setCurrentPage} = useMainContext();
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    scrollToTop();
+    setCurrentPage('home');
+  }, []);
 
   useEffect(() => {
     const isFirstVisit = localStorage.getItem('visited');

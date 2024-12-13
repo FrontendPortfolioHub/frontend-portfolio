@@ -1,8 +1,17 @@
 import { Link } from 'react-router-dom';
 import './Projects';
+import { useContext, useEffect } from 'react';
 import { scrollToTop } from '../../utils/scrollToTop';
+import { useMainContext } from '../../context/MainContext';
 
 export const Projects = () => {
+  const {setCurrentPage} = useMainContext();
+
+  useEffect(() => {
+    scrollToTop();
+    setCurrentPage('projects');
+  }, []);
+
   return (
     <div className="projects-page">
       <div className="container">
@@ -122,34 +131,6 @@ export const Projects = () => {
             <div className="project-image online-shop__image" />
           </div>
         </section>
-        <nav className="projects-page__nav">
-          <ul className="projects-page__nav-list">
-            <li className="projects-page__nav-item">
-              <Link
-                to="/"
-                className="projects-page__nav-link menu-link text-accent"
-              >
-                ...menu
-              </Link>
-            </li>
-            <li className="projects-page__nav-item">
-              <Link
-                to="/contacts"
-                className="projects-page__nav-link contacts-page-link text-accent"
-              >
-                contacts...
-              </Link>
-            </li>
-            <li className="projects-page__nav-item">
-              <button
-                onClick={() => scrollToTop()}
-                className="projects-page__nav-link top-link text-accent"
-              >
-                ...to top
-              </button>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
   );

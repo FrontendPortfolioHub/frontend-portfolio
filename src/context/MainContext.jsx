@@ -1,20 +1,21 @@
-import React, { useState, useMemo } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
-export const MainContext = React.createContext({
-  isStarted: false,
-  setIsStarted: () => {},
-});
+const MainContext = createContext();
 
 export const MainProvider = ({ children }) => {
-  const [isStarted, setIsStarted] = useState(false);
+  const [currentPage, setCurrentPage] = useState('home');
 
-  const value = useMemo(
-    () => ({
-      isStarted,
-      setIsStarted,
-    }),
-    [isStarted],
+  return (
+    <MainContext.Provider value={{ currentPage, setCurrentPage }}>
+      {children}
+    </MainContext.Provider>
   );
+};
 
-  return <MainContext.Provider value={value}>{children}</MainContext.Provider>;
+export const useMainContext = () => {
+  const context = useContext(MainContext);
+  if (!context) {
+    throw new Error('useMainContext must be used within a MainProvider');
+  }
+  return context;
 };

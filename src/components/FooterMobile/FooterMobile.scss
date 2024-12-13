@@ -1,0 +1,20 @@
+.footer-mobile {
+  padding-block: 30px;
+  background-color: #000000;
+}
+
+.footer__nav-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.footer__nav-link {
+  color: $color-accent;
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  text-transform: lowercase;
+}
