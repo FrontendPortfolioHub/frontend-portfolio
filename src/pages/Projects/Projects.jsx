@@ -135,7 +135,7 @@ export const Projects = () => {
             <li className="projects-page__nav-item">
               <Link
                 to="/contacts"
-                className="projects-page__nav-link contacts-link text-accent"
+                className="projects-page__nav-link contacts-page-link text-accent"
               >
                 contacts...
               </Link>

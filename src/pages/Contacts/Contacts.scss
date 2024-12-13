@@ -1,0 +1,35 @@
+.contacts-page {
+  padding-top: 25px;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 25, 47, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.contacts-page__description {
+  padding-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 175%;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contacts-title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175%;
+}
+
+.contacts-link {
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
