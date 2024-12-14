@@ -11,17 +11,17 @@
   padding-bottom: 40px;
   font-family: 'Roboto', sans-serif;
   line-height: 175%;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .contacts-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  font-size: 16px;
 }
 
 .contacts-title {
-  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 175%;
@@ -29,7 +29,6 @@
 
 .contacts-link {
   font-family: 'Roboto Mono';
-  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
