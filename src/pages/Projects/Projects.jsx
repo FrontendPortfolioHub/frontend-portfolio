@@ -6,7 +6,7 @@ import { useMainContext } from '../../context/MainContext';
 import { BackLink } from '../../components/BackLink/BackLink';
 
 export const Projects = () => {
-  const {setCurrentPage} = useMainContext();
+  const { setCurrentPage } = useMainContext();
 
   useEffect(() => {
     scrollToTop();
@@ -28,18 +28,27 @@ export const Projects = () => {
           as well as my commitment to creating quality solutions.
         </article>
         <section className="projects-page-section landings">
-          <div className="projects-page-section-top">
-            <div className="projects-page-section-top__left">
-              <p className="projects-page-section__title text-accent">
-                Landing pages...
-              </p>
-            </div>
-            <div className="slider-arrows">
-              <button className="slider-arrow left" />
-              <button className="slider-arrow right" />
-            </div>
+          <div className="projects-page-section-top__left">
+            <p className="projects-page-section__title text-accent">
+              Landing pages...
+            </p>
           </div>
           <div className="projects-page-section__content">
+            <div className="project__content-top">
+              <h2 className="project-name text-primary">Strategic Agency</h2>
+              <div className="project__socials">
+                <Link
+                  to="https://paulmaistrenko.github.io/layout_dia/"
+                  target="_blank"
+                  className="project__social-link project-link"
+                />
+                <Link
+                  to="https://github.com/PaulMaistrenko/layout_dia/tree/develop/src"
+                  target="_blank"
+                  className="project__social-link project__git-link"
+                />
+              </div>
+            </div>
             <div className="project-technologies">
               <ul className="technologies__list">
                 <li className="technologies__item">JavaScript</li>
@@ -51,13 +60,15 @@ export const Projects = () => {
                 <li className="technologies__item">BEM</li>
               </ul>
             </div>
-            <div className="slider-dots">
-              <div className="slider-dot slider-dot--active"></div>
-              <div className="slider-dot"></div>
-              <div className="slider-dot"></div>
-              <div className="slider-dot"></div>
+            <Link
+              to="https://paulmaistrenko.github.io/layout_dia/"
+              className="project-image landings__image"
+              target="_blank"
+            />
+            <div className="slider-arrows">
+              <button className="slider-arrow left" />
+              <button className="slider-arrow right" />
             </div>
-            <div className="project-image landings__image" />
           </div>
         </section>
         <section className="projects-page-section tsk-manager">
