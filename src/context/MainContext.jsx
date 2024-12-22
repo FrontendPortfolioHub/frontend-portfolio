@@ -4,9 +4,20 @@ const MainContext = createContext();
 
 export const MainProvider = ({ children }) => {
   const [currentPage, setCurrentPage] = useState('home');
+  const [language, setLanguage] = useState('en');
+
+  const toggleLanguage = (lang) => setLanguage(lang);
 
   return (
-    <MainContext.Provider value={{ currentPage, setCurrentPage }}>
+    <MainContext.Provider
+      value={{
+        currentPage,
+        setCurrentPage,
+        language,
+        setLanguage,
+        toggleLanguage,
+      }}
+    >
       {children}
     </MainContext.Provider>
   );

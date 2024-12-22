@@ -13,6 +13,7 @@
 @import '../components/FooterMobile/FooterMobile';
 @import '../components/BackLink/BackLink';
 @import '../components//CreaterInfo/CreaterInfo';
+@import '../components/UI/LanguageSelector/LanguageSelector';
 
 body {
   height: 100vh;
@@ -23,6 +24,10 @@ body {
 
 .container {
   padding-inline: 20px;
+
+  @include onTablet {
+    padding-inline: 70px;
+  }
 }
 
 .text-primary {

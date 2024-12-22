@@ -8,7 +8,6 @@ import { BackLink } from '../../components/BackLink/BackLink';
 
 export const About = () => {
   const {setCurrentPage} = useMainContext();
-
   const [isMoreInfoOpen, setMoreInfoOpen] = useState(false);
 
   useEffect(() => {
