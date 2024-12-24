@@ -10,6 +10,7 @@
 @import '../pages/About/About';
 @import '../pages/Projects/Projects';
 @import '../pages/Contacts/Contacts';
+@import '../components/FeaturesItem/FeaturesItem';
 @import '../components/FooterMobile/FooterMobile';
 @import '../components/BackLink/BackLink';
 @import '../components//CreaterInfo/CreaterInfo';
@@ -26,7 +27,7 @@ body {
   padding-inline: 20px;
 
   @include onTablet {
-    padding-inline: 70px;
+    padding-inline: 80px;
   }
 }
 
@@ -53,6 +54,7 @@ body {
     opacity: 0.3;
 
     @include onTablet {
+      margin-bottom: 70px;
       font-size: 46px;
     }
 

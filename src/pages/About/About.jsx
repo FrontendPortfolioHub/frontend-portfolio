@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './About';
 import { scrollToTop } from '../../utils/scrollToTop';
 import { useEffect, useState } from 'react';
@@ -7,9 +6,11 @@ import classNames from 'classnames';
 import { useMainContext } from '../../context/MainContext';
 import { BackLink } from '../../components/BackLink/BackLink';
 import { DownloadCvButton } from '../../components/UI/DownloadCvButton/DownloadCvButton';
+import { FeaturesItem } from '../../components/FeaturesItem/FeaturesItem';
+import { featuresData } from '../../data/aboutPageFeatures';
 
 export const About = () => {
-  const {setCurrentPage} = useMainContext();
+  const { setCurrentPage } = useMainContext();
   const [isMoreInfoOpen, setMoreInfoOpen] = useState(false);
   const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
@@ -83,62 +84,11 @@ export const About = () => {
           </p>
         </article>
         <ul className="features__list">
-          <li className="features__item">
-            <div className="features-item__top">
-              <p className="feature__title text-accent">My education...</p>
-            </div>
-            <div className="feature__content">
-              <ul className="feature-content__list">
-                <li className="feauture-content__item">
-                  Master's Degree in Electronic Industry
-                </li>
-                <li className="feauture-content__item">Frontend Development</li>
-                <li className="feauture-content__item">
-                  ...many days of practice and experimenting.
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li className="features__item">
-            <div className="features-item__top">
-              <p className="feature__title text-accent">What I know...</p>
-            </div>
-            <div className="feature__content">
-              <ul className="feature-content__list">
-                <li className="feauture-content__item">
-                  JavaScript,TypeScript
-                </li>
-                <li className="feauture-content__item">React, Redux</li>
-                <li className="feauture-content__item">HTML,CSS,Sass(SCSS)</li>
-                <li className="feauture-content__item">Bootstrap,Bulma</li>
-                <li className="feauture-content__item">
-                  Fetch, Axios, REST API
-                </li>
-                <li className="feauture-content__item">Figma</li>
-                <li className="feauture-content__item">
-                  Git/GitHub, VS Code, Chrome Developer Tools (incl. React)
-                </li>
-                <li className="feauture-content__item">
-                  Basic OOP understanding
-                </li>
-                <li className="feauture-content__item">
-                  Jira, Trello, Сonfluence (Atlassian Products)
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li className="features__item">
-            <div className="features-item__top">
-              <p className="feature__title text-accent">My future way...</p>
-            </div>
-            <div className="feature__content">
-              <ul className="feature-content__list">
-                <li className="feauture-content__item">Backend Development</li>
-                <li className="feauture-content__item">UX/UI Design</li>
-                <li className="feauture-content__item">DevOps</li>
-              </ul>
-            </div>
-          </li>
+          {featuresData.map((item) => (
+            <li key={item.id} className="features__item">
+              <FeaturesItem title={item.title} features={item.features} />
+            </li>
+          ))}
         </ul>
         {isMobile && <DownloadCvButton />}
       </div>
