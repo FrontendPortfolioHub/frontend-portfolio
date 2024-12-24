@@ -3,10 +3,18 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  @include onTablet {
+    height: max-content;
+  }
 }
 
 .mobile__nav {
   margin-bottom: 50px;
+
+  @include onTablet {
+    display: none;
+  }
 }
 
 .mobile__nav-list {

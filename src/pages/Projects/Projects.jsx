@@ -14,7 +14,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="projects-page">
+    <div className="page projects">
       <div className="container">
         <BackLink />
         <h1 className="page__title text-secondary">Projects</h1>

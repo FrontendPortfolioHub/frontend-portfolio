@@ -2,13 +2,16 @@ import { Link } from 'react-router-dom';
 import './About';
 import { scrollToTop } from '../../utils/scrollToTop';
 import { useEffect, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import classNames from 'classnames';
 import { useMainContext } from '../../context/MainContext';
 import { BackLink } from '../../components/BackLink/BackLink';
+import { DownloadCvButton } from '../../components/UI/DownloadCvButton/DownloadCvButton';
 
 export const About = () => {
   const {setCurrentPage} = useMainContext();
   const [isMoreInfoOpen, setMoreInfoOpen] = useState(false);
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
   useEffect(() => {
     scrollToTop();
@@ -16,7 +19,7 @@ export const About = () => {
   }, []);
 
   return (
-    <div className="about-page">
+    <div className="page about">
       <div className="container">
         <BackLink />
         <h1 className="page__title text-secondary">About</h1>
@@ -137,9 +140,7 @@ export const About = () => {
             </div>
           </li>
         </ul>
-        <div className="about-page__footer">
-          <button className="cv-button text-accent">download cv</button>
-        </div>
+        {isMobile && <DownloadCvButton />}
       </div>
     </div>
   );

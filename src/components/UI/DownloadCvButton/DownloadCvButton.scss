@@ -1,0 +1,31 @@
+.cv-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 35px;
+  width: 188px;
+  margin: 0 auto;
+  border: 2px solid $color-accent;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 7px rgba(100, 255, 218, 0.2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+
+  @include onTablet {
+    margin: 0;
+    width: 150px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url('../../../assets/icons/cv-download.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

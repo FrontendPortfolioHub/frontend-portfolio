@@ -2,6 +2,12 @@
 @import './styles/utilities/_mixins';
 
 .mobile__content {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 25, 47, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
   @include onTablet {
     display: none;
   }
@@ -12,5 +18,10 @@
 
   @include onTablet {
     display: block;
+    background: linear-gradient(
+      180deg,
+      rgba(10, 25, 47, 1) 30%,
+      rgba(0, 0, 0, 1) 100%
+    );
   }
 }

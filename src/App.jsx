@@ -33,7 +33,10 @@ export const App = () => {
       ) : (
         <div className="desktop__content">
           <Header />
-          <Outlet />
+          <About />
+          <Projects />
+          <Contacts />
+          <Footer />
         </div>
       )}
     </div>

@@ -9,6 +9,12 @@
   background-color: $background-color;
 }
 
+.header__nav-bar {
+  display: flex;
+  align-items: center;
+
+}
+
 .header__nav-list {
   display: flex;
   gap: 30px;

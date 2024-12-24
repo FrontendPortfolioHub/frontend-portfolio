@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { MainContext } from '../../context/MainContext';
 import { LanguageSelector } from '../UI/LanguageSelector';
 import { NavLink } from 'react-router-dom';
+import { DownloadCvButton } from '../UI/DownloadCvButton/DownloadCvButton';
 
 export const Header = () => {
   return (
@@ -21,7 +22,9 @@ export const Header = () => {
             <NavLink to="/contacts" className="heder__nav-link">.contacts</NavLink>
           </li>
         </ul>
+        
       </nav>
+      <DownloadCvButton />
     </header>
   );
 };

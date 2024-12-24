@@ -13,7 +13,7 @@ export const Contacts = () => {
   }, []);
 
   return (
-    <div className="contacts-page">
+    <div className="page contacts">
       <div className="container">
         <BackLink />
         <h1 className="page__title text-secondary">Contacts</h1>
