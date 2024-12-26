@@ -1,0 +1,130 @@
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.projects__item {
+  padding: 10px;
+  border: 1px solid rgba(136, 146, 176, 0.25);
+
+  @include onTablet {
+    padding: 20px;
+  }
+}
+
+.project-name {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 175%;
+}
+
+.project__content-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-name {
+  margin-bottom: 15px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.8px;
+}
+
+.project__social-link {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project__socials {
+  display: flex;
+  gap: 25px;
+}
+
+.project-link {
+  background-image: url('../../assets/icons/open-in-new-window.svg');
+}
+
+.project__git-link {
+  background-image: url('../../assets/icons/git-hub_icon--light.svg');
+}
+/*
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px auto 0;
+  width: 100px;
+}
+
+.slider-arrow {
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}*/
+
+/*.left {
+  background-image: url('../../assets/icons/slider-arrow-left-grey.svg');
+}
+
+.right {
+  background-image: url('../../assets/icons/slider-arrow-right-accent.svg');
+}*/
+
+.project-technologies {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgba(136, 146, 176, 0.25);
+}
+
+.technologies__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.technologies__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url('../../assets/icons/arrow-accent-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.project-image {
+  display: block;
+  margin: 0 auto;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.landings__image {
+  background-image: url('../../assets/images/projects/DIA_landing.png');
+}
+
+.tsk-manager__image {
+  background-image: url('../../assets/images/projects/todo.png');
+}
+
+.game__image {
+  background-image: url('../../assets/images/projects/2048_game_.png');
+}
+
+.online-shop__image {
+  background-image: url('../../assets/images/projects/gadgets_catalog.bmp');
+}

@@ -4,86 +4,24 @@
   line-height: 175%;
 }
 
-.projects-page-section {
-  margin-bottom: 50px;
+.project-type__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.projects-page-section__title {
-  font-size: 14px;
-  font-style: normal;
-  line-height: 175%;
-}
-
-.projects-page-section-top__left {
+.project-type__title {
   display: flex;
   align-items: center;
-  padding-left: 15px;
-  height: 32px;
-  width: 185px;
+  height: 35px;
+  width: max-content;
+  padding: 10px 20px;
   border-radius: 8px 8px 0px 0px;
   background: #06132b;
   box-shadow: 0px 0px 3px 3px rgba(100, 255, 218, 0.2);
 }
 
-.project__content-top {
-  display: flex;
-  justify-content: space-between;
-}
-
-.project-name {
-  margin-bottom: 15px;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 120%; /* 19.2px */
-  letter-spacing: 0.8px;
-}
-
-.project__social-link {
-  display: block;
-  width: 22px;
-  height: 22px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project__socials {
-  display: flex;
-  gap: 25px;
-}
-
-.project-link {
-  background-image: url('../../assets/icons/open-in-new-window.svg');
-}
-
-.project__git-link {
-  background-image: url('../../assets/icons/git-hub_icon--light.svg');
-}
-
-.slider-arrows {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 15px auto 0;
-  width: 100px;
-}
-
-.slider-arrow {
-  width: 21px;
-  height: 21px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.left {
-  background-image: url('../../assets/icons/slider-arrow-left-grey.svg');
-}
-
-.right {
-  background-image: url('../../assets/icons/slider-arrow-right-accent.svg');
-}
-
-.projects-page-section__content {
+.project-type__content {
   padding: 15px;
   font-size: 14px;
   font-style: normal;
@@ -93,61 +31,4 @@
   border: 1px solid rgba(55, 62, 83, 0.5);
   background: #06132b;
   box-shadow: 0px 3px 3px 3px rgba(100, 255, 218, 0.2);
-}
-
-.project-technologies {
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid rgba(136, 146, 176, 0.25);
-}
-
-.technologies__list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.technologies__item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  &::before {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-image: url('../../assets/icons/arrow-accent-right.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-
-.project-image {
-  display: block;
-  margin: 0 auto;
-  height: 180px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 0px 0px 8px 8px;
-}
-
-.landings__image {
-  background-image: url('../../assets/images/projects/DIA_landing.png');
-}
-
-.tsk-manager__image {
-  background-image: url('../../assets/images/projects/todo.png');
-}
-
-.game__image {
-  background-image: url('../../assets/images/projects/2048_game_.png');
-}
-
-.online-shop__image {
-  background-image: url('../../assets/images/projects/gadgets_catalog.bmp');
-}
-
-.online-shop {
-  margin-bottom: 0;
 }

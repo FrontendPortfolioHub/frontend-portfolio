@@ -31,6 +31,7 @@
   padding-bottom: 24px;
   font-family: 'Roboto', sans-serif;
   line-height: 175%;
+  grid-row: 2/3;
 }
 
 .additional-information__button {
@@ -47,6 +48,13 @@
 
 .additional-information {
   margin-bottom: 40px;
+  grid-row: 3/4;
+
+  @include onTablet {
+    position: relative;
+    height: 500px;
+    overflow-x: auto;
+  }
 }
 
 .additional-information__title {
@@ -59,6 +67,7 @@
 .additional-information__text {
   font-family: 'Roboto', sans-serif;
   line-height: 175%;
+  overflow-x: auto;
 }
 
 .features__list {
@@ -66,6 +75,7 @@
   flex-direction: column;
   gap: 30px;
   margin-bottom: 70px;
+  grid-row: 2/4;
 
   @include onTablet {
     margin-bottom: 0;

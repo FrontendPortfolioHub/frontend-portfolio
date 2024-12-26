@@ -1,13 +1,17 @@
 .language-selector {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .language-selector__dropdown {
+  position: absolute;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  top: 36px;
+  gap: 5px;
 }
 
 .language-selector__item {
