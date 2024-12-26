@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
 import './ProjectsList';
+import classNames from 'classnames';
 
 export const ProjectsList = ({ projects }) => {
 
   return (
     <ul className="projects__list">
       {projects.map((project) => (
-        <li className="projects__item" key={project.title}>
+        <li
+          className={classNames('projects__item', {'full-width': projects.length === 1})}
+          key={project.title}>
           <div className="projects__item-content">
             <div className="project__content-top">
               <h2 className="project-name text-primary">{project.title}</h2>
