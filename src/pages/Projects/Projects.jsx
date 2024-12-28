@@ -6,6 +6,7 @@ import { useMainContext } from '../../context/MainContext';
 import { BackLink } from '../../components/BackLink/BackLink';
 import { ProjectsList } from '../../components/ProjectsList/ProjectsList';
 import { projectsData } from '../../data/projectsData';
+import { ArrowButton } from '../../components/UI/ArrowButton/ArrowButton';
 
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();
@@ -29,7 +30,7 @@ export const Projects = () => {
           Each project reflects my journey in mastering and applying new skills,
           as well as my commitment to creating quality solutions.
         </article>
-        <ul className="project-type__list">
+        {/*<ul className="project-type__list">
           {projectsData.map((projectsTypeItem) => (
             <li key={projectsTypeItem.id} className="project-type__item">
               <div className="project-type__title text-accent">
@@ -40,7 +41,24 @@ export const Projects = () => {
               </div>
             </li>
           ))}
-        </ul>
+        </ul>*/}
+        <article className="project-type-card">
+          <h3 className="project-type-card__title text-accent">Landing pages</h3>
+          <div className="project-type-card__description">
+            Pixel-perfect adaptive landing pages: crisp design, flawless
+            responsiveness, maximum conversion.
+          </div>
+          <div className="project-type-card__bottom">
+            <ul className="technologies__list">
+              <li className="technologies__item">JavaScript</li>
+              <li className="technologies__item">HTML,CSS,Sass(SCSS)</li>
+              <li className="technologies__item">Figma</li>
+              <li className="technologies__item">Git/GitHub, VS Code, Chrome Developer Tools</li>
+              <li className="technologies__item">BEM</li>
+            </ul>
+            <ArrowButton />
+          </div>
+        </article>
       </div>
     </div>
   );

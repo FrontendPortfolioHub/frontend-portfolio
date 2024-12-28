@@ -1,0 +1,10 @@
+.arrow-button {
+  background-color: $background-color;
+  width: 36px;
+  height: 36px;
+  background-image: url('../../../assets/icons/global-arrow-accent.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid $color-accent;
+  border-radius: 50%;
+}
