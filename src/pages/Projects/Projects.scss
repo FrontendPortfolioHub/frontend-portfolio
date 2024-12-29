@@ -1,5 +1,5 @@
 .projects-page__description {
-  padding-bottom: 40px;
+  margin-bottom: 70px;
   font-family: 'Roboto', sans-serif;
   line-height: 175%;
 }
@@ -40,30 +40,150 @@
 
 /* card type */
 
-.project-type-card {
-  padding: 24px;
-  border-radius: 6px;
-  opacity: 0.9;
-  background: #121e31;
-  box-shadow: 1px 1px 10px 5px rgba(204, 214, 246, 0.25);
+/*.projects-page-item {
+  position: relative;
+  height: 300px;
 }
 
-.project-type-card__title {
+.project-type {
+  opacity: 0.9;
+}
+
+.projects-card {
+  position: absolute;
+  width: 100%;
+  padding: 24px;
+  border-radius: 6px;
+  background: #121e31;
+  box-shadow: 1px 1px 10px 5px rgba(204, 214, 246, 0.2);
+}
+
+.current-project-card__title {
+  margin-bottom: 38px;
+  color: $color-primary;
+  font-family: Roboto;
+  letter-spacing: 0.8px;
+}
+
+.current-project-card__image {
+  width: 330px;
+}
+
+.slider-scrollbar {
+  background-color: $color-secondary;
+  width: 2px;
+  height: 330px;
+}
+
+.scrollbar__thumb {
+  width: 2px;
+  height: 80px;
+  background-color: $color-accent;
+}
+
+.projects-card__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projects-card__slider__item {
+  width: 125px;
+  height: 70px;
+  background-color: antiquewhite;
+}
+
+.projects-card__slider__item--active {
+  width: 170px;
+  height: 110px;
+}
+
+.projects-type-card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.project-type {
+  z-index: 1;
+}
+
+.projects-type-card__title {
   margin-bottom: 24px;
   font-size: 18px;
 }
 
-.project-type-card__description {
+.projects-type-card__description {
   margin-bottom: 34px;
   color: $text-primary;
   font-family: Roboto;
   line-height: 135%;
 }
 
-.project-technologies {
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid rgba(136, 146, 176, 0.25);
+.technologies__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.technologies__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $text-primary;
+  line-height: 120%;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url('../../assets/icons/arrow-accent-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}*/
+
+/* project type card */
+.projects-page-item {
+  box-shadow: 1px -1px 10px 5px rgba(204, 214, 246, 0.2);
+  border-radius: 6px;
+}
+
+.project-type-card {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background: #121e31;
+  //box-shadow: 1px -1px 10px 5px rgba(204, 214, 246, 0.2);
+  opacity: 0.9;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.projects-type-card__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.projects-type-card__description {
+  margin-bottom: 44px;
+  color: $text-primary;
+  font-family: Roboto;
+  line-height: 135%;
+}
+
+.projects-type-card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .technologies__list {
@@ -90,8 +210,73 @@
   }
 }
 
-.project-type-card__bottom {
+/* project list */
+
+.projects-card {
+  width: 100%;
+  padding: 30px;
+  background: #121e31;
+  //box-shadow: 1px 1px 10px 5px rgba(204, 214, 246, 0.2);
+  border-radius: 6px;
+  z-index: 15;
+}
+
+.projects-list-item__top {
+  margin-bottom: 38px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.projects-list-item__title {
+  color: $color-primary;
+  font-family: Roboto;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+
+.projects-list-item__link  {
+  width: 26px;
+  height: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-list-item__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-link {
+  background-image: url('../../assets/icons/open-in-new-window.svg');
+}
+
+.project-git-link {
+  background-image: url('../../assets/icons/git-hub_icon--light.svg');
+}
+
+.projects-list-item__image {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  height: auto;
+}
+
+.slider-dots {
+  display: flex;
+  gap: 10px;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.slider-dots__item {
+  width: 55px;
+  height: 1px;
+  background-color: $color-secondary;
+}
+
+.slider-dots__item--active {
+  background-color: $color-accent;
 }

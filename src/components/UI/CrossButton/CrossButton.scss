@@ -1,11 +1,11 @@
-.arrow-button {
+.cross-button {
   width: 32px;
   height: 32px;
   background-color: $background-color;
-  background-image: url('../../../assets/icons/global-arrow-accent.svg');
-  background-repeat: no-repeat;
+  background-image: url('../../../assets/icons/cross-accent.svg');
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 2px solid $color-accent;
   border-radius: 50%;
-  transform: rotate(-90deg);
 }
