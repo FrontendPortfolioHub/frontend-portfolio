@@ -1,9 +1,15 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.4fd6f973.css",
-    "main.js": "/frontend-portfolio/static/js/main.fe200442.js",
+    "main.css": "/frontend-portfolio/static/css/main.6d5fb872.css",
+    "main.js": "/frontend-portfolio/static/js/main.b5d48c48.js",
+    "static/media/gadgets_catalog.bmp": "/frontend-portfolio/static/media/gadgets_catalog.ba4dd55446effcdced3f.bmp",
+    "static/media/MET_landing.png": "/frontend-portfolio/static/media/MET_landing.ee500b8d274d01c38eaa.png",
+    "static/media/Miami_landing.png": "/frontend-portfolio/static/media/Miami_landing.11c8cb824ec6d0e6ff58.png",
+    "static/media/Museum_landing.png": "/frontend-portfolio/static/media/Museum_landing.942bf36f4ef0f826e23c.png",
     "static/media/DIA_landing.png": "/frontend-portfolio/static/media/DIA_landing.26128d7027c6e6855d73.png",
     "static/media/main-photo.png": "/frontend-portfolio/static/media/main-photo.8e9debedf85632d94f8b.png",
+    "static/media/todo.png": "/frontend-portfolio/static/media/todo.2179cb6d9e22bf86116c.png",
+    "static/media/2048_game_.png": "/frontend-portfolio/static/media/2048_game_.81954281422ba93388ea.png",
     "static/media/cv-download.svg": "/frontend-portfolio/static/media/cv-download.bdc3d9187494f99ade5e.svg",
     "index.html": "/frontend-portfolio/index.html",
     "static/media/git-hub_icon--green.svg": "/frontend-portfolio/static/media/git-hub_icon--green.5f57d8398ff0e314e787.svg",
@@ -15,11 +21,11 @@
     "static/media/global-arrow-accent.svg": "/frontend-portfolio/static/media/global-arrow-accent.cd5de4ae1c6b7f0619bf.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.4fd6f973.css.map": "/frontend-portfolio/static/css/main.4fd6f973.css.map",
-    "main.fe200442.js.map": "/frontend-portfolio/static/js/main.fe200442.js.map"
+    "main.6d5fb872.css.map": "/frontend-portfolio/static/css/main.6d5fb872.css.map",
+    "main.b5d48c48.js.map": "/frontend-portfolio/static/js/main.b5d48c48.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fd6f973.css",
-    "static/js/main.fe200442.js"
+    "static/css/main.6d5fb872.css",
+    "static/js/main.b5d48c48.js"
   ]
 }
