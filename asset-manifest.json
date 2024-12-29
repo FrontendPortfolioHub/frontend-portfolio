@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.646c86d8.css",
-    "main.js": "/frontend-portfolio/static/js/main.c1236d9a.js",
-    "static/media/gadgets_catalog.bmp": "/frontend-portfolio/static/media/gadgets_catalog.ba4dd55446effcdced3f.bmp",
+    "main.css": "/frontend-portfolio/static/css/main.4fd6f973.css",
+    "main.js": "/frontend-portfolio/static/js/main.fe200442.js",
     "static/media/DIA_landing.png": "/frontend-portfolio/static/media/DIA_landing.26128d7027c6e6855d73.png",
     "static/media/main-photo.png": "/frontend-portfolio/static/media/main-photo.8e9debedf85632d94f8b.png",
-    "static/media/todo.png": "/frontend-portfolio/static/media/todo.2179cb6d9e22bf86116c.png",
-    "static/media/2048_game_.png": "/frontend-portfolio/static/media/2048_game_.81954281422ba93388ea.png",
     "static/media/cv-download.svg": "/frontend-portfolio/static/media/cv-download.bdc3d9187494f99ade5e.svg",
     "index.html": "/frontend-portfolio/index.html",
     "static/media/git-hub_icon--green.svg": "/frontend-portfolio/static/media/git-hub_icon--green.5f57d8398ff0e314e787.svg",
     "static/media/git-hub_icon--light.svg": "/frontend-portfolio/static/media/git-hub_icon--light.47495e3f1c0395823587.svg",
     "static/media/linked-in_icon--green.svg": "/frontend-portfolio/static/media/linked-in_icon--green.b9b144fbbaa251ad3c2c.svg",
     "static/media/open-in-new-window.svg": "/frontend-portfolio/static/media/open-in-new-window.1bdd5760bb3d0b92b5be.svg",
+    "static/media/cross-accent.svg": "/frontend-portfolio/static/media/cross-accent.b161219770c11937c783.svg",
     "static/media/send-button-accent.svg": "/frontend-portfolio/static/media/send-button-accent.d3dcfa5dfc7016fd7c19.svg",
+    "static/media/global-arrow-accent.svg": "/frontend-portfolio/static/media/global-arrow-accent.cd5de4ae1c6b7f0619bf.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.646c86d8.css.map": "/frontend-portfolio/static/css/main.646c86d8.css.map",
-    "main.c1236d9a.js.map": "/frontend-portfolio/static/js/main.c1236d9a.js.map"
+    "main.4fd6f973.css.map": "/frontend-portfolio/static/css/main.4fd6f973.css.map",
+    "main.fe200442.js.map": "/frontend-portfolio/static/js/main.fe200442.js.map"
   },
   "entrypoints": [
-    "static/css/main.646c86d8.css",
-    "static/js/main.c1236d9a.js"
+    "static/css/main.4fd6f973.css",
+    "static/js/main.fe200442.js"
   ]
 }
