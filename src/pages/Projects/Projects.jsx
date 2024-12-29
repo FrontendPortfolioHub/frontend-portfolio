@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Projects';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { scrollToTop } from '../../utils/scrollToTop';
 import { useMainContext } from '../../context/MainContext';
 import { BackLink } from '../../components/BackLink/BackLink';
@@ -11,6 +11,7 @@ import StrategicAgency from '../../assets/images/projects/DIA_landing.png';
 import { CrossButton } from '../../components/UI/CrossButton/CrossButton';
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();
+  const [isProjectsCardOpen, setIsOpenProjectsCardOpen] = useState(false);
 
   useEffect(() => {
     scrollToTop();
@@ -62,36 +63,41 @@ export const Projects = () => {
                 </li>
                 <li className="technologies__item">BEM</li>
               </ul>
-              <ArrowButton />
+              <ArrowButton
+                isProjectsCardOpen={isProjectsCardOpen}
+                setIsOpenProjectsCardOpen={setIsOpenProjectsCardOpen}
+              />
             </div>
           </div>
-          <div className="projects-card">
-            <div className="projects-card__slider">
-              <ul className="projects-list">
-                <li className="projects-list__item">
-                  <div className="projects-list-item__top">
-                    <h2 className="projects-list-item__title">
-                      Strategic agency
-                    </h2>
-                    <div className="projects-list-item__links">
-                      <Link className="projects-list-item__link project-link" />
-                      <Link className="projects-list-item__link project-git-link" />
+          {isProjectsCardOpen && (
+            <div className="projects-card">
+              <div className="projects-card__slider">
+                <ul className="projects-list">
+                  <li className="projects-list__item">
+                    <div className="projects-list-item__top">
+                      <h2 className="projects-list-item__title">
+                        Strategic agency
+                      </h2>
+                      <div className="projects-list-item__links">
+                        <Link className="projects-list-item__link project-link" />
+                        <Link className="projects-list-item__link project-git-link" />
+                      </div>
                     </div>
-                  </div>
-                  <img
-                    src={StrategicAgency}
-                    alt="strategic agency"
-                    className="projects-list-item__image"
-                  />
-                </li>
-              </ul>
-              <div className="slider-dots">
-                <div className="slider-dots__item slider-dots__item--active"></div>
-                <div className="slider-dots__item"></div>
-                <div className="slider-dots__item"></div>
+                    <img
+                      src={StrategicAgency}
+                      alt="strategic agency"
+                      className="projects-list-item__image"
+                    />
+                  </li>
+                </ul>
+                <div className="slider-dots">
+                  <div className="slider-dots__item slider-dots__item--active"></div>
+                  <div className="slider-dots__item"></div>
+                  <div className="slider-dots__item"></div>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

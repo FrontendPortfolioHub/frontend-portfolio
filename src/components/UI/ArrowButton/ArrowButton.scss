@@ -1,11 +1,19 @@
 .arrow-button {
-  width: 32px;
-  height: 32px;
-  background-color: $background-color;
+  width: 26px;
+  height: 26px;
   background-image: url('../../../assets/icons/global-arrow-accent.svg');
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid $color-accent;
-  border-radius: 50%;
-  transform: rotate(-90deg);
+  background-size: contain;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+
+  @include onTablet {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--up {
+    transform: rotate(-90deg);
+  }
 }

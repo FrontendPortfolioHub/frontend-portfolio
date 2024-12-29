@@ -1,7 +1,16 @@
+import classNames from 'classnames';
 import './ArrowButton';
 
-export const ArrowButton = () => {
+export const ArrowButton = ({
+  isProjectsCardOpen,
+  setIsOpenProjectsCardOpen,
+}) => {
   return (
-    <button className="arrow-button"></button>
+    <button
+      className={classNames('arrow-button', {
+        'arrow-button--up': isProjectsCardOpen,
+      })}
+      onClick={() => setIsOpenProjectsCardOpen(!isProjectsCardOpen)}
+    />
   );
-}
+};

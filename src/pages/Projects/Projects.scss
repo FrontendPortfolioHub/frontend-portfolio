@@ -4,7 +4,7 @@
   line-height: 175%;
 }
 
-.project-type__list {
+/*.project-type__list {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -20,9 +20,9 @@
   border-radius: 8px 8px 0px 0px;
   background: #06132b;
   box-shadow: 0px 0px 3px 3px rgba(100, 255, 218, 0.2);
-}
+}*/
 
-.project-type__content {
+/*.project-type__content {
   padding: 10px;
   font-size: 14px;
   font-style: normal;
@@ -36,148 +36,47 @@
   @include onTablet {
     padding: 20px;
   }
-}
-
-/* card type */
-
-/*.projects-page-item {
-  position: relative;
-  height: 300px;
-}
-
-.project-type {
-  opacity: 0.9;
-}
-
-.projects-card {
-  position: absolute;
-  width: 100%;
-  padding: 24px;
-  border-radius: 6px;
-  background: #121e31;
-  box-shadow: 1px 1px 10px 5px rgba(204, 214, 246, 0.2);
-}
-
-.current-project-card__title {
-  margin-bottom: 38px;
-  color: $color-primary;
-  font-family: Roboto;
-  letter-spacing: 0.8px;
-}
-
-.current-project-card__image {
-  width: 330px;
-}
-
-.slider-scrollbar {
-  background-color: $color-secondary;
-  width: 2px;
-  height: 330px;
-}
-
-.scrollbar__thumb {
-  width: 2px;
-  height: 80px;
-  background-color: $color-accent;
-}
-
-.projects-card__slider {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.projects-card__slider__item {
-  width: 125px;
-  height: 70px;
-  background-color: antiquewhite;
-}
-
-.projects-card__slider__item--active {
-  width: 170px;
-  height: 110px;
-}
-
-.projects-type-card__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.project-card {
-  display: flex;
-  justify-content: space-between;
-  z-index: 10;
-}
-
-.project-type {
-  z-index: 1;
-}
-
-.projects-type-card__title {
-  margin-bottom: 24px;
-  font-size: 18px;
-}
-
-.projects-type-card__description {
-  margin-bottom: 34px;
-  color: $text-primary;
-  font-family: Roboto;
-  line-height: 135%;
-}
-
-.technologies__list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.technologies__item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: $text-primary;
-  line-height: 120%;
-
-  &::before {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-image: url('../../assets/icons/arrow-accent-right.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
 }*/
 
 /* project type card */
 .projects-page-item {
   box-shadow: 1px -1px 10px 5px rgba(204, 214, 246, 0.2);
   border-radius: 6px;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 25, 47, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .project-type-card {
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-  background: #121e31;
-  //box-shadow: 1px -1px 10px 5px rgba(204, 214, 246, 0.2);
-  opacity: 0.9;
-  border-radius: 6px;
-  z-index: 10;
+  padding: 15px;
+
+  @include onTablet {
+    padding: 30px;
+  }
 }
 
 .projects-type-card__title {
-  margin-bottom: 30px;
-  font-size: 18px;
+  margin-bottom: 20px;
+  font-size: 16px;
+
+  @include onTablet {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
 }
 
 .projects-type-card__description {
-  margin-bottom: 44px;
-  color: $text-primary;
+  margin-bottom: 30px;
+  color: $text-secondary;
   font-family: Roboto;
   line-height: 135%;
+  font-size: 14px;
+
+  @include onTablet {
+    margin-bottom: 44px;
+  }
 }
 
 .projects-type-card__bottom {
@@ -189,15 +88,24 @@
 .technologies__list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
+
+  @include onTablet {
+    gap: 8px;
+  }
 }
 
 .technologies__item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: $text-primary;
+  gap: 5px;
+  color: $text-secondary;
   line-height: 120%;
+  font-size: 14px;
+
+  @include onTablet {
+    gap: 8px;
+  }
 
   &::before {
     content: '';
@@ -214,11 +122,16 @@
 
 .projects-card {
   width: 100%;
-  padding: 30px;
-  background: #121e31;
-  //box-shadow: 1px 1px 10px 5px rgba(204, 214, 246, 0.2);
-  border-radius: 6px;
-  z-index: 15;
+  padding: 15px;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 25, 47, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  @include onTablet {
+    padding: 30px;
+  }
 }
 
 .projects-list-item__top {
@@ -231,22 +144,35 @@
 .projects-list-item__title {
   color: $color-primary;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.8px;
+
+  @include onTablet {
+    font-size: 18px;
+  }
 }
 
-.projects-list-item__link  {
-  width: 26px;
-  height: 26px;
+.projects-list-item__link {
+  width: 22px;
+  height: 22px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include onTablet {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .projects-list-item__links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
+
+  @include onTablet {
+    gap: 20px;
+  }
 }
 
 .project-link {
@@ -259,22 +185,29 @@
 
 .projects-list-item__image {
   display: block;
-  margin: 0 auto;
-  width: 75%;
   height: auto;
 }
 
 .slider-dots {
   display: flex;
-  gap: 10px;
-  padding-top: 30px;
+  gap: 5px;
+  padding-top: 15px;
   justify-content: center;
+
+  @include onTablet {
+    padding-top: 30px;
+    gap: 10px;
+  }
 }
 
 .slider-dots__item {
-  width: 55px;
+  width: 35px;
   height: 1px;
   background-color: $color-secondary;
+
+  @include onTablet {
+    width: 55px;
+  }
 }
 
 .slider-dots__item--active {
