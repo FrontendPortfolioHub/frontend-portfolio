@@ -9,6 +9,7 @@ export const projectsData = [
       'Git/GitHub, VS Code, Chrome Developer Tools',
       'BEM',
     ],
+    backImage: 'strategic-agency',
     description:
       'Pixel-perfect adaptive landing pages: crisp design, flawless responsiveness, maximum conversion.',
     projects: [
@@ -57,6 +58,7 @@ export const projectsData = [
   {
     id: 2,
     type: 'Task manager',
+    backImage: 'tsk-manager__image',
     description:
       'An interactive to-do created using functional components, hooks, fetch, routing, and local storage.',
     technologies: [
@@ -80,6 +82,7 @@ export const projectsData = [
   {
     id: 3,
     type: 'Strategy squared',
+    backImage: 'game__image',
     description: 'The game is written in pure Java Script.',
     technologies: [
       'JavaScript',
@@ -100,6 +103,7 @@ export const projectsData = [
   {
     id: 4,
     type: 'Online-store',
+    backImage: 'online-shop__image',
     description: 'Gadgets catalog for 1440px - screen resolution.',
     technologies: [
       'JavaScript',

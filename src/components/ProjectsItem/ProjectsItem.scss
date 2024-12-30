@@ -20,14 +20,38 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background-image: url('../../assets/images/projects/DIA_landing.png');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: -1;
     opacity: 0.1;
   }
 
   @include onTablet {
     padding: 30px;
+  }
+}
+
+.project-type-card--strategic-agency {
+  &::after {
+    background-image: url('../../assets/images/projects/DIA_landing.png');
+  }
+}
+
+.project-type-card--tsk-manager__image {
+  &::after {
+    background-image: url('../../assets/images/projects/todo.png');
+  }
+}
+
+.project-type-card--game__image {
+  &::after {
+    background-image: url('../../assets/images/projects/2048_game_.png');
+  }
+}
+
+.project-type-card--online-shop__image {
+  &::after {
+    background-image: url('../../assets/images/projects/gadgets_catalog.bmp');
   }
 }
 

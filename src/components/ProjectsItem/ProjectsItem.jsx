@@ -8,13 +8,13 @@ import classNames from 'classnames';
 import { ProjectCard } from '../ProjectCard';
 
 export const ProjectsItem = ({ projectsItem }) => {
-  const { type, description, technologies, projects } = projectsItem;
+  const { type, description, technologies, projects, backImage } = projectsItem;
   const [isProjectsCardOpen, setIsOpenProjectsCardOpen] = useState(false);
 
   return (
     <>
       <div
-        className={classNames('project-type-card', {
+        className={classNames(`project-type-card project-type-card--${backImage}`, {
           'position--static': isProjectsCardOpen,
         })}
       >
