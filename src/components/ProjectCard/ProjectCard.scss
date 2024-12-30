@@ -1,0 +1,98 @@
+.projects-list-item__top {
+  width: 100%;
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-list-item__title {
+  color: $color-primary;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+
+  @include onTablet {
+    font-size: 18px;
+  }
+}
+
+.projects-list-item__link {
+  width: 22px;
+  height: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include onTablet {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.projects-list-item__links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @include onTablet {
+    gap: 20px;
+  }
+}
+
+.project-link {
+  background-image: url('../../assets/icons/open-in-new-window.svg');
+}
+
+.project-git-link {
+  background-image: url('../../assets/icons/git-hub_icon--light.svg');
+}
+
+.projects-list-item__image {
+  display: block;
+  height: 300px;
+  width: 218px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include onTablet {
+    width: 516px;
+  }
+}
+
+.strategic-agency {
+  background-image: url('../../assets/images/projects/DIA_landing.png');
+}
+
+.kate-vr {
+  background-image: url('../../assets/images/projects/DIA_landing.png');
+}
+
+.art-museum {
+  background-image: url('../../assets/images/projects/Museum_landing.png');
+}
+
+.art-museum-2 {
+  background-image: url('../../assets/images/projects/Museum_landing.png');
+}
+
+.met {
+  background-image: url('../../assets/images/projects/MET_landing.png');
+}
+
+.kondo-kings {
+  background-image: url('../../assets/images/projects/Miami_landing.png');
+}
+
+.tsk-manager__image {
+  background-image: url('../../assets/images/projects/todo.png');
+}
+
+.game__image {
+  background-image: url('../../assets/images/projects/2048_game_.png');
+}
+
+.online-shop__image {
+  background-image: url('../../assets/images/projects/gadgets_catalog.bmp');
+}

@@ -5,14 +5,10 @@ import { ArrowButton } from '../UI/ArrowButton/ArrowButton';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import classNames from 'classnames';
+import { ProjectCard } from '../ProjectCard';
 
 export const ProjectsItem = ({ projectsItem }) => {
-  const {
-    type,
-    description,
-    technologies,
-    projects,
-  } = projectsItem;
+  const { type, description, technologies, projects } = projectsItem;
   const [isProjectsCardOpen, setIsOpenProjectsCardOpen] = useState(false);
 
   return (
@@ -36,26 +32,16 @@ export const ProjectsItem = ({ projectsItem }) => {
       </div>
       {isProjectsCardOpen && (
         <div className="projects-card">
-          <div className="projects-card__slider">
-            <ul className="projects-list">
-              {projects.map((project) => (
-                <li key={project.title} className="projects-list__item">
-                  <div className="projects-list-item__top">
-                    <h2 className="projects-list-item__title">
-                      {project.title}
-                    </h2>
-                    <div className="projects-list-item__links">
-                      <Link
-                        to={project.projectLink}
-                        className="projects-list-item__link project-link"
-                      />
-                      <Link  to={project.codeLink} className="projects-list-item__link project-git-link" />
-                    </div>
-                  </div>
-                  <Link className={`projects-list-item__image ${project.backImageLink}`} />
-                </li>
-              ))}
-            </ul>
+          <div className="projects-slider">
+            <div className="projects-slider__screen">
+              <ul className="projects-list">
+                {projects.map((project) => (
+                  <li key={project.title} className="projects-list__item">
+                    <ProjectCard project={project} />
+                  </li>
+                ))}
+              </ul>
+            </div>
             {projects.length > 1 && (
               <div className="slider-dots">
                 <div className="slider-dots__item slider-dots__item--active"></div>
