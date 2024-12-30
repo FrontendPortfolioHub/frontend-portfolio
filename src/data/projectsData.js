@@ -87,8 +87,8 @@ export const projectsData = [
     technologies: [
       'JavaScript',
       'HTML,CSS,Sass(SCSS)',
-      'Figma',
       'Git/GitHub, VS Code, Chrome Developer Tools',
+      'Figma',
     ],
     projects: [
       {

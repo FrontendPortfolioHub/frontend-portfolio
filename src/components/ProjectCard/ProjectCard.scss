@@ -41,25 +41,25 @@
 }
 
 .project-link {
-  background-image: url('../../assets/icons/open-in-new-window.svg');
+  background-image: url('../../assets/icons/open-in-new-window-accent.svg');
 }
 
 .project-git-link {
-  background-image: url('../../assets/icons/git-hub_icon--light.svg');
+  background-image: url('../../assets/icons/git-hub_icon--green.svg');
 }
 
 .projects-list-item__image {
   display: block;
-  height: 160px;
+  height: 185px;
   width: 100%;
   min-width: 218px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  box-shadow: 4px 4px 3px rgba(100, 255, 218, 0.25);
 
   @include onTablet {
-    height: 300px;
-    width: 516px;
+    height: 398px;
   }
 }
 
