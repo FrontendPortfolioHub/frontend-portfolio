@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.4d675a26.css",
-    "main.js": "/frontend-portfolio/static/js/main.58c6e2ff.js",
+    "main.css": "/frontend-portfolio/static/css/main.8bbed1f7.css",
+    "main.js": "/frontend-portfolio/static/js/main.53f29005.js",
     "static/media/gadgets_catalog.bmp": "/frontend-portfolio/static/media/gadgets_catalog.ba4dd55446effcdced3f.bmp",
     "static/media/MET_landing.png": "/frontend-portfolio/static/media/MET_landing.ee500b8d274d01c38eaa.png",
     "static/media/Miami_landing.png": "/frontend-portfolio/static/media/Miami_landing.11c8cb824ec6d0e6ff58.png",
@@ -13,19 +13,18 @@
     "static/media/cv-download.svg": "/frontend-portfolio/static/media/cv-download.bdc3d9187494f99ade5e.svg",
     "index.html": "/frontend-portfolio/index.html",
     "static/media/git-hub_icon--green.svg": "/frontend-portfolio/static/media/git-hub_icon--green.5f57d8398ff0e314e787.svg",
-    "static/media/git-hub_icon--light.svg": "/frontend-portfolio/static/media/git-hub_icon--light.47495e3f1c0395823587.svg",
+    "static/media/open-in-new-window-accent.svg": "/frontend-portfolio/static/media/open-in-new-window-accent.d3af0b4236a850dda9e3.svg",
     "static/media/linked-in_icon--green.svg": "/frontend-portfolio/static/media/linked-in_icon--green.b9b144fbbaa251ad3c2c.svg",
-    "static/media/open-in-new-window.svg": "/frontend-portfolio/static/media/open-in-new-window.1bdd5760bb3d0b92b5be.svg",
     "static/media/cross-accent.svg": "/frontend-portfolio/static/media/cross-accent.b161219770c11937c783.svg",
     "static/media/send-button-accent.svg": "/frontend-portfolio/static/media/send-button-accent.d3dcfa5dfc7016fd7c19.svg",
     "static/media/global-arrow-accent.svg": "/frontend-portfolio/static/media/global-arrow-accent.cd5de4ae1c6b7f0619bf.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.4d675a26.css.map": "/frontend-portfolio/static/css/main.4d675a26.css.map",
-    "main.58c6e2ff.js.map": "/frontend-portfolio/static/js/main.58c6e2ff.js.map"
+    "main.8bbed1f7.css.map": "/frontend-portfolio/static/css/main.8bbed1f7.css.map",
+    "main.53f29005.js.map": "/frontend-portfolio/static/js/main.53f29005.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d675a26.css",
-    "static/js/main.58c6e2ff.js"
+    "static/css/main.8bbed1f7.css",
+    "static/js/main.53f29005.js"
   ]
 }
