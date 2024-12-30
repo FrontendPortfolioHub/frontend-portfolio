@@ -13,7 +13,11 @@ export const ProjectsItem = ({ projectsItem }) => {
 
   return (
     <>
-      <div className="project-type-card">
+      <div
+        className={classNames('project-type-card', {
+          'position--static': isProjectsCardOpen,
+        })}
+      >
         <h3 className="projects-type-card__title text-accent">{type}</h3>
         <div className="projects-type-card__description">{description}</div>
         <div className="projects-type-card__bottom">
@@ -33,7 +37,11 @@ export const ProjectsItem = ({ projectsItem }) => {
       {isProjectsCardOpen && (
         <div className="projects-card">
           <div className="projects-slider">
-            <div className="projects-slider__screen">
+            <div
+              className={classNames('projects-slider__screen', {
+                'justify-content--start': projects.length > 1,
+              })}
+            >
               <ul className="projects-list">
                 {projects.map((project) => (
                   <li key={project.title} className="projects-list__item">

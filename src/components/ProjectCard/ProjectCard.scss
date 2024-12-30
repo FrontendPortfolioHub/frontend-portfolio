@@ -50,13 +50,15 @@
 
 .projects-list-item__image {
   display: block;
-  height: 300px;
-  width: 218px;
+  height: 160px;
+  width: 100%;
+  min-width: 218px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 
   @include onTablet {
+    height: 300px;
     width: 516px;
   }
 }

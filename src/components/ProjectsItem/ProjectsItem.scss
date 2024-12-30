@@ -9,7 +9,22 @@
 }
 
 .project-type-card {
+  position: relative;
   padding: 15px;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('../../assets/images/projects/DIA_landing.png');
+    background-size: contain;
+    z-index: -1;
+    opacity: 0.1;
+  }
 
   @include onTablet {
     padding: 30px;
@@ -28,7 +43,7 @@
 
 .projects-type-card__description {
   margin-bottom: 30px;
-  color: $text-secondary;
+  color: $text-primary;
   font-family: Roboto;
   line-height: 135%;
   font-size: 14px;
@@ -59,7 +74,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  color: $text-secondary;
+  color: $text-primary;
   line-height: 120%;
   font-size: 14px;
 
@@ -102,6 +117,7 @@
 
 .projects-slider__screen {
   display: flex;
+  justify-content: center;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -111,13 +127,19 @@
 }
 
 .projects-list__item {
-  padding-block: 30px;
+  padding-top: 30px;
+  padding-bottom: 15px;
   padding-inline: 15px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid $color-secondary;
+
+  @include onTablet {
+    padding-inline: 50px;
+  }
 }
 
 .slider-dots {

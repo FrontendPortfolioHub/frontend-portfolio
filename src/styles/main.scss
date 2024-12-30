@@ -86,6 +86,14 @@ body {
   width: 100%;
 }
 
+.justify-content--start {
+  justify-content: flex-start;
+}
+
+.position--static {
+  position: static;
+}
+
 .text-primary {
   color: $text-primary;
 }
