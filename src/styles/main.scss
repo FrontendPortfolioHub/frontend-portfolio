@@ -85,6 +85,10 @@ body {
   width: 100%;
 }
 
+.position--static {
+  position: static;
+}
+
 .text-primary {
   color: $text-primary;
 }

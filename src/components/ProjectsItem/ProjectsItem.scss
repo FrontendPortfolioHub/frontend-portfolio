@@ -39,19 +39,19 @@
 
 .project-type-card--tsk-manager__image {
   &::after {
-    background-image: url('../../assets/images/projects/todo.png');
+    background-image: url('../../assets/images/projects/project-type-backgrounds/todo.png');
   }
 }
 
 .project-type-card--game__image {
   &::after {
-    background-image: url('../../assets/images/projects/2048_game_.png');
+    background-image: url('../../assets/images/projects/project-type-backgrounds/2048.png');
   }
 }
 
 .project-type-card--online-shop__image {
   &::after {
-    background-image: url('../../assets/images/projects/gadgets_catalog.bmp');
+    background-image: url('../../assets/images/projects/project-type-backgrounds/online-catalogue.png');
   }
 }
 
@@ -222,15 +222,15 @@
 }
 
 .tsk-manager__image {
-  background-image: url('../../assets/images/projects/todo.png');
+  background-image: url('../../assets/images/projects/320px/todo.png');
 }
 
 .game__image {
-  background-image: url('../../assets/images/projects/2048_game_.png');
+  background-image: url('../../assets/images/projects/320px/2048.png');
 }
 
 .online-shop__image {
-  background-image: url('../../assets/images/projects/gadgets_catalog.bmp');
+  background-image: url('../../assets/images/projects/320px/online-catalogue.png');
 }
 
 .dots-container {
