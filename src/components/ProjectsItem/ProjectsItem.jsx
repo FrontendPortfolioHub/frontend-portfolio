@@ -87,9 +87,7 @@ export const ProjectsItem = ({ projectsItem }) => {
           onTouchEnd={handleTouchEnd}
         >
           <div className="projects-list-item__top">
-            <h2
-              className="projects-list-item__title"
-            >
+            <h2 className="projects-list-item__title">
               {projects[currentIndex].title}
             </h2>
             <div className="projects-list-item__links">
@@ -104,11 +102,6 @@ export const ProjectsItem = ({ projectsItem }) => {
             </div>
           </div>
           <Link
-            style={{
-              transition: isTransitioning
-                ? 'background-image 0.5s ease-in-out'
-                : 'none',
-            }}
             className={`projects-list-item__image ${projects[currentIndex].backImageLink}`}
           />
           {/*<div className="projects-slider">
