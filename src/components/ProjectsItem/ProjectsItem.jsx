@@ -1,11 +1,9 @@
 import './ProjectsItem';
 
-import StrategicAgency from '../../assets/images/projects/DIA_landing.png';
 import { ArrowButton } from '../UI/ArrowButton/ArrowButton';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import classNames from 'classnames';
-import { ProjectCard } from '../ProjectCard';
 
 export const ProjectsItem = ({ projectsItem }) => {
   const { type, description, technologies, projects, backImage } = projectsItem;
@@ -13,7 +11,10 @@ export const ProjectsItem = ({ projectsItem }) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startX, setStartX] = useState(null);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
 
   const handleTouchStart = (e) => {
     setStartX(e.touches[0].clientX);
@@ -26,11 +27,9 @@ export const ProjectsItem = ({ projectsItem }) => {
     const diffX = startX - currentX;
 
     if (diffX > 50) {
-      setIsTransitioning(true);
       setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
       setStartX(null);
     } else if (diffX < -50) {
-      setIsTransitioning(true);
       setCurrentIndex(
         (prevIndex) => (prevIndex - 1 + projects.length) % projects.length,
       );
@@ -86,46 +85,37 @@ export const ProjectsItem = ({ projectsItem }) => {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="projects-list-item__top">
-            <h2 className="projects-list-item__title">
+          <div className="projects-card__top">
+            <h2 className="projects-card__title">
               {projects[currentIndex].title}
             </h2>
-            <div className="projects-list-item__links">
+            <div className="projects-card__links">
               <Link
                 to={projects[currentIndex].projectLink}
-                className="projects-list-item__link project-link"
+                className="projects-card__link project-link"
               />
               <Link
                 to={projects[currentIndex].codeLink}
-                className="projects-list-item__link project-git-link"
+                className="projects-card__link project-git-link"
               />
             </div>
           </div>
           <Link
-            className={`projects-list-item__image ${projects[currentIndex].backImageLink}`}
+            to={projects[currentIndex].projectLink}
+            target='_blank'
+            className={`projects-card__image ${projects[currentIndex].backImageLink}`}
           />
-          {/*<div className="projects-slider">
-            <div
-              className={classNames('projects-slider__screen', {
-                'justify-content--start': projects.length > 1,
-              })}
-            >
-              <ul className="projects-list">
-                {projects.map((project) => (
-                  <li key={project.title} className="projects-list__item">
-                    <ProjectCard project={project} />
-                  </li>
-                ))}
-              </ul>
+          {projects.length > 1 && (
+            <div className="dots-container">
+              {projects.map((_, index) => (
+                <div
+                  key={index}
+                  className={`dot ${index === currentIndex ? 'dot--active' : ''}`}
+                  onClick={() => goToSlide(index)}
+                ></div>
+              ))}
             </div>
-            {projects.length > 1 && (
-              <div className="slider-dots">
-                <div className="slider-dots__item slider-dots__item--active"></div>
-                <div className="slider-dots__item"></div>
-                <div className="slider-dots__item"></div>
-              </div>
-            )}
-          </div>*/}
+          )}
         </div>
       )}
     </>

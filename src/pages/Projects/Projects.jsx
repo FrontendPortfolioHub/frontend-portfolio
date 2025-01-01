@@ -1,12 +1,9 @@
-import { Link } from 'react-router-dom';
 import './Projects';
 import { useEffect, useState } from 'react';
 import { scrollToTop } from '../../utils/scrollToTop';
 import { useMainContext } from '../../context/MainContext';
 import { BackLink } from '../../components/BackLink/BackLink';
 import { projectsData } from '../../data/projectsData';
-import { ArrowButton } from '../../components/UI/ArrowButton/ArrowButton';
-import { CrossButton } from '../../components/UI/CrossButton/CrossButton';
 import { ProjectsItem } from '../../components/ProjectsItem/ProjectsItem';
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();

@@ -16,7 +16,6 @@
 @import '../components/BackLink/BackLink';
 @import '../components//CreaterInfo/CreaterInfo';
 @import '../components/ProjectsItem/ProjectsItem';
-@import '../components/ProjectCard/ProjectCard';
 @import '../components/UI/LanguageSelector/LanguageSelector';
 @import '../components/UI/DownloadCvButton/DownloadCvButton';
 @import '../components/UI/ArrowButton/ArrowButton';
@@ -84,14 +83,6 @@ body {
 
 .full-width {
   width: 100%;
-}
-
-.justify-content--start {
-  justify-content: flex-start;
-}
-
-.position--static {
-  position: static;
 }
 
 .text-primary {
