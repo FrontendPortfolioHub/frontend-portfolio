@@ -3,7 +3,7 @@ import './CreaterInfo';
 export const CreaterInfo = () => {
   return (
     <div className="creater-info__content">
-      <p className="creater-info__text">Designed and created by Pavlo Maistrenko, 2024.</p>
+      <p className="creater-info__text">Created by Pavlo Maistrenko,<br /> 2024.</p>
     </div>
   );
 }

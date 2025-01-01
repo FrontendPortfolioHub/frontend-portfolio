@@ -63,8 +63,8 @@ export const About = () => {
           >
             <h2 className="additional-information__title text-primary">
               How I became a Frontend Deweloper
-            </h2>
-            <p className="additional-information__text text-secondary grid__item--tablet-1-2">
+            </h2>grid__item--tablet-1-2
+            <p className="additional-information__text text-secondary ">
               I dedicated a significant part of my career to collaborating with
               international companies in the field of trade. This experience
               exposed me to innovative technological solutions, sparking a deep

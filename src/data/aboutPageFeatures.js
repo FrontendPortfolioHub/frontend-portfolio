@@ -1,7 +1,7 @@
 export const featuresData = [
   {
     id: 1,
-    title: 'My education...',
+    title: 'My education',
     features: [
       "Master's Degree in Electronic Industry",
       'Frontend Development',
@@ -10,7 +10,7 @@ export const featuresData = [
   },
   {
     id: 2,
-    title: 'What I know...',
+    title: 'What I know',
     features: [
       'JavaScript,TypeScript',
       'React, Redux',
@@ -25,7 +25,7 @@ export const featuresData = [
   },
   {
     id: 3,
-    title: 'My future way...',
+    title: 'My future way',
     features: [
       'Backend Development',
       'UX/UI Design',

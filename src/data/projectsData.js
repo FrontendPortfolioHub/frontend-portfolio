@@ -28,13 +28,13 @@ export const projectsData = [
         backImageLink: 'strategic-agency',
       },
       {
-        title: 'ART Museum',
+        title: 'NAMU',
         projectLink: 'https://paulmaistrenko.github.io/Museum_2/',
         codeLink: 'https://github.com/PaulMaistrenko/Museum_2/tree/master/src',
         backImageLink: 'art-museum',
       },
       {
-        title: 'ART Museum 2',
+        title: 'NAMU new',
         projectLink: 'https://paulmaistrenko.github.io/Museum/',
         codeLink: 'https://github.com/PaulMaistrenko/Museum/tree/master/src',
         backImageLink: 'art-museum-2',

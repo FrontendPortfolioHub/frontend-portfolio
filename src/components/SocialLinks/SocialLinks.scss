@@ -1,0 +1,34 @@
+.social__links {
+  position: relative;
+  top: 210px;
+  margin-top: 6px;
+
+  @include onTablet {
+    position: sticky;
+  }
+}
+
+.social__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  @include onTablet {
+    justify-content: flex-start;
+  }
+}
+
+.social__nav-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.linkedin {
+  background-image: url("../../assets/icons/linked-in_icon--green.svg");
+}
+
+.git-hub {
+  background-image: url("../../assets/icons/git-hub_icon--green.svg")
+}
