@@ -193,6 +193,23 @@
   background-size: cover;
   box-shadow: 1px -1px 10px 5px rgba(100, 255, 218, 0.25);
 
+  @media (min-width: 360px) {
+    height: 215px;
+  }
+
+  @media (min-width: 380px) {
+    height: 225px;
+  }
+
+  @media (min-width: 400px) {
+    height: 245px;
+  }
+
+
+  @media (min-width: 420px) {
+    height: 260px;
+  }
+
   @media (min-width: 448px) {
     height: 280px;
   }
