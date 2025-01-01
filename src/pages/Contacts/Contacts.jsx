@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './Contacts';
 import { useEffect, useState } from 'react';
 import { useMainContext } from '../../context/MainContext';
@@ -23,7 +22,7 @@ export const Contacts = () => {
   }, []);
 
   return (
-    <div className="page contacts">
+    <section id='contacts' className="page contacts">
       <div className="container">
         <BackLink />
         <h1 className="page__title text-secondary">Contacts</h1>
@@ -114,6 +113,6 @@ export const Contacts = () => {
           </div>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };

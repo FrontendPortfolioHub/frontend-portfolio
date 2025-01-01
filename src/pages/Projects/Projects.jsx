@@ -14,7 +14,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="page projects">
+    <section id="projects" className="page projects">
       <div className="container">
         <BackLink />
         <h1 className="page__title text-secondary">Projects</h1>
@@ -28,13 +28,13 @@ export const Projects = () => {
           as well as my commitment to creating quality solutions.
         </article>
         <ul className="projects-page-list">
-          {projectsData.map(projectsItem => (
+          {projectsData.map((projectsItem) => (
             <li key={projectsItem.id} className="projects-page-item">
               <ProjectsItem projectsItem={projectsItem} />
             </li>
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };

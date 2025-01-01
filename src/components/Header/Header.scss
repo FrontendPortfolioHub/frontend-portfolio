@@ -3,17 +3,28 @@
   top: 0;
   right: 0;
   left: 0;
-  padding-block: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-inline: 20px;
   display: flex;
   justify-content: space-between;
   background-color: $background-color;
   z-index: 10;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+
+  @include onTablet {
+    padding-inline: 80px;
+  }
+}
+
+.header--hidden {
+  transform: translateY(-100%);
 }
 
 .header__nav-bar {
   display: flex;
   align-items: center;
-
 }
 
 .header__nav-list {
@@ -23,4 +34,20 @@
 
 .heder__nav-link {
   color: $text-primary;
+}
+
+.heder__nav-link--active {
+  position: relative;
+  padding-bottom: 26px;
+  color: $text-accent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: $color-accent;
+  }
 }

@@ -23,19 +23,15 @@ export const About = () => {
   }, []);
 
   return (
-    <div className="page about">
+    <section id="about" className="page about">
       <div className="container">
         <BackLink />
         <h1 className="page__title text-secondary">About</h1>
         <div className="grid">
           <div className="about-page__image grid__item--tablet-1-2"></div>
           <div className="greeting__block">
-            <p className="greeting text-accent">
-              Hi, my name is
-            </p>
-            <p className="name text-primary">
-              Pavlo Maistrenko
-            </p>
+            <p className="greeting text-accent">Hi, my name is</p>
+            <p className="name text-primary">Pavlo Maistrenko</p>
           </div>
           <article className="short-description text-secondary grid__item--tablet-1-2">
             Since 2021, I’ve enjoyed creating efficient and intuitive solutions
@@ -63,7 +59,8 @@ export const About = () => {
           >
             <h2 className="additional-information__title text-primary">
               How I became a Frontend Deweloper
-            </h2>grid__item--tablet-1-2
+            </h2>
+            grid__item--tablet-1-2
             <p className="additional-information__text text-secondary ">
               I dedicated a significant part of my career to collaborating with
               international companies in the field of trade. This experience
@@ -107,6 +104,6 @@ export const About = () => {
         </div>
         {isMobile && <DownloadCvButton />}
       </div>
-    </div>
+    </section>
   );
 };
