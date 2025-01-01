@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.a2c115ef.css",
+    "main.css": "/frontend-portfolio/static/css/main.bc2c3b93.css",
     "main.js": "/frontend-portfolio/static/js/main.bf47de79.js",
-    "static/media/gadgets_catalog.bmp": "/frontend-portfolio/static/media/gadgets_catalog.ba4dd55446effcdced3f.bmp",
     "static/media/met.png": "/frontend-portfolio/static/media/met.b26b28daa917a73525a3.png",
     "static/media/maimi-condo-kings.png": "/frontend-portfolio/static/media/maimi-condo-kings.3a54e008612549765e45.png",
     "static/media/landing-pages.png": "/frontend-portfolio/static/media/landing-pages.985ff65d608dfc4f627e.png",
     "static/media/namu-new.png": "/frontend-portfolio/static/media/namu-new.89f988270f8c7c3ec736.png",
     "static/media/namu.png": "/frontend-portfolio/static/media/namu.4a5ef9a24606ea1bfe6d.png",
     "static/media/strategic-agency.png": "/frontend-portfolio/static/media/strategic-agency.e18d69241e52b5bab8ba.png",
+    "static/media/online-catalogue.png": "/frontend-portfolio/static/media/online-catalogue.353ca8711aa038846b9b.png",
     "static/media/kat-vr.png": "/frontend-portfolio/static/media/kat-vr.c5518844b56eb5355aed.png",
     "static/media/main-photo.png": "/frontend-portfolio/static/media/main-photo.8e9debedf85632d94f8b.png",
-    "static/media/todo.png": "/frontend-portfolio/static/media/todo.2179cb6d9e22bf86116c.png",
-    "static/media/2048_game_.png": "/frontend-portfolio/static/media/2048_game_.81954281422ba93388ea.png",
+    "static/media/todo.png": "/frontend-portfolio/static/media/todo.9aba056b7b681ec0fda1.png",
+    "static/media/2048.png": "/frontend-portfolio/static/media/2048.b16b337313dbdf1158da.png",
     "static/media/cv-download.svg": "/frontend-portfolio/static/media/cv-download.bdc3d9187494f99ade5e.svg",
     "index.html": "/frontend-portfolio/index.html",
     "static/media/git-hub_icon--green.svg": "/frontend-portfolio/static/media/git-hub_icon--green.5f57d8398ff0e314e787.svg",
@@ -23,11 +23,11 @@
     "static/media/global-arrow-accent.svg": "/frontend-portfolio/static/media/global-arrow-accent.cd5de4ae1c6b7f0619bf.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.a2c115ef.css.map": "/frontend-portfolio/static/css/main.a2c115ef.css.map",
+    "main.bc2c3b93.css.map": "/frontend-portfolio/static/css/main.bc2c3b93.css.map",
     "main.bf47de79.js.map": "/frontend-portfolio/static/js/main.bf47de79.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2c115ef.css",
+    "static/css/main.bc2c3b93.css",
     "static/js/main.bf47de79.js"
   ]
 }
