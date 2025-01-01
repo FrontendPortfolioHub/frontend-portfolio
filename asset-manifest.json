@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/frontend-portfolio/static/css/main.8bbed1f7.css",
-    "main.js": "/frontend-portfolio/static/js/main.37e51436.js",
+    "main.js": "/frontend-portfolio/static/js/main.b29a8b72.js",
     "static/media/gadgets_catalog.bmp": "/frontend-portfolio/static/media/gadgets_catalog.ba4dd55446effcdced3f.bmp",
     "static/media/MET_landing.png": "/frontend-portfolio/static/media/MET_landing.ee500b8d274d01c38eaa.png",
     "static/media/Miami_landing.png": "/frontend-portfolio/static/media/Miami_landing.11c8cb824ec6d0e6ff58.png",
@@ -21,10 +21,10 @@
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
     "main.8bbed1f7.css.map": "/frontend-portfolio/static/css/main.8bbed1f7.css.map",
-    "main.37e51436.js.map": "/frontend-portfolio/static/js/main.37e51436.js.map"
+    "main.b29a8b72.js.map": "/frontend-portfolio/static/js/main.b29a8b72.js.map"
   },
   "entrypoints": [
     "static/css/main.8bbed1f7.css",
-    "static/js/main.37e51436.js"
+    "static/js/main.b29a8b72.js"
   ]
 }
