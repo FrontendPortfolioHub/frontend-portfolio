@@ -24,7 +24,7 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    opacity: 0.25;
+    opacity: 0.15;
   }
 
   @include onTablet {
@@ -190,8 +190,12 @@
   min-width: 218px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   box-shadow: 1px -1px 10px 5px rgba(100, 255, 218, 0.25);
+
+  @media (min-width: 448px) {
+    height: 280px;
+  }
 
   @include onTablet {
     height: 398px;
