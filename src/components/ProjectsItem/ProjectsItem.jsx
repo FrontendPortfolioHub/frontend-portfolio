@@ -11,6 +11,37 @@ export const ProjectsItem = ({ projectsItem }) => {
   const { type, description, technologies, projects, backImage } = projectsItem;
   const [isProjectsCardOpen, setIsOpenProjectsCardOpen] = useState(false);
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [startX, setStartX] = useState(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handleTouchStart = (e) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    if (startX === null) return;
+
+    const currentX = e.touches[0].clientX;
+    const diffX = startX - currentX;
+
+    if (diffX > 50) {
+      setIsTransitioning(true);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
+      setStartX(null);
+    } else if (diffX < -50) {
+      setIsTransitioning(true);
+      setCurrentIndex(
+        (prevIndex) => (prevIndex - 1 + projects.length) % projects.length,
+      );
+      setStartX(null);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setStartX(null);
+  };
+
   return (
     <>
       <div
@@ -49,21 +80,37 @@ export const ProjectsItem = ({ projectsItem }) => {
         </div>
       </div>
       {isProjectsCardOpen && (
-        <div className="projects-card">
+        <div
+          className="projects-card"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           <div className="projects-list-item__top">
-            <h2 className="projects-list-item__title">Strategic Agency</h2>
+            <h2
+              className="projects-list-item__title"
+            >
+              {projects[currentIndex].title}
+            </h2>
             <div className="projects-list-item__links">
               <Link
-                to="https://paulmaistrenko.github.io/layout_dia/"
+                to={projects[currentIndex].projectLink}
                 className="projects-list-item__link project-link"
               />
               <Link
-                to="https://github.com/PaulMaistrenko/layout_dia/tree/develop/src"
+                to={projects[currentIndex].codeLink}
                 className="projects-list-item__link project-git-link"
               />
             </div>
           </div>
-          <Link className={`projects-list-item__image strategic-agency`} />
+          <Link
+            style={{
+              transition: isTransitioning
+                ? 'background-image 0.5s ease-in-out'
+                : 'none',
+            }}
+            className={`projects-list-item__image ${projects[currentIndex].backImageLink}`}
+          />
           {/*<div className="projects-slider">
             <div
               className={classNames('projects-slider__screen', {
