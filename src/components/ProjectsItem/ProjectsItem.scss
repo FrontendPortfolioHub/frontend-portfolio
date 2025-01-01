@@ -23,7 +23,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.25;
   }
 
   @include onTablet {
@@ -33,7 +33,7 @@
 
 .project-type-card--strategic-agency {
   &::after {
-    background-image: url('../../assets/images/projects/DIA_landing.png');
+    background-image: url('../../assets/images/projects/project-type-backgrounds/landing-pages.png');
   }
 }
 
@@ -198,27 +198,27 @@
 }
 
 .strategic-agency {
-  background-image: url('../../assets/images/projects/DIA_landing.png');
+  background-image: url('../../assets/images/projects/320px/strategic-agency.png');
 }
 
 .kate-vr {
-  background-image: url('../../assets/images/projects/DIA_landing.png');
+  background-image: url('../../assets/images/projects/320px/kat-vr.png');
 }
 
 .art-museum {
-  background-image: url('../../assets/images/projects/Museum_landing.png');
+  background-image: url('../../assets/images/projects/320px/namu.png');
 }
 
 .art-museum-2 {
-  background-image: url('../../assets/images/projects/Museum_landing.png');
+  background-image: url('../../assets/images/projects/320px/namu-new.png');
 }
 
 .met {
-  background-image: url('../../assets/images/projects/MET_landing.png');
+  background-image: url('../../assets/images/projects/320px/met.png');
 }
 
 .kondo-kings {
-  background-image: url('../../assets/images/projects/Miami_landing.png');
+  background-image: url('../../assets/images/projects/320px/maimi-condo-kings.png');
 }
 
 .tsk-manager__image {
