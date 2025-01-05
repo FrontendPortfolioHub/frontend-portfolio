@@ -7,7 +7,7 @@
 
   @include onDesktop {
     column-gap: 30px;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(9, 1fr);
   }
 
   &__item {

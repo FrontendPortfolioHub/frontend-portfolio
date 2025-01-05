@@ -3,19 +3,25 @@
   top: 0;
   right: 0;
   left: 0;
+  background-color: $background-color;
+  z-index: 10;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+  opacity: 0.9;
+
+  @include onTablet {
+    padding-inline: 80px;
+  }
+}
+
+.header__content {
+  margin: 0 auto;
+  max-width: 1240px;
   padding-top: 30px;
   padding-bottom: 20px;
   padding-inline: 20px;
   display: flex;
   justify-content: space-between;
-  background-color: $background-color;
-  z-index: 10;
-  transform: translateY(0);
-  transition: transform 0.3s ease;
-
-  @include onTablet {
-    padding-inline: 80px;
-  }
 }
 
 .header--hidden {
@@ -47,7 +53,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 1px;
+    height: 2px;
     background-color: $color-accent;
+    box-shadow: 0 -3px 14px 5px rgba(100, 255, 218, 0.25);
   }
 }
