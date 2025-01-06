@@ -51,7 +51,7 @@ export const About = () => {
           </article>
           <article
             className={classNames(
-              'additional-information grid__item--tablet-1-2',
+              'additional-information grid__item--tablet-1-2 grid__item--desktop-2-8',
               {
                 hidden: !isMoreInfoOpen,
               },
@@ -93,7 +93,7 @@ export const About = () => {
               </button>
             </p>
           </article>
-          <ul className="features__list grid__item--tablet-3-4">
+          <ul className="features__list grid__item--tablet-3-4 grid__item--desktop-1-9">
             {featuresData.map((item) => (
               <li key={item.id} className="features__item">
                 <FeaturesItem title={item.title} features={item.features} />
