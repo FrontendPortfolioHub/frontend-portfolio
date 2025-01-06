@@ -4,9 +4,13 @@ import { scrollToTop } from '../../utils/scrollToTop';
 import { useMainContext } from '../../context/MainContext';
 import { BackLink } from '../../components/BackLink/BackLink';
 import { projectsData } from '../../data/projectsData';
-import { ProjectsItem } from '../../components/ProjectsItem/ProjectsItem';
+import { ProjectsMobileItem } from '../../components/ProjectsMobileItem/ProjectsMobileItem';
+import { useMediaQuery } from 'react-responsive';
+import { ProjectsDesktopItem } from '../../components/ProjectsDesktopItem/ProjectsDesktopItem';
+
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();
+  const isDesktop = useMediaQuery({ query: '(max-width: 1280px)' });
 
   useEffect(() => {
     scrollToTop();
@@ -14,7 +18,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <section id='projects' className="page projects">
+    <section id="projects" className="page projects">
       <div className="container">
         <BackLink />
         <h1 className="page__title text-secondary">Projects</h1>
@@ -27,13 +31,23 @@ export const Projects = () => {
           Each project reflects my journey in mastering and applying new skills,
           as well as my commitment to creating quality solutions.
         </article>
-        <ul className="projects-page-list">
-          {projectsData.map(projectsItem => (
-            <li key={projectsItem.id} className="projects-page-item">
-              <ProjectsItem projectsItem={projectsItem} />
-            </li>
-          ))}
-        </ul>
+        {isDesktop ? (
+          <ul className="projects-page-list">
+            {projectsData.map((projectsItem) => (
+              <li key={projectsItem.id} className="projects-page-item">
+                <ProjectsMobileItem projectsItem={projectsItem} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <ul className="projects-page-list">
+            {projectsData.map((projectsItem) => (
+              <li key={projectsItem.id} className="projects-page-item--desktop">
+                <ProjectsDesktopItem projectsItem={projectsItem}/>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );

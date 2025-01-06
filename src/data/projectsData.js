@@ -6,7 +6,9 @@ export const projectsData = [
       'JavaScript',
       'HTML,CSS,Sass(SCSS)',
       'Figma',
-      'Git/GitHub, VS Code, Chrome Developer Tools',
+      'Git/GitHub',
+      'VS Code',
+      'Chrome Developer Tools',
       'BEM',
     ],
     backImage: 'strategic-agency',
@@ -67,7 +69,7 @@ export const projectsData = [
       'React',
       'Fetch, Axios, REST API',
       'Figma',
-      'Git/GitHub, VS Code, Chrome Developer Tools',
+      'Git/GitHub, Chrome Developer Tools',
       'BEM',
     ],
     projects: [
@@ -87,8 +89,11 @@ export const projectsData = [
     technologies: [
       'JavaScript',
       'HTML,CSS,Sass(SCSS)',
-      'Git/GitHub, VS Code, Chrome Developer Tools',
       'Figma',
+      'Git/GitHub',
+      'VS Code',
+      'Chrome Developer Tools',
+      'BEM',
     ],
     projects: [
       {
@@ -111,7 +116,7 @@ export const projectsData = [
       'React',
       'Fetch, Axios, REST API',
       'Figma',
-      'Git/GitHub, VS Code, Chrome Developer Tools',
+      'Git/GitHub, Chrome Developer Tools',
       'BEM',
     ],
     projects: [

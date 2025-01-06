@@ -218,6 +218,12 @@
   @include onTablet {
     height: 398px;
   }
+
+  @include onDesktop {
+    margin: 0 auto;
+    width: 80%;
+    height: 212px;
+  }
 }
 
 .strategic-agency {
@@ -258,13 +264,11 @@
 
 .dots-container {
   display: flex;
-  gap: 5px;
   padding-top: 15px;
   justify-content: center;
 
   @include onTablet {
     padding-top: 30px;
-    gap: 10px;
   }
 }
 
@@ -272,6 +276,7 @@
   width: 35px;
   height: 1px;
   background-color: $color-secondary;
+  cursor: pointer;
 
   @include onTablet {
     width: 55px;

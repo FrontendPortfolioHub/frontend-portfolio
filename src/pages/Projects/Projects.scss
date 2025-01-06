@@ -2,10 +2,21 @@
   margin-bottom: 70px;
   font-family: 'Roboto', sans-serif;
   line-height: 175%;
+
+  @include onDesktop {
+    margin: 0 auto 110px;
+    width: 920px;
+    font-size: 20px;
+  }
 }
 
 .projects-page-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @include onDesktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

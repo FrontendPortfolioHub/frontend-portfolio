@@ -1,11 +1,11 @@
-import './ProjectsItem';
+import './ProjectsMobileItem';
 
 import { ArrowButton } from '../UI/ArrowButton/ArrowButton';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import classNames from 'classnames';
 
-export const ProjectsItem = ({ projectsItem }) => {
+export const ProjectsMobileItem = ({ projectsItem }) => {
   const { type, description, technologies, projects, backImage } = projectsItem;
   const [isProjectsCardOpen, setIsOpenProjectsCardOpen] = useState(false);
 
@@ -42,7 +42,7 @@ export const ProjectsItem = ({ projectsItem }) => {
   };
 
   return (
-    <>
+    <div className="projects__item">
       <div
         className={classNames(
           `project-type-card project-type-card--${backImage}`,
@@ -102,7 +102,7 @@ export const ProjectsItem = ({ projectsItem }) => {
           </div>
           <Link
             to={projects[currentIndex].projectLink}
-            target='_blank'
+            target="_blank"
             className={`projects-card__image ${projects[currentIndex].backImageLink}`}
           />
           {projects.length > 1 && (
@@ -118,6 +118,6 @@ export const ProjectsItem = ({ projectsItem }) => {
           )}
         </div>
       )}
-    </>
+    </div>
   );
 };
