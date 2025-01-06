@@ -36,6 +36,10 @@
 .header__nav-list {
   display: flex;
   gap: 30px;
+
+  @include onDesktop {
+    gap: 100px;
+  }
 }
 
 .heder__nav-link {

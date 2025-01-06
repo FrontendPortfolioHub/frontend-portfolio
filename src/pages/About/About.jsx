@@ -28,12 +28,12 @@ export const About = () => {
         <BackLink />
         <h1 className="page__title text-secondary">About</h1>
         <div className="grid">
-          <div className="about-page__image grid__item--tablet-1-2"></div>
-          <div className="greeting__block">
+          <div className="about-page__image grid__item--tablet-1-2 grid__item--desktop-1-3"></div>
+          <div className="greeting__block grid__item--tablet-3-4 grid__item--desktop-5-9">
             <p className="greeting text-accent">Hi, my name is</p>
             <p className="name text-primary">Pavlo Maistrenko</p>
           </div>
-          <article className="short-description text-secondary grid__item--tablet-1-2">
+          <article className="short-description text-secondary grid__item--tablet-1-2 grid__item--desktop-5-9">
             Since 2021, I’ve enjoyed creating efficient and intuitive solutions
             in frontend development. When I'm not coding, I'm learning something
             new, traveling, or working out.
