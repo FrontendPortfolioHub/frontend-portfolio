@@ -29,7 +29,7 @@ export const Contacts = () => {
         <p className="contacts-page__description">Always in touch for you...</p>
         <ul className="contacts-list">
           <div className="grid">
-            <li className="contacts-item grid__item--tablet-1-2">
+            <li className="contacts-item grid__item--tablet-1-2 grid__item--desktop-2-4">
               <p className="contacts-title text-secondary">Call me...</p>
               <a
                 href="tel:+4916096294939"
@@ -38,7 +38,7 @@ export const Contacts = () => {
                 +4916096294939
               </a>
             </li>
-            <li className="contacts-item grid__item--tablet-1-2">
+            <li className="contacts-item grid__item--tablet-1-2 grid__item--desktop-2-4">
               <p className="contacts-title text-secondary">
                 Chat with me on Telegram...
               </p>
@@ -51,7 +51,7 @@ export const Contacts = () => {
                 @Pavlo_Maistrenko
               </a>
             </li>
-            <li className="contacts-item grid__item--tablet-1-2">
+            <li className="contacts-item grid__item--tablet-1-2 grid__item--desktop-2-4">
               <p className="contacts-title text-secondary">Drop me a line...</p>
               <a
                 href="mailto:maystrenko.p@gmail.com"
@@ -63,12 +63,12 @@ export const Contacts = () => {
               </a>
             </li>
             {!isMobile && (
-              <li className="contacts-item grid__item--tablet-1-2">
+              <li className="contacts-item grid__item--tablet-1-2 grid__item--desktop-2-4">
                 <p className="contacts-title text-secondary">Follow me...</p>
                 <SocialLinks />
               </li>
             )}
-            <li className="contacts-item grid__item--tablet-3-4 grid-row--tablet-1-5">
+            <li className="contacts-item grid__item--tablet-3-4 grid-row--tablet-1-5 grid__item--desktop-5-9">
               <p className="contacts-title text-secondary">
                 or use the form below...
               </p>
@@ -105,7 +105,7 @@ export const Contacts = () => {
               </form>
               {!isMobile && (
                 <button
-                  className="to-top-button grid__item--tablet-4-4"
+                  className="to-top-button"
                   onClick={() => scrollToTop()}
                 />
               )}

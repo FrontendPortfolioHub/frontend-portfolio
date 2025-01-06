@@ -10,7 +10,7 @@ import { ProjectsDesktopItem } from '../../components/ProjectsDesktopItem/Projec
 
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();
-  const isDesktop = useMediaQuery({ query: '(max-width: 1280px)' });
+  const isDesktop = useMediaQuery({ query: '(max-width: 1279px)' });
 
   useEffect(() => {
     scrollToTop();
