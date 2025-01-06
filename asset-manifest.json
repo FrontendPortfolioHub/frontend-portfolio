@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.ca6962e6.css",
-    "main.js": "/frontend-portfolio/static/js/main.87d51057.js",
+    "main.css": "/frontend-portfolio/static/css/main.345d463b.css",
+    "main.js": "/frontend-portfolio/static/js/main.b9b90940.js",
     "static/media/met.png": "/frontend-portfolio/static/media/met.b26b28daa917a73525a3.png",
     "static/media/maimi-condo-kings.png": "/frontend-portfolio/static/media/maimi-condo-kings.3a54e008612549765e45.png",
     "static/media/landing-pages.png": "/frontend-portfolio/static/media/landing-pages.985ff65d608dfc4f627e.png",
@@ -21,13 +21,17 @@
     "static/media/cross-accent.svg": "/frontend-portfolio/static/media/cross-accent.b161219770c11937c783.svg",
     "static/media/send-button-accent.svg": "/frontend-portfolio/static/media/send-button-accent.d3dcfa5dfc7016fd7c19.svg",
     "static/media/global-arrow-accent.svg": "/frontend-portfolio/static/media/global-arrow-accent.cd5de4ae1c6b7f0619bf.svg",
+    "static/media/slider-arrow-right-accent.svg": "/frontend-portfolio/static/media/slider-arrow-right-accent.fe45c0a790d8ba8d3d0b.svg",
+    "static/media/slider-arrow-right-grey.svg": "/frontend-portfolio/static/media/slider-arrow-right-grey.2d5a7d83402883cbbb04.svg",
+    "static/media/slider-arrow-left-accent.svg": "/frontend-portfolio/static/media/slider-arrow-left-accent.f34c845c4f11c9141002.svg",
+    "static/media/slider-arrow-left-grey.svg": "/frontend-portfolio/static/media/slider-arrow-left-grey.5831872fc074583427b0.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.ca6962e6.css.map": "/frontend-portfolio/static/css/main.ca6962e6.css.map",
-    "main.87d51057.js.map": "/frontend-portfolio/static/js/main.87d51057.js.map"
+    "main.345d463b.css.map": "/frontend-portfolio/static/css/main.345d463b.css.map",
+    "main.b9b90940.js.map": "/frontend-portfolio/static/js/main.b9b90940.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca6962e6.css",
-    "static/js/main.87d51057.js"
+    "static/css/main.345d463b.css",
+    "static/js/main.b9b90940.js"
   ]
 }
