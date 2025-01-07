@@ -1,5 +1,3 @@
-import './CreaterInfo';
-
 export const CreaterInfo = () => {
   return (
     <div className="creater-info__content">

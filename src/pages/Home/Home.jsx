@@ -1,11 +1,14 @@
-import { Link, NavLink } from 'react-router-dom';
-import { scrollToTop } from '../../utils/scrollToTop';
-import './Home';
-import { homePageNavItems } from '../../data/homePageNavItems';
-import { StartPage } from '../../components/StartPage/StartPage';
 import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
+import { scrollToTop } from '../../utils/scrollToTop';
+
 import { useMainContext } from '../../context/MainContext';
+
+import { StartPage } from '../../components/StartPage/StartPage';
 import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
+
+import { homePageNavItems } from '../../data/homePageNavItems';
 
 export const Home = () => {
   const { setCurrentPage } = useMainContext();
@@ -14,7 +17,7 @@ export const Home = () => {
   useEffect(() => {
     scrollToTop();
     setCurrentPage('home');
-  }, []);
+  });
 
   useEffect(() => {
     const isFirstVisit = localStorage.getItem('visited');

@@ -1,8 +1,10 @@
-import './Contacts';
 import { useEffect, useState } from 'react';
-import { useMainContext } from '../../context/MainContext';
+
 import { scrollToTop } from '../../utils/scrollToTop';
-import { BackLink } from '../../components/BackLink/BackLink';
+
+import { useMainContext } from '../../context/MainContext';
+
+import { BackLink } from '../../components/UI/BackLink/BackLink';
 import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
 
 export const Contacts = () => {
@@ -19,7 +21,7 @@ export const Contacts = () => {
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+  });
 
   return (
     <section id='contacts' className="page contacts">

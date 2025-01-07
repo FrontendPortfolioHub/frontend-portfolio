@@ -1,4 +1,3 @@
-import './StartPage';
 import classNames from 'classnames';
 
 export const StartPage = ({ isLoading }) => {

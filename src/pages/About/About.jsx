@@ -1,12 +1,15 @@
-import './About';
-import { scrollToTop } from '../../utils/scrollToTop';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import classNames from 'classnames';
+
+import { scrollToTop } from '../../utils/scrollToTop';
+
 import { useMainContext } from '../../context/MainContext';
-import { BackLink } from '../../components/BackLink/BackLink';
+
+import { BackLink } from '../../components/UI/BackLink/BackLink';
 import { DownloadCvButton } from '../../components/UI/DownloadCvButton/DownloadCvButton';
 import { FeaturesItem } from '../../components/FeaturesItem/FeaturesItem';
+
 import { featuresData } from '../../data/aboutPageFeatures';
 
 export const About = () => {
@@ -20,7 +23,7 @@ export const About = () => {
     if (!isMobile) {
       setMoreInfoOpen(true);
     }
-  }, []);
+  }, [isMobile, setCurrentPage]);
 
   return (
     <section id="about" className="page about">

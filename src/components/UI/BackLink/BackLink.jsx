@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import './BackLink';
 
 export const BackLink = () => {
   const navigate = useNavigate();

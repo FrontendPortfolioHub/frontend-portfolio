@@ -1,8 +1,6 @@
-import { useContext, useEffect, useState } from 'react';
-import './Header';
-import classNames from 'classnames';
+import { useEffect, useState } from 'react';
+
 import { LanguageSelector } from '../UI/LanguageSelector';
-import { NavLink } from 'react-router-dom';
 import { DownloadCvButton } from '../UI/DownloadCvButton/DownloadCvButton';
 
 export const Header = () => {

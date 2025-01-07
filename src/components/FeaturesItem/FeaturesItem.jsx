@@ -1,5 +1,3 @@
-import './FeaturesItem';
-
 export const FeaturesItem = ({ title, features }) => {
   return (
     <>

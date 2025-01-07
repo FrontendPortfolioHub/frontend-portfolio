@@ -1,5 +1,4 @@
 import { CreaterInfo } from '../CreaterInfo/CreaterInfo';
-import './Footer';
 
 export const Footer = () => {
   return (

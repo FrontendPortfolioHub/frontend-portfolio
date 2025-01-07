@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import './ProjectsPageItem';
 import { useState } from 'react';
 import classNames from 'classnames';
 import { useMediaQuery } from 'react-responsive';

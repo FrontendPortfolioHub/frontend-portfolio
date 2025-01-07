@@ -5,25 +5,23 @@
 @import './utilities/variables';
 @import './utilities/mixins';
 @import './utilities/_grid';
-@import '../components/Header/Header';
-@import '../components/StartPage/StartPage';
 @import '../pages/Home/Home';
 @import '../pages/About/About';
 @import '../pages/Projects/Projects';
 @import '../pages/Contacts/Contacts';
+@import '../components/Header/Header';
+@import '../components/StartPage/StartPage';
 @import '../components/Footer/Footer';
 @import '../components/FeaturesItem/FeaturesItem';
 @import '../components/FooterMobile/FooterMobile';
 @import '../components/SocialLinks/SocialLinks';
-@import '../components/BackLink/BackLink';
+@import '../components/UI/BackLink/BackLink';
 @import '../components//CreaterInfo/CreaterInfo';
 @import '../components/ProjectsPageItem/ProjectsPageItem';
-@import '../components/ProjectsMobileItem/ProjectsMobileItem';
-@import '../components/ProjectsDesktopItem/ProjectsDesktopItem';
 @import '../components/UI/LanguageSelector/LanguageSelector';
 @import '../components/UI/DownloadCvButton/DownloadCvButton';
 @import '../components/UI/ArrowButton/ArrowButton';
-@import '../components/UI/CrossButton/CrossButton';
+
 
 body {
   height: 100vh;

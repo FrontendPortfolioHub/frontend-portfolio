@@ -1,22 +1,21 @@
-import './Projects';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+
 import { scrollToTop } from '../../utils/scrollToTop';
+
 import { useMainContext } from '../../context/MainContext';
-import { BackLink } from '../../components/BackLink/BackLink';
-import { projectsData } from '../../data/projectsData';
-import { ProjectsMobileItem } from '../../components/ProjectsMobileItem/ProjectsMobileItem';
-import { useMediaQuery } from 'react-responsive';
-import { ProjectsDesktopItem } from '../../components/ProjectsDesktopItem/ProjectsDesktopItem';
+
+import { BackLink } from '../../components/UI/BackLink/BackLink';
 import { ProjectsPageItem } from '../../components/ProjectsPageItem/ProjectsPageItem';
+
+import { projectsData } from '../../data/projectsData';
 
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();
-  const isDesktop = useMediaQuery({ query: '(max-width: 1279px)' });
 
   useEffect(() => {
     scrollToTop();
     setCurrentPage('projects');
-  }, []);
+  });
 
   return (
     <section id="projects" className="page projects">

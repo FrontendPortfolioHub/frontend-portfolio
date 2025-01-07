@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import './LanguageSelector';
-import { useMainContext } from '../../../context/MainContext';
 import classNames from 'classnames';
+
+import { useMainContext } from '../../../context/MainContext';
+
 
 export const LanguageSelector = () => {
   const { language, toggleLanguage } = useMainContext();

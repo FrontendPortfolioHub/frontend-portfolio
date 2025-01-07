@@ -1,5 +1,3 @@
-import './DownloadCvButton';
-
 export const DownloadCvButton = () => {
   return (
     <a
