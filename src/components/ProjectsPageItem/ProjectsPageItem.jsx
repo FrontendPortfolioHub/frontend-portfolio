@@ -7,6 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 export const ProjectsPageItem = ({ projectsItem }) => {
   const { type, description, technologies, projects, backImage } = projectsItem;
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [startX, setStartX] = useState(null);
   const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' });
 
   const handleNextSlide = () => {
@@ -29,6 +30,31 @@ export const ProjectsPageItem = ({ projectsItem }) => {
     setCurrentIndex(index);
   };
 
+  const handleTouchStart = (e) => {
+    setStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    if (startX === null) return;
+
+    const currentX = e.touches[0].clientX;
+    const diffX = startX - currentX;
+
+    if (diffX > 50) {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
+      setStartX(null);
+    } else if (diffX < -50) {
+      setCurrentIndex(
+        (prevIndex) => (prevIndex - 1 + projects.length) % projects.length,
+      );
+      setStartX(null);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setStartX(null);
+  };
+
   return (
     <div className="projects-card__inner">
       <div className={`projects-card-front projects-card-front--${backImage}`}>
@@ -46,7 +72,12 @@ export const ProjectsPageItem = ({ projectsItem }) => {
           </ul>
         </div>
       </div>
-      <div className="projects-card-back">
+      <div
+        className="projects-card-back"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <div className="projects-card-back__top">
           <h2 className="project-card__title">
             {projects[currentIndex].title}
