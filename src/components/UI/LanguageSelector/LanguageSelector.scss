@@ -1,8 +1,13 @@
 .language-selector {
-  position: relative;
+  position: absolute;
+  top: -70px;
   display: flex;
   align-items: center;
-  gap: 5px;
+
+  @include onTablet {
+    position: relative;
+    top: 0;
+  }
 }
 
 .language-selector__dropdown {

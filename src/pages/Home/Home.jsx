@@ -7,6 +7,7 @@ import { useMainContext } from '../../context/MainContext';
 
 import { StartPage } from '../../components/StartPage/StartPage';
 import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
+import { LanguageSelector } from '../../components/UI/LanguageSelector';
 
 import { homePageNavItems } from '../../data/homePageNavItems';
 
@@ -43,6 +44,7 @@ export const Home = () => {
       ) : (
         <div className="home-page__content">
           <div className="home-page__top">
+            <LanguageSelector />
             <h1 className="start-page__title text-primary">
               I<span>'</span>M <br /> Pavlo Maistrenko
             </h1>
