@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.815e254c.css",
-    "main.js": "/frontend-portfolio/static/js/main.ddfb87b0.js",
+    "main.css": "/frontend-portfolio/static/css/main.30a83bd2.css",
+    "main.js": "/frontend-portfolio/static/js/main.1666d3a3.js",
     "static/media/met.png": "/frontend-portfolio/static/media/met.b26b28daa917a73525a3.png",
     "static/media/maimi-condo-kings.png": "/frontend-portfolio/static/media/maimi-condo-kings.3a54e008612549765e45.png",
     "static/media/landing-pages.png": "/frontend-portfolio/static/media/landing-pages.985ff65d608dfc4f627e.png",
@@ -26,11 +26,11 @@
     "static/media/slider-arrow-left-grey.svg": "/frontend-portfolio/static/media/slider-arrow-left-grey.5831872fc074583427b0.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.815e254c.css.map": "/frontend-portfolio/static/css/main.815e254c.css.map",
-    "main.ddfb87b0.js.map": "/frontend-portfolio/static/js/main.ddfb87b0.js.map"
+    "main.30a83bd2.css.map": "/frontend-portfolio/static/css/main.30a83bd2.css.map",
+    "main.1666d3a3.js.map": "/frontend-portfolio/static/js/main.1666d3a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.815e254c.css",
-    "static/js/main.ddfb87b0.js"
+    "static/css/main.30a83bd2.css",
+    "static/js/main.1666d3a3.js"
   ]
 }
