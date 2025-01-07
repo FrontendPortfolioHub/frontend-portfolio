@@ -29,6 +29,10 @@
   text-transform: uppercase;
 }
 
+.start-page__title span {
+  color: $text-accent;
+}
+
 .start-page__content p span {
   margin-left: 4px;
   opacity: 0.1;

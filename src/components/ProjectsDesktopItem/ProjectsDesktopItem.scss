@@ -1,7 +1,11 @@
-.projects-page-item-card {
-  width: 500px;
+/*.projects-page-item-card {
   height: 370px;
   perspective: 1000px;
+
+  @include onDesktop {
+    width: 500px;
+  }
+
 }
 
 .projects-page-item__content {
@@ -83,4 +87,4 @@
   &--disable {
     background-image: url('../../assets/icons/slider-arrow-right-grey.svg');
   }
-}
+}*/

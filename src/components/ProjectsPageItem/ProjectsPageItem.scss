@@ -1,0 +1,289 @@
+.projects-card__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.projects-page-item:hover .projects-card__inner {
+  transform: rotateY(180deg);
+}
+
+.projects-card-front,
+.projects-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.projects-card-back {
+  transform: rotateY(180deg);
+}
+
+.projects-card-front__title {
+  margin-bottom: 20px;
+  font-size: 16px;
+
+  @include onTablet {
+    font-size: 18px;
+  }
+}
+
+.projects-card-front__description {
+  margin-bottom: 15px;
+  font-family: Roboto;
+  line-height: 135%;
+  font-size: 14px;
+
+  @include onTablet {
+    font-size: 16px;
+  }
+}
+
+.technologies__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @include onTablet {
+    gap: 8px;
+  }
+}
+
+.technologies__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: $text-primary;
+  line-height: 120%;
+  font-size: 14px;
+  font-weight: 300;
+
+  @include onTablet {
+    gap: 8px;
+    font-size: 16px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-image: url('../../assets/icons/arrow-accent-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.projects-card-front {
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.15;
+  }
+}
+
+.projects-card-front--strategic-agency {
+  &::after {
+    background-image: url('../../assets/images/projects/project-type-backgrounds/landing-pages.png');
+  }
+}
+
+.projects-card-front--tsk-manager__image {
+  &::after {
+    background-image: url('../../assets/images/projects/project-type-backgrounds/todo.png');
+  }
+}
+
+.projects-card-front--game__image {
+  &::after {
+    background-image: url('../../assets/images/projects/project-type-backgrounds/2048.png');
+  }
+}
+
+.projects-card-front--online-shop__image {
+  &::after {
+    background-image: url('../../assets/images/projects/project-type-backgrounds/online-catalogue.png');
+  }
+}
+
+.projects-card-front__content {
+  padding: 15px;
+}
+
+.projects-card-back {
+  padding-block: 15px;
+  padding-inline: 10px;
+}
+
+.projects-card-back__top {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card__title {
+  color: $color-primary;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+
+  @include onTablet {
+    font-size: 18px;
+  }
+}
+
+.project-card__links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @include onTablet {
+    gap: 20px;
+  }
+}
+
+.project-card__link {
+  width: 22px;
+  height: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include onTablet {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.project-link {
+  background-image: url('../../assets/icons/open-in-new-window-accent.svg');
+}
+
+.project-git-link {
+  background-image: url('../../assets/icons/git-hub_icon--green.svg');
+}
+
+.projects-card-back__action {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-card-back__action button {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.prev-button {
+  background-image: url('../../assets/icons/slider-arrow-left-accent.svg');
+
+  &--disable {
+    background-image: url('../../assets/icons/slider-arrow-left-grey.svg');
+  }
+}
+
+.next-button {
+  background-image: url('../../assets/icons/slider-arrow-right-accent.svg');
+
+  &--disable {
+    background-image: url('../../assets/icons/slider-arrow-right-grey.svg');
+  }
+}
+
+.project__image {
+  display: block;
+  height: 185px;
+  width: 100%;
+  min-width: 218px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px -1px 10px 5px rgba(100, 255, 218, 0.25);
+}
+
+.strategic-agency {
+  background-image: url('../../assets/images/projects/320px/strategic-agency.png');
+}
+
+.kate-vr {
+  background-image: url('../../assets/images/projects/320px/kat-vr.png');
+}
+
+.art-museum {
+  background-image: url('../../assets/images/projects/320px/namu.png');
+}
+
+.art-museum-2 {
+  background-image: url('../../assets/images/projects/320px/namu-new.png');
+}
+
+.met {
+  background-image: url('../../assets/images/projects/320px/met.png');
+}
+
+.kondo-kings {
+  background-image: url('../../assets/images/projects/320px/maimi-condo-kings.png');
+}
+
+.tsk-manager__image {
+  background-image: url('../../assets/images/projects/320px/todo.png');
+}
+
+.game__image {
+  background-image: url('../../assets/images/projects/320px/2048.png');
+}
+
+.online-shop__image {
+  background-image: url('../../assets/images/projects/320px/online-catalogue.png');
+}
+
+.dots-container {
+  display: flex;
+  padding-top: 25px;
+  justify-content: center;
+  gap: 2px;
+
+  @include onTablet {
+    padding-top: 30px;
+  }
+}
+
+.dot {
+  width: 35px;
+  height: 2px;
+  background-color: $color-secondary;
+  cursor: pointer;
+
+  @include onTablet {
+    width: 55px;
+  }
+}
+
+.dot--active {
+  background-color: $color-accent;
+}

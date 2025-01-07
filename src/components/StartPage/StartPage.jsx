@@ -12,7 +12,7 @@ export const StartPage = ({ isLoading }) => {
           })}
         >
           <h1 className="start-page__title text-primary">
-            I'M <br /> Pavlo Maistrenko
+            I<span>'</span>M <br /> Pavlo Maistrenko
           </h1>
           <p className="start-page__subtitle">Frontend Developer</p>
           <p className="text-accent">

@@ -41,7 +41,7 @@ export const Home = () => {
         <div className="home-page__content">
           <div className="home-page__top">
             <h1 className="start-page__title text-primary">
-              I'M <br /> Pavlo Maistrenko
+              I<span>'</span>M <br /> Pavlo Maistrenko
             </h1>
             <p className="start-page__subtitle">Frontend Developer</p>
           </div>

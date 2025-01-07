@@ -1,19 +1,17 @@
 .about-page__image {
   margin-bottom: 48px;
-  height: 177px;
+  height: 272px;
+  width: 272px;
   background-image: url('../../assets/images/about/main-photo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: 4px 4px 3px rgba(100, 255, 218, 0.25);
 
-  @include onTablet {
-    height: 274px;
-  }
-
   @include onDesktop {
     margin-bottom: 60px;
     height: 314px;
+    width: auto;
     grid-row: 1/3;
   }
 }

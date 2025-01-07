@@ -7,6 +7,7 @@ import { projectsData } from '../../data/projectsData';
 import { ProjectsMobileItem } from '../../components/ProjectsMobileItem/ProjectsMobileItem';
 import { useMediaQuery } from 'react-responsive';
 import { ProjectsDesktopItem } from '../../components/ProjectsDesktopItem/ProjectsDesktopItem';
+import { ProjectsPageItem } from '../../components/ProjectsPageItem/ProjectsPageItem';
 
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();
@@ -31,23 +32,13 @@ export const Projects = () => {
           Each project reflects my journey in mastering and applying new skills,
           as well as my commitment to creating quality solutions.
         </article>
-        {isDesktop ? (
-          <ul className="projects-page-list">
+        <ul className="projects-page-list">
             {projectsData.map((projectsItem) => (
               <li key={projectsItem.id} className="projects-page-item">
-                <ProjectsMobileItem projectsItem={projectsItem} />
+                <ProjectsPageItem projectsItem={projectsItem}/>
               </li>
             ))}
           </ul>
-        ) : (
-          <ul className="projects-page-list">
-            {projectsData.map((projectsItem) => (
-              <li key={projectsItem.id} className="projects-page-item--desktop">
-                <ProjectsDesktopItem projectsItem={projectsItem}/>
-              </li>
-            ))}
-          </ul>
-        )}
       </div>
     </section>
   );
