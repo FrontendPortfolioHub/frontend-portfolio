@@ -274,6 +274,7 @@
 }
 
 .dot {
+  position: relative;
   width: 35px;
   height: 2px;
   background-color: $color-secondary;
@@ -281,6 +282,17 @@
 
   @include onTablet {
     width: 55px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    background: transparent;
+    z-index: -1;
   }
 }
 
