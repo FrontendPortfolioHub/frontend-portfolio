@@ -49,7 +49,7 @@ export const About = () => {
                 },
               )}
             >
-              <span>...</span>more
+              <span>...</span>{t('more')}
             </button>
           </article>
           <article
@@ -69,7 +69,7 @@ export const About = () => {
                 onClick={() => setMoreInfoOpen(false)}
                 className="additional-information__button text-accent on-tablet--hidden"
               >
-                <span>...</span>less
+                <span>...</span>{t('less')}
               </button>
             </p>
           </article>

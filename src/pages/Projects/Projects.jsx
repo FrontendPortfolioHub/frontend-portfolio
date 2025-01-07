@@ -25,13 +25,11 @@ export const Projects = () => {
         <BackLink />
         <h1 className="page__title text-secondary">{t('projects').charAt(0).toUpperCase() + t('projects').slice(1)}</h1>
         <article className="projects-page__description text-secondary">
-          Here you will find projects that allowed me to learn and develop my
-          skills in core technologies such as{' '}
+          {t('projects page description part 1')}{' '}
           <span className="text-accent">
-            HTML, CSS, JavaScript, React, and much more....
+          {t('projects page description part 2')}
           </span>{' '}
-          Each project reflects my journey in mastering and applying new skills,
-          as well as my commitment to creating quality solutions.
+          {t('projects page description part 3')}
         </article>
         <ul className="projects-page-list">
             {projectsData.map((projectsItem) => (

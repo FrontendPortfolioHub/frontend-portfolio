@@ -62,7 +62,7 @@ export const ProjectsPageItem = ({ projectsItem }) => {
         <div className="projects-card-front__content">
           <h3 className="projects-card-front__title text-accent">{t(type)}</h3>
           <div className="projects-card-front__description text-primary">
-            {description}
+          {t(description)}
           </div>
           <ul className="technologies__list">
             {technologies.map((technology) => (

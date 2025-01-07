@@ -13,7 +13,7 @@ i18n
     fallbackLng: 'en',
     debug: true, // Показывать отладочные сообщения в консоли (включите только в разработке)
     interpolation: {
-      escapeValue: false, // Не экранируйте строки, React это делает автоматически
+      escapeValue: false,
     },
     resources: {
       en: { translation: enTranslation },

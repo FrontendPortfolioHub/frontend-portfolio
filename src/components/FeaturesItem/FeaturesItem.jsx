@@ -12,7 +12,7 @@ export const FeaturesItem = ({ title, features }) => {
         <ul className="feature-content__list">
           {features.map((feature) => (
             <li key={feature} className="feauture-content__item">
-              {feature}
+              {t(feature)}
             </li>
           ))}
         </ul>

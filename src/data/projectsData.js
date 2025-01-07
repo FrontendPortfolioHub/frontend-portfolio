@@ -70,7 +70,6 @@ export const projectsData = [
       'Fetch, Axios, REST API',
       'Figma',
       'Git/GitHub, Chrome Developer Tools',
-      'BEM',
     ],
     projects: [
       {
