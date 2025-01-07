@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -11,6 +12,7 @@ import { projectsData } from '../../data/projectsData';
 
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();
+  const { t } = useTranslation();
 
   useEffect(() => {
     scrollToTop();
@@ -21,7 +23,7 @@ export const Projects = () => {
     <section id="projects" className="page projects">
       <div className="container">
         <BackLink />
-        <h1 className="page__title text-secondary">Projects</h1>
+        <h1 className="page__title text-secondary">{t('projects').charAt(0).toUpperCase() + t('projects').slice(1)}</h1>
         <article className="projects-page__description text-secondary">
           Here you will find projects that allowed me to learn and develop my
           skills in core technologies such as{' '}

@@ -1,12 +1,21 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
+import i18n from '../config/i18n';
 
 const MainContext = createContext();
 
 export const MainProvider = ({ children }) => {
+  const savedLanguage = localStorage.getItem('language') || 'en';
   const [currentPage, setCurrentPage] = useState('home');
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState(savedLanguage);
 
-  const toggleLanguage = (lang) => setLanguage(lang);
+  useEffect(() => {
+    localStorage.setItem('language', language);
+    i18n.changeLanguage(language);
+  }, [language]);
+
+  const toggleLanguage = (lang) => {
+    setLanguage(lang);
+  };
 
   return (
     <MainContext.Provider

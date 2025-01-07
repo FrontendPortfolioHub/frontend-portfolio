@@ -6,10 +6,12 @@ import { useMainContext } from '../../context/MainContext';
 
 import { BackLink } from '../../components/UI/BackLink/BackLink';
 import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
+import { useTranslation } from 'react-i18next';
 
 export const Contacts = () => {
   const { setCurrentPage } = useMainContext();
   const [isMobile, setIsMobile] = useState(false);
+  const { t } = useTranslation();
 
   const checkMobile = () => {
     setIsMobile(window.innerWidth < 768);
@@ -27,7 +29,7 @@ export const Contacts = () => {
     <section id='contacts' className="page contacts">
       <div className="container">
         <BackLink />
-        <h1 className="page__title text-secondary">Contacts</h1>
+        <h1 className="page__title text-secondary">{t('contacts').charAt(0).toUpperCase() + t('contacts').slice(1)}</h1>
         <p className="contacts-page__description">Always in touch for you...</p>
         <ul className="contacts-list">
           <div className="grid">

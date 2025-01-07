@@ -20,11 +20,9 @@
 @import '../components/ProjectsPageItem/ProjectsPageItem';
 @import '../components/UI/LanguageSelector/LanguageSelector';
 @import '../components/UI/DownloadCvButton/DownloadCvButton';
-@import '../components/UI/ArrowButton/ArrowButton';
 
 
 body {
-  height: 100vh;
   font-family: 'Roboto Mono', monospace;
   color: $color-secondary;
 }

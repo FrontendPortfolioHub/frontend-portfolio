@@ -34,10 +34,10 @@
 
 .header__nav-list {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 
   @include onDesktop {
-    gap: 70px;
+    gap: 60px;
   }
 }
 

@@ -49,6 +49,7 @@
   font-family: 'Roboto', sans-serif;
   line-height: 175%;
   grid-row: 2/3;
+  text-align: justify;
 
   @include onDesktop {
     font-size: 22px;
@@ -102,6 +103,7 @@
   font-family: 'Roboto', sans-serif;
   line-height: 175%;
   overflow-x: auto;
+  text-align: justify;
 
   @include onDesktop {
     font-size: 20px;

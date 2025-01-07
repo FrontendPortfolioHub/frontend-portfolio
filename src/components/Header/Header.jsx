@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { LanguageSelector } from '../UI/LanguageSelector';
 import { DownloadCvButton } from '../UI/DownloadCvButton/DownloadCvButton';
 
 export const Header = () => {
   const [activeSection, setActiveSection] = useState('about');
+  const { t } = useTranslation();
 
   useEffect(() => {
     const sections = document.querySelectorAll('section');
@@ -45,7 +47,7 @@ export const Header = () => {
                     : 'heder__nav-link'
                 }
               >
-                .about
+                .{t('about')}
               </a>
             </li>
             <li className="header__nav-item">
@@ -57,7 +59,7 @@ export const Header = () => {
                     : 'heder__nav-link'
                 }
               >
-                .projects
+                .{t('projects')}
               </a>
             </li>
             <li className="header__nav-item">
@@ -69,7 +71,7 @@ export const Header = () => {
                     : 'heder__nav-link'
                 }
               >
-                .contacts
+                .{t('contacts')}
               </a>
             </li>
           </ul>

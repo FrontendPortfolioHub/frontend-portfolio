@@ -2,12 +2,14 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import classNames from 'classnames';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
 
 export const ProjectsPageItem = ({ projectsItem }) => {
   const { type, description, technologies, projects, backImage } = projectsItem;
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startX, setStartX] = useState(null);
   const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' });
+  const { t } = useTranslation();
 
   const handleNextSlide = () => {
     if (currentIndex === projects.length - 1) {
@@ -58,7 +60,7 @@ export const ProjectsPageItem = ({ projectsItem }) => {
     <div className="projects-card__inner">
       <div className={`projects-card-front projects-card-front--${backImage}`}>
         <div className="projects-card-front__content">
-          <h3 className="projects-card-front__title text-accent">{type}</h3>
+          <h3 className="projects-card-front__title text-accent">{t(type)}</h3>
           <div className="projects-card-front__description text-primary">
             {description}
           </div>
@@ -79,7 +81,7 @@ export const ProjectsPageItem = ({ projectsItem }) => {
       >
         <div className="projects-card-back__top">
           <h2 className="project-card__title">
-            {projects[currentIndex].title}
+            {t(`${projects[currentIndex].title}`)}
           </h2>
           <div className="project-card__links">
             <Link
