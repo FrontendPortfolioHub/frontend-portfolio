@@ -49,19 +49,21 @@
 
   input {
     padding: 5px 0 8px 8px;
-    width: 228px;
     border-bottom: 0.5px solid $color-secondary;
 
     &::placeholder {
       color: $color-secondary;
       opacity: 0.3;
     }
+
+    @include onTablet {
+      width: 228px;
+    }
   }
 
   textarea {
     padding: 5px 8px;
     margin-bottom: 25px;
-    width: 228px;
     border: 0.5px solid $color-secondary;
 
     &::placeholder {
@@ -79,6 +81,10 @@
     @include onDesktop {
       width: 450px;
     }
+  }
+
+  @include onTablet {
+    width: 228px;
   }
 }
 

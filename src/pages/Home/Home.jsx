@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -14,6 +15,7 @@ import { homePageNavItems } from '../../data/homePageNavItems';
 export const Home = () => {
   const { setCurrentPage } = useMainContext();
   const [isLoading, setIsLoading] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     scrollToTop();
@@ -59,8 +61,7 @@ export const Home = () => {
                     className="mobile__nav-link"
                     onClick={handleMenuState}
                   >
-                    <span>.</span>
-                    {`${item.label}`}
+                    {`.${t(item.label)}`}
                   </NavLink>
                 </li>
               ))}
@@ -72,7 +73,7 @@ export const Home = () => {
                 }}
               >
                 <p className="mobile__nav-link">
-                  <span>.</span>to start
+                  <span>.</span>{t('to start')}
                 </p>
               </button>
             </ul>
