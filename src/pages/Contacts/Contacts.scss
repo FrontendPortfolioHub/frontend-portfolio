@@ -4,10 +4,10 @@
 }
 
 .contacts-page__description {
-  padding-bottom: 40px;
+  padding-bottom: 26px;
   font-family: 'Roboto', sans-serif;
   line-height: 175%;
-  font-size: 20px;
+  font-size: 18px;
 
   @include onTablet {
     font-size: 24px;
@@ -33,6 +33,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 175%;
+  font-size: 14px;
 }
 
 .contacts-link {
