@@ -46,13 +46,13 @@ export const Home = () => {
       ) : (
         <div className="home-page__content">
           <div className="home-page__top">
-            <LanguageSelector />
             <h1 className="start-page__title text-primary">
               I<span>'</span>M <br /> Pavlo Maistrenko
             </h1>
             <p className="start-page__subtitle">Frontend Developer</p>
           </div>
           <nav className="mobile__nav">
+            <LanguageSelector />
             <ul className="mobile__nav-list">
               {homePageNavItems.map((item) => (
                 <li key={item.id} className="mobile__nav-item">

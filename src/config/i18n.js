@@ -11,7 +11,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: true, // Показывать отладочные сообщения в консоли (включите только в разработке)
+    debug: false,
     interpolation: {
       escapeValue: false,
     },

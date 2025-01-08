@@ -20,8 +20,8 @@ export const FooterMobile = () => {
           </li>
           <li className="footer__nav-item">
             {currentPage === 'about' && <Link to="/projects" className="footer__nav-link">.{t('projects')}</Link>}
-            {currentPage === 'projects' && <Link to="/contacts" className="footer__nav-link">.{t('kontakte')}</Link>}
-            {currentPage === 'contacts' && <Link to="/about" className="footer__nav-link">.{t('über mich')}</Link>}
+            {currentPage === 'projects' && <Link to="/contacts" className="footer__nav-link">.{t('contacts')}</Link>}
+            {currentPage === 'contacts' && <Link to="/about" className="footer__nav-link">.{t('about')}</Link>}
           </li>
           <li className="footer__nav-item">
             <button onClick={() => scrollToTop()} className="footer__nav-link">.{t('to top')}</button>

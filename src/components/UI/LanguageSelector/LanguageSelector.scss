@@ -1,22 +1,23 @@
 .language-selector {
-  position: absolute;
-  top: -70px;
   display: flex;
   align-items: center;
+  gap: 10px;
 
   @include onTablet {
     position: relative;
-    top: 0;
   }
 }
 
 .language-selector__dropdown {
-  position: absolute;
   display: flex;
-  flex-direction: column;
   align-items: center;
   top: 36px;
-  gap: 5px;
+  gap: 10px;
+
+  @include onTablet {
+    position: absolute;
+    flex-direction: column;
+  }
 }
 
 .language-selector__item {

@@ -11,7 +11,7 @@
 
 .home-page__top {
   position: relative;
-  bottom: 100px;
+  bottom: 35px;
   text-align: center;
 }
 
@@ -20,7 +20,10 @@
 }
 
 .mobile__nav {
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
 
   @include onTablet {
     display: none;

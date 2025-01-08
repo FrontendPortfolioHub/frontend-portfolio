@@ -59,12 +59,23 @@
     @include onTablet {
       width: 228px;
     }
+
+    @include onDesktop {
+      width: 450px;
+    }
+  }
+
+  input:-webkit-autofill {
+    background-color: #000 !important;  /* Цвет фона при фокусе */
+    color: #333 !important;  /* Цвет текста при фокусе */
+    border: 2px solid #0077cc !important;  /* Цвет границы при фокусе */
   }
 
   textarea {
     padding: 5px 8px;
     margin-bottom: 25px;
     border: 0.5px solid $color-secondary;
+    resize: none;
 
     &::placeholder {
       color: $color-secondary;
@@ -73,12 +84,6 @@
 
     @include onDesktop {
       margin-bottom: 50px;
-      width: 450px;
-    }
-  }
-
-  & input {
-    @include onDesktop {
       width: 450px;
     }
   }

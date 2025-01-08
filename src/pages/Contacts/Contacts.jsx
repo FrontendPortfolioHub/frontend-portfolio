@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import emailjs from 'emailjs-com';
 
 import { scrollToTop } from '../../utils/scrollToTop';
 
@@ -9,9 +10,49 @@ import { BackLink } from '../../components/UI/BackLink/BackLink';
 import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
 
 export const Contacts = () => {
-  const { setCurrentPage } = useMainContext();
+  const { currentPage, setCurrentPage } = useMainContext();
   const [isMobile, setIsMobile] = useState(false);
   const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [statusMessage, setStatusMessage] = useState('');
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_a5fzh9o',
+        'template_m0i6rei',
+        event.target,
+        'Z9jQH0HnTBFeGnW2W',
+      )
+      .then(
+        (result) => {
+          setStatusMessage('Сообщение отправлено успешно!');
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+          });
+        },
+        (error) => {
+          setStatusMessage('Произошла ошибка. Попробуйте снова.');
+          console.error(error.text);
+        },
+      );
+  };
 
   const checkMobile = () => {
     setIsMobile(window.innerWidth < 768);
@@ -23,14 +64,18 @@ export const Contacts = () => {
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
-  });
+  }, [currentPage, setCurrentPage]);
 
   return (
-    <section id='contacts' className="page contacts">
+    <section id="contacts" className="page contacts">
       <div className="container">
         <BackLink />
-        <h1 className="page__title text-secondary">{t('contacts').charAt(0).toUpperCase() + t('contacts').slice(1)}</h1>
-        <p className="contacts-page__description">{t('Always in touch for you...')}</p>
+        <h1 className="page__title text-secondary">
+          {t('contacts').charAt(0).toUpperCase() + t('contacts').slice(1)}
+        </h1>
+        <p className="contacts-page__description">
+          {t('Always in touch for you...')}
+        </p>
         <ul className="contacts-list">
           <div className="grid">
             <li className="contacts-item grid__item--tablet-1-2 grid__item--desktop-2-4">
@@ -56,7 +101,9 @@ export const Contacts = () => {
               </a>
             </li>
             <li className="contacts-item grid__item--tablet-1-2 grid__item--desktop-2-4">
-              <p className="contacts-title text-secondary">{t('Drop me a line...')}</p>
+              <p className="contacts-title text-secondary">
+                {t('Drop me a line...')}
+              </p>
               <a
                 href="mailto:maystrenko.p@gmail.com"
                 target="_blank"
@@ -68,7 +115,9 @@ export const Contacts = () => {
             </li>
             {!isMobile && (
               <li className="contacts-item grid__item--tablet-1-2 grid__item--desktop-2-4">
-                <p className="contacts-title text-secondary">{t('Follow me...')}</p>
+                <p className="contacts-title text-secondary">
+                  {t('Follow me...')}
+                </p>
                 <SocialLinks />
               </li>
             )}
@@ -76,12 +125,18 @@ export const Contacts = () => {
               <p className="contacts-title text-secondary">
                 {t('or use the form below...')}
               </p>
-              <form action="/submit" method="post" className="contact-form">
+              <form
+                className="contact-form"
+                onSubmit={handleSubmit}
+
+              >
                 <label htmlFor="name" />
                 <input
                   type="text"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   placeholder={t('Your name...')}
                   required
                 />
@@ -91,6 +146,8 @@ export const Contacts = () => {
                   type="email"
                   id="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   placeholder={t('Your e-mail...')}
                   required
                 />
@@ -99,6 +156,8 @@ export const Contacts = () => {
                 <textarea
                   id="message"
                   name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   placeholder={t('Your message...')}
                   rows="5"
                   required
