@@ -1,7 +1,7 @@
 .about-page__image {
   margin-bottom: 48px;
-  height: 272px;
-  width: 272px;
+  height: 230px;
+  width: 230px;
   background-image: url('../../assets/images/about/main-photo.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -10,8 +10,8 @@
 
   @include onDesktop {
     margin-bottom: 60px;
-    height: 314px;
-    width: auto;
+    height: 285px;
+    width: 285px;
     grid-row: 1/3;
   }
 }
