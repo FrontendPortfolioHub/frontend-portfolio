@@ -5,6 +5,7 @@
 
   @include onTablet {
     position: relative;
+    gap: 10px;
   }
 }
 
@@ -16,7 +17,9 @@
 
   @include onTablet {
     position: absolute;
+    top: 44px;
     flex-direction: column;
+    gap: 10px;
   }
 }
 

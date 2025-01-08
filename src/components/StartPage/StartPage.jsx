@@ -1,21 +1,18 @@
-import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
 
-export const StartPage = ({ isLoading }) => {
+export const StartPage = () => {
+  const { t } = useTranslation();
 
   return (
     <div className="start-page">
       <div className="container">
-        <div
-          className={classNames('start-page__content', {
-            'start-page__content--active': isLoading,
-          })}
-        >
+        <div className="start-page__content">
           <h1 className="start-page__title text-primary">
             I<span>'</span>M <br /> Pavlo Maistrenko
           </h1>
-          <p className="start-page__subtitle">Frontend Developer</p>
+          <p className="start-page__subtitle">{t('position')}</p>
           <p className="text-accent">
-            with passion to creating and improving
+            {t('with passion to creating and improving')}
             <span>.</span>
             <span>.</span>
             <span>.</span>

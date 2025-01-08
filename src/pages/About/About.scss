@@ -40,7 +40,7 @@
 
   @include onDesktop {
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -53,7 +53,7 @@
   font-size: 14px;
 
   @include onDesktop {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -107,7 +107,7 @@
   text-align: justify;
 
   @include onDesktop {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

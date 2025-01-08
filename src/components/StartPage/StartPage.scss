@@ -3,28 +3,18 @@
 }
 
 .start-page__content {
-  height: 75vh;
+  height: 50vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 20px;
-  opacity: 0.1;
-  filter: grayscale(100%);
 
   & p {
     line-height: 175%;
   }
-
-  &--active {
-    transition: opacity 3s;
-    opacity: 1;
-    filter: grayscale(0);
-  }
 }
 
 .start-page__title {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 900;
   text-transform: uppercase;
 }

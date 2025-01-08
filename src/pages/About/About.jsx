@@ -38,7 +38,7 @@ export const About = () => {
             <p className="greeting text-accent">{t('gretings')}</p>
             <p className="name text-primary">{t('name')}</p>
           </div>
-          <article className="short-description text-secondary grid__item--tablet-1-2 grid__item--desktop-5-9">
+          <article className="short-description text-secondary grid__item--tablet-1-2 grid__item--desktop-5-8">
             {t('short description')}
             <button
               onClick={() => setMoreInfoOpen(true)}
