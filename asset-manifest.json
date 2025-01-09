@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontend-portfolio/static/css/main.f0b04cd1.css",
+    "main.css": "/frontend-portfolio/static/css/main.6bb2cf05.css",
     "main.js": "/frontend-portfolio/static/js/main.341638c0.js",
     "static/media/MET.png": "/frontend-portfolio/static/media/MET.14aab0f2c24694028ff7.png",
     "static/media/met.png": "/frontend-portfolio/static/media/met.b26b28daa917a73525a3.png",
@@ -17,22 +17,27 @@
     "static/media/2048.png": "/frontend-portfolio/static/media/2048.b16b337313dbdf1158da.png",
     "static/media/cv-download.svg": "/frontend-portfolio/static/media/cv-download.bdc3d9187494f99ade5e.svg",
     "index.html": "/frontend-portfolio/index.html",
+    "static/media/cv-download-dark.svg": "/frontend-portfolio/static/media/cv-download-dark.e570cdc021cb449a1dcb.svg",
     "static/media/git-hub_icon--green.svg": "/frontend-portfolio/static/media/git-hub_icon--green.5f57d8398ff0e314e787.svg",
+    "static/media/git-hub_icon--light.svg": "/frontend-portfolio/static/media/git-hub_icon--light.47495e3f1c0395823587.svg",
     "static/media/open-in-new-window-accent.svg": "/frontend-portfolio/static/media/open-in-new-window-accent.d3af0b4236a850dda9e3.svg",
     "static/media/linked-in_icon--green.svg": "/frontend-portfolio/static/media/linked-in_icon--green.b9b144fbbaa251ad3c2c.svg",
+    "static/media/open-in-new-window.svg": "/frontend-portfolio/static/media/open-in-new-window.1bdd5760bb3d0b92b5be.svg",
     "static/media/send-button-accent.svg": "/frontend-portfolio/static/media/send-button-accent.d3dcfa5dfc7016fd7c19.svg",
+    "static/media/send-button-dark.svg": "/frontend-portfolio/static/media/send-button-dark.199819c0b0318f9c1cd7.svg",
     "static/media/global-arrow-accent.svg": "/frontend-portfolio/static/media/global-arrow-accent.cd5de4ae1c6b7f0619bf.svg",
+    "static/media/global-arrow-dark.svg": "/frontend-portfolio/static/media/global-arrow-dark.40bef20b1aac99f98be3.svg",
     "static/media/slider-arrow-right-accent.svg": "/frontend-portfolio/static/media/slider-arrow-right-accent.fe45c0a790d8ba8d3d0b.svg",
     "static/media/slider-arrow-right-grey.svg": "/frontend-portfolio/static/media/slider-arrow-right-grey.2d5a7d83402883cbbb04.svg",
     "static/media/slider-arrow-left-accent.svg": "/frontend-portfolio/static/media/slider-arrow-left-accent.f34c845c4f11c9141002.svg",
     "static/media/slider-arrow-left-grey.svg": "/frontend-portfolio/static/media/slider-arrow-left-grey.5831872fc074583427b0.svg",
     "static/media/arrow-accent-right.svg": "/frontend-portfolio/static/media/arrow-accent-right.968bc592074ed31b57a5.svg",
     "static/media/arrow-accent-left.svg": "/frontend-portfolio/static/media/arrow-accent-left.cac1e3a641f65b1dd5ae.svg",
-    "main.f0b04cd1.css.map": "/frontend-portfolio/static/css/main.f0b04cd1.css.map",
+    "main.6bb2cf05.css.map": "/frontend-portfolio/static/css/main.6bb2cf05.css.map",
     "main.341638c0.js.map": "/frontend-portfolio/static/js/main.341638c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0b04cd1.css",
+    "static/css/main.6bb2cf05.css",
     "static/js/main.341638c0.js"
   ]
 }
