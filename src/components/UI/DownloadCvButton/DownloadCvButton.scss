@@ -15,6 +15,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 175%;
+  transition: all 0.3s;
 
   @include onTablet {
     margin: 0;
@@ -28,5 +29,13 @@
     background-image: url('../../../assets/icons/cv-download.svg');
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $color-accent;
+    color: $background-color;
+    &::before {
+      background-image: url('../../../assets/icons/cv-download-dark.svg');
+    }
   }
 }

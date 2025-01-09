@@ -172,11 +172,21 @@
 }
 
 .project-link {
-  background-image: url('../../assets/icons/open-in-new-window-accent.svg');
+  background-image: url('../../assets/icons/open-in-new-window.svg');
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-image: url('../../assets/icons/open-in-new-window-accent.svg');
+  }
 }
 
 .project-git-link {
-  background-image: url('../../assets/icons/git-hub_icon--green.svg');
+  background-image: url('../../assets/icons/git-hub_icon--light.svg');
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-image: url('../../assets/icons/git-hub_icon--green.svg');
+  }
 }
 
 .projects-card-back__action {

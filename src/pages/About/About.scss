@@ -6,13 +6,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: 4px 4px 3px rgba(100, 255, 218, 0.25);
+  box-shadow: 8px 10px 3px rgba(100, 255, 218, 0.25);
+  transition: all 0.5s;
 
   @include onDesktop {
     margin-bottom: 60px;
     height: 285px;
     width: 285px;
     grid-row: 1/3;
+  }
+
+  &:hover {
+    transform: scale(105%);
+    box-shadow:none
   }
 }
 
@@ -130,7 +136,12 @@
 }
 
 .features__item {
+  transition: transform 0.5s ease;
   @include onDesktop {
     width: 326px;
+  }
+
+  &:hover {
+    transform: scale(105%);
   }
 }

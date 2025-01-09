@@ -28,14 +28,20 @@
   width: 280px;
   height: 300px;
   min-width: 280px;
-  box-shadow: 1px -1px 10px 5px rgba(100, 255, 218, 0.2);
+  box-shadow: 1px -1px 10px 5px rgba(204, 214, 246, 0.2);
   border-radius: 6px;
   background: linear-gradient(
     180deg,
     rgba(10, 25, 47, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
+  transition: all 0.5s ease;
   perspective: 1000px;
+
+  &:hover {
+    transform: scale(105%);
+    box-shadow: 1px -1px 10px 5px rgba(100, 255, 218, 0.5);
+  }
 
   @include onTablet {
     height: 318px;
