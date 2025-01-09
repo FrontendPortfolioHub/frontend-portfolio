@@ -15,7 +15,7 @@ export const ScrollReveal = ({ children }) => {
           setIsVisible(false);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.5 }
     );
 
     if (elementRef.current) {
