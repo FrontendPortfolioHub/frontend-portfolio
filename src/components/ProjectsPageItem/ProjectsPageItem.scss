@@ -245,38 +245,182 @@
 
 .strategic-agency {
   background-image: url('../../assets/images/projects/320px/strategic-agency.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/strategic-agency.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/strategic-agency.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/strategic-agency.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/strategic-agency.png');
+  }
 }
 
 .kate-vr {
   background-image: url('../../assets/images/projects/320px/kat-vr.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/kat-vr.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/kat-vr.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/kat-vr.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/kat-vr.png');
+  }
 }
 
 .art-museum {
   background-image: url('../../assets/images/projects/320px/namu.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/namu.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/namu.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/namu.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/namu.png');
+  }
 }
 
 .art-museum-2 {
   background-image: url('../../assets/images/projects/320px/namu-new.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/namu-new.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/namu-new.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/namu-new.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/namu-new.png');
+  }
 }
 
 .met {
   background-image: url('../../assets/images/projects/320px/met.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/MET.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/MET.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/MET.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/MET.png');
+  }
 }
 
 .kondo-kings {
   background-image: url('../../assets/images/projects/320px/maimi-condo-kings.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/miami.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/miami.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/miami.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/miami.png');
+  }
 }
 
 .tsk-manager__image {
   background-image: url('../../assets/images/projects/320px/todo.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/todo.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/todo.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/todo.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/todo.png');
+  }
 }
 
 .game__image {
   background-image: url('../../assets/images/projects/320px/2048.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/2048.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/2048.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/2048.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/2048.png');
+  }
 }
 
 .online-shop__image {
   background-image: url('../../assets/images/projects/320px/online-catalogue.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/online-catalogue.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/online-catalogue.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/online-catalogue.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/online-catalogue.png');
+  }
 }
 
 .dots-container {
