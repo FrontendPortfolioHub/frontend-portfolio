@@ -12,6 +12,7 @@ import { DownloadCvButton } from '../../components/UI/DownloadCvButton/DownloadC
 import { FeaturesItem } from '../../components/FeaturesItem/FeaturesItem';
 
 import { featuresData } from '../../data/aboutPageFeatures';
+import { ScrollReveal } from '../../components/ScrollReveal/ScrollReveal';
 
 export const About = () => {
   const { setCurrentPage } = useMainContext();
@@ -31,7 +32,9 @@ export const About = () => {
     <section id="about" className="page about">
       <div className="container">
         <BackLink />
-        <h1 className="page__title text-secondary">{t('about').charAt(0).toUpperCase() + t('about').slice(1)}</h1>
+        <h1 className="page__title text-secondary">
+          {t('about').charAt(0).toUpperCase() + t('about').slice(1)}
+        </h1>
         <div className="grid">
           <div className="about-page__image grid__item--tablet-1-2 grid__item--desktop-1-3"></div>
           <div className="greeting__block grid__item--tablet-3-4 grid__item--desktop-5-9">
@@ -49,7 +52,8 @@ export const About = () => {
                 },
               )}
             >
-              <span>...</span>{t('more')}
+              <span>...</span>
+              {t('more')}
             </button>
           </article>
           <article
@@ -61,22 +65,25 @@ export const About = () => {
             )}
           >
             <h2 className="additional-information__title text-primary">
-            {t('additional information title')}
+              {t('additional information title')}
             </h2>
             <p className="additional-information__text text-secondary ">
-            {t('additional information')}
+              {t('additional information')}
               <button
                 onClick={() => setMoreInfoOpen(false)}
                 className="additional-information__button text-accent on-tablet--hidden"
               >
-                <span>...</span>{t('less')}
+                <span>...</span>
+                {t('less')}
               </button>
             </p>
           </article>
           <ul className="features__list grid__item--tablet-3-4 grid__item--desktop-1-9">
             {featuresData.map((item) => (
               <li key={item.id} className="features__item">
-                <FeaturesItem title={item.title} features={item.features} />
+                <ScrollReveal>
+                  <FeaturesItem title={item.title} features={item.features} />
+                </ScrollReveal>
               </li>
             ))}
           </ul>

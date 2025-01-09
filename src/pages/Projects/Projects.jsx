@@ -9,6 +9,7 @@ import { BackLink } from '../../components/UI/BackLink/BackLink';
 import { ProjectsPageItem } from '../../components/ProjectsPageItem/ProjectsPageItem';
 
 import { projectsData } from '../../data/projectsData';
+import { ScrollReveal } from '../../components/ScrollReveal/ScrollReveal';
 
 export const Projects = () => {
   const { setCurrentPage } = useMainContext();
@@ -33,9 +34,11 @@ export const Projects = () => {
         </article>
         <ul className="projects-page-list">
             {projectsData.map((projectsItem) => (
-              <li key={projectsItem.id} className="projects-page-item">
+              <ScrollReveal key={projectsItem.id}>
+                <li className="projects-page-item">
                 <ProjectsPageItem projectsItem={projectsItem}/>
               </li>
+              </ScrollReveal>
             ))}
           </ul>
       </div>
