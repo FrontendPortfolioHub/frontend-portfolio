@@ -24,23 +24,28 @@ export const Projects = () => {
     <section id="projects" className="page projects">
       <div className="container">
         <BackLink />
-        <h1 className="page__title text-secondary">{t('projects').charAt(0).toUpperCase() + t('projects').slice(1)}</h1>
-        <article className="projects-page__description text-secondary">
-          {t('projects page description part 1')}{' '}
-          <span className="text-accent">
-          {t('projects page description part 2')}
-          </span>{' '}
-          {t('projects page description part 3')}
-        </article>
+        <ScrollReveal>
+          <h1 className="page__title text-secondary">
+            {t('projects').charAt(0).toUpperCase() + t('projects').slice(1)}
+          </h1>
+          <article className="projects-page__description text-secondary">
+            {t('projects page description part 1')}{' '}
+            <span className="text-accent">
+              {t('projects page description part 2')}
+            </span>{' '}
+            {t('projects page description part 3')}
+          </article>
+        </ScrollReveal>
+
         <ul className="projects-page-list">
-            {projectsData.map((projectsItem) => (
-              <ScrollReveal key={projectsItem.id}>
-                <li className="projects-page-item">
-                <ProjectsPageItem projectsItem={projectsItem}/>
+          {projectsData.map((projectsItem) => (
+            <ScrollReveal key={projectsItem.id}>
+              <li className="projects-page-item">
+                <ProjectsPageItem projectsItem={projectsItem} />
               </li>
-              </ScrollReveal>
-            ))}
-          </ul>
+            </ScrollReveal>
+          ))}
+        </ul>
       </div>
     </section>
   );

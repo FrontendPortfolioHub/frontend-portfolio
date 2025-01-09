@@ -1,21 +1,18 @@
 import { useState, useEffect, useRef } from 'react';
 import './ScrollReveal';
 
-
 export const ScrollReveal = ({ children }) => {
   const elementRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isRevealed, setIsRevealed] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
+        if (entry.isIntersecting && !isRevealed) {
+          setIsRevealed(true);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (elementRef.current) {
@@ -27,12 +24,12 @@ export const ScrollReveal = ({ children }) => {
         observer.unobserve(elementRef.current);
       }
     };
-  }, []);
+  }, [isRevealed]);
 
   return (
     <div
       ref={elementRef}
-      className={`scroll-reveal ${isVisible ? 'visible' : ''}`}
+      className={`element--hidden ${isRevealed ? 'revealed' : ''}`}
     >
       {children}
     </div>

@@ -1,10 +1,10 @@
-.scroll-reveal {
+.element--hidden {
   opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
+  transform: translateY(150px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.scroll-reveal.visible {
+.revealed {
   opacity: 1;
   transform: translateY(0);
 }
