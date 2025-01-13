@@ -74,8 +74,8 @@ export const projectsData = [
     projects: [
       {
         title: 'Todo App',
-        projectLink: 'https://paulmaistrenko.github.io/react_todo-app/',
-        codeLink: 'https://github.com/PaulMaistrenko/react_todo-app',
+        projectLink: 'https://frontendportfoliohub.github.io/react-todo-app/',
+        codeLink: 'https://github.com/FrontendPortfolioHub/react-todo-app/tree/main/src',
         backImageLink: 'tsk-manager__image',
       },
     ],
