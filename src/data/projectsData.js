@@ -97,9 +97,9 @@ export const projectsData = [
     projects: [
       {
         title: '2048',
-        projectLink: 'https://paulmaistrenko.github.io/js_2048_game/',
+        projectLink: 'https://frontendportfoliohub.github.io/js-2048/',
         codeLink:
-          'https://github.com/PaulMaistrenko/js_2048_game/tree/master/src',
+          'https://github.com/FrontendPortfolioHub/js-2048',
         backImageLink: 'game__image',
       },
     ],
