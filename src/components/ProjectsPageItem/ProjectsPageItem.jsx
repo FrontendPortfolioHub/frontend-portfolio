@@ -3,6 +3,7 @@ import { useState } from 'react';
 import classNames from 'classnames';
 import { useMediaQuery } from 'react-responsive';
 import { useTranslation } from 'react-i18next';
+import { Notification } from '../Notification/Notification';
 
 export const ProjectsPageItem = ({ projectsItem }) => {
   const { type, description, technologies, projects, backImage } = projectsItem;
@@ -79,6 +80,7 @@ export const ProjectsPageItem = ({ projectsItem }) => {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
+        {projects[currentIndex].title === 'Gadgets Market' && <Notification />}
         <div className="projects-card-back__top">
           <h2 className="project-card__title">
             {t(`${projects[currentIndex].title}`)}

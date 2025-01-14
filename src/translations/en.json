@@ -43,5 +43,8 @@
   "Your name...": "Your name...",
   "Your e-mail...": "Your e-mail...",
   "Your message...": "Your message...",
-  "Send": "Send"
+  "Send": "Send",
+  "Sorry": "Sorry",
+  "Notification text": "This project is adapted for screen resolutions of 1154 px and above. You will be able to access this link from your laptop or desktop computer. The mobile version is currently under development.",
+  "close": "close"
 }
