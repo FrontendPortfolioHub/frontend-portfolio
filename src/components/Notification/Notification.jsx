@@ -11,10 +11,6 @@ export const Notification = () => {
     }
   }, [isVisible]);
 
-  const closeNotification = () => {
-    setIsVisible(false);
-  };
-
   return (
     isVisible && (
       <div className="notification">
@@ -24,12 +20,6 @@ export const Notification = () => {
             'Notification text',
           )}
         </p>
-        <button
-          className="close-notification-button text-accent"
-          onClick={closeNotification}
-        >
-          {t(`${'close'}...`)}
-        </button>
       </div>
     )
   );
