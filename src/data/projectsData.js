@@ -108,7 +108,7 @@ export const projectsData = [
     id: 4,
     type: 'Online-store',
     backImage: 'online-shop__image',
-    description: 'Gadgets catalog for 1440px - screen resolution.',
+    description: 'Gadgets catalog.',
     technologies: [
       'JavaScript',
       'HTML,CSS,Sass(SCSS)',
