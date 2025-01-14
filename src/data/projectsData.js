@@ -16,6 +16,13 @@ export const projectsData = [
       'Pixel-perfect adaptive landing pages: crisp design, flawless responsiveness, maximum conversion.',
     projects: [
       {
+        title: 'Kickstarter',
+        projectLink: 'https://paulmaistrenko.github.io/Kickstarter/',
+        codeLink:
+          'https://github.com/PaulMaistrenko/Kickstarter/tree/master/src',
+        backImageLink: 'kickstarter',
+      },
+      {
         title: 'Kate VR',
         projectLink: 'https://paulmaistrenko.github.io/layout_KateVR/',
         codeLink:

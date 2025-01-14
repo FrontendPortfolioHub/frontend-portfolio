@@ -253,6 +253,26 @@
   }
 }
 
+.kickstarter {
+  background-image: url('../../assets/images/projects/320px/kickstarter.png');
+
+  @media (min-width: 480px) {
+    background-image: url('../../assets/images/projects/480px/kickstarter.png');
+  }
+
+  @media (min-width: 560px) {
+    background-image: url('../../assets/images/projects/560px/kickstarter.png');
+  }
+
+  @media (min-width: 640px) {
+    background-image: url('../../assets/images/projects/640px/kickstarter.png');
+  }
+
+  @include onDesktop {
+    background-image: url('../../assets/images/projects/560px/kickstarter.png');
+  }
+}
+
 .strategic-agency {
   background-image: url('../../assets/images/projects/320px/strategic-agency.png');
 
