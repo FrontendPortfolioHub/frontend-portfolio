@@ -6,6 +6,7 @@
   height: 50vh;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   gap: 20px;
 
   & p {
@@ -14,6 +15,7 @@
 }
 
 .start-page__title {
+  margin-top: 30px;
   font-size: 26px;
   font-weight: 900;
   text-transform: uppercase;

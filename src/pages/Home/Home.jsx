@@ -11,10 +11,12 @@ import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
 import { LanguageSelector } from '../../components/UI/LanguageSelector';
 
 import { homePageNavItems } from '../../data/homePageNavItems';
+import { MainLogo } from '../../components/UI/MainLogo';
 
 export const Home = () => {
   const { setCurrentPage } = useMainContext();
   const [isLoading, setIsLoading] = useState(true);
+  
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -45,6 +47,7 @@ export const Home = () => {
         <StartPage isLoading={isLoading} />
       ) : (
         <div className="home-page__content">
+          <MainLogo />
           <div className="home-page__top">
             <h1 className="start-page__title text-primary">
               I<span>'</span>M <br /> Pavlo Maistrenko
@@ -73,7 +76,8 @@ export const Home = () => {
                 }}
               >
                 <p className="mobile__nav-link">
-                  <span>.</span>{t('to start')}
+                  <span>.</span>
+                  {t('to start')}
                 </p>
               </button>
             </ul>

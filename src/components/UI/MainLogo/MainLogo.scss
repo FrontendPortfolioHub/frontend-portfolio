@@ -1,0 +1,19 @@
+.main-logo {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 85px;
+  height: 85px;
+  background-image: url('../../../assets/icons/PM-logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.main-logo--visible {
+  opacity: 1;
+}

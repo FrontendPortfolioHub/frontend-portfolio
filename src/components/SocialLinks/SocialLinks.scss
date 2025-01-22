@@ -1,7 +1,6 @@
 .social__links {
-  position: relative;
-  top: 95px;
-  margin-top: 6px;
+  position: fixed;
+  bottom: 50px;
 
   @include onTablet {
     position: sticky;
