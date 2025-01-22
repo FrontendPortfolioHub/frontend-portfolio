@@ -13,6 +13,7 @@ import { FeaturesItem } from '../../components/FeaturesItem/FeaturesItem';
 
 import { featuresData } from '../../data/aboutPageFeatures';
 import { ScrollReveal } from '../../components/ScrollReveal/ScrollReveal';
+import { MainLogo } from '../../components/UI/MainLogo';
 
 export const About = () => {
   const { setCurrentPage } = useMainContext();
@@ -31,7 +32,9 @@ export const About = () => {
   return (
     <section id="about" className="page about">
       <div className="container">
-        <BackLink />
+        <div className="page-top__wrapper">
+          <BackLink />
+        </div>
         <h1 className="page__title text-secondary">
           {t('about').charAt(0).toUpperCase() + t('about').slice(1)}
         </h1>

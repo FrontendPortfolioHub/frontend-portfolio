@@ -24,10 +24,7 @@ export const StartPage = () => {
           <p className="start-page__subtitle">{t('position')}</p>
           <p className="text-accent">
             {t('with passion to creating and improving')}
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
+            <span>|</span>
           </p>
         </div>
       </div>
