@@ -1,4 +1,5 @@
 .cv-button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +17,7 @@
   font-weight: 400;
   line-height: 175%;
   transition: all 0.3s;
+  cursor: pointer;
 
   @include onTablet {
     margin: 0;
@@ -38,4 +40,38 @@
       background-image: url('../../../assets/icons/cv-download-dark.svg');
     }
   }
+}
+
+.sub-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  background-color: $background-color;
+  border: 1px solid $color-accent;
+  color: $text-accent;
+
+  &:hover {
+    background-color: $color-accent;
+  }
+}
+
+.left-subbutton {
+  left: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+.right-subbutton {
+  right: 0;
+  border-radius: 0 20px 20px 0;
+}
+
+.cv-download-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }

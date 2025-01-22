@@ -13,7 +13,6 @@ import { FeaturesItem } from '../../components/FeaturesItem/FeaturesItem';
 
 import { featuresData } from '../../data/aboutPageFeatures';
 import { ScrollReveal } from '../../components/ScrollReveal/ScrollReveal';
-import { MainLogo } from '../../components/UI/MainLogo';
 
 export const About = () => {
   const { setCurrentPage } = useMainContext();

@@ -11,7 +11,7 @@ import { SocialLinks } from '../../components/SocialLinks/SocialLinks';
 import { ScrollReveal } from '../../components/ScrollReveal/ScrollReveal';
 
 export const Contacts = () => {
-  const { currentPage, setCurrentPage } = useMainContext();
+  const { currentPage, setCurrentPage, country } = useMainContext();
   const [isMobile, setIsMobile] = useState(false);
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
@@ -88,7 +88,7 @@ export const Contacts = () => {
                   href="tel:+4916096294939"
                   className="contacts-link text-accent"
                 >
-                  +4916096294939
+                  {country === 'UA' ? '+38 050 5584254 (WhatsApp, Viber)' : '+49 160 96294939'}
                 </a>
               </li>
               <li className="contacts-item grid__item--tablet-1-2 grid__item--desktop-2-4">
